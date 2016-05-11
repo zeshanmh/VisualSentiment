@@ -1,0 +1,2 @@
+image_url: http://farm6.staticflickr.com/5220/5490784007_fda4869607.jpg    flickr_username: "me and the sysop" realname: "Chelsea Oakes"
+image_url: http://farm7.staticflickr.com/6079/6071619002_94734f2a00.jpg    flickr_username: "glenn~" realname: "Glenn Simmons"

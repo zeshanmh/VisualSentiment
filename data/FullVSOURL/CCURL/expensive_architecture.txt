@@ -1,0 +1,2 @@
+image_url: http://farm5.staticflickr.com/4031/4532587635_e7e3674838.jpg    flickr_username: "dbrekke" realname: "Dennis Brekke"
+image_url: http://farm6.staticflickr.com/5067/5691653546_42925e8902.jpg    flickr_username: "Walter A. Aue" realname: "Walter A. Aue"

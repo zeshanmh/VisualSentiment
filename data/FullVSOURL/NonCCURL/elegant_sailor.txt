@@ -1,0 +1,3 @@
+image_url: http://farm7.staticflickr.com/6196/6072255468_57894fced7.jpg    flickr_username: "dn & wp" realname: ""
+image_url: http://farm9.staticflickr.com/8011/7321661916_aaf8fd13b4.jpg    flickr_username: "Karl'sfriend" realname: "Charles R. Forker"
+image_url: http://farm9.staticflickr.com/8303/7996327503_1703413342.jpg    flickr_username: "Valérie Busymum" realname: "Valérie "BusyMum""

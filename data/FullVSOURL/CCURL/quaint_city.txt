@@ -1,0 +1,3 @@
+image_url: http://farm1.staticflickr.com/41/109553124_a0138b7b56.jpg    flickr_username: "Chika" realname: "Chika Watanabe"
+image_url: http://farm1.staticflickr.com/125/320439465_b5c6e0e6a5.jpg    flickr_username: "Stephen_AU" realname: ""
+image_url: http://farm8.staticflickr.com/7175/6636244929_e5f8448a9b.jpg    flickr_username: "Marcio Cabral de Moura" realname: "Márcio Cabral de Moura"

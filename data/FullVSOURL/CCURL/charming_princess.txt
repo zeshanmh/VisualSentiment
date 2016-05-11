@@ -1,0 +1,3 @@
+image_url: http://farm3.staticflickr.com/2400/2370468096_560c92dd5d.jpg    flickr_username: "dugspr — Home for Good" realname: "Douglas Sprott"
+image_url: http://farm7.staticflickr.com/6146/5973756832_dddb0febff.jpg    flickr_username: "Gilderic Photography" realname: "Fred"
+image_url: http://farm9.staticflickr.com/8010/7424484872_b3c55c021f.jpg    flickr_username: "Mr.MVP" realname: "Visarus V."

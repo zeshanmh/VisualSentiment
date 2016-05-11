@@ -1,0 +1,2 @@
+image_url: http://farm3.staticflickr.com/2794/4159228048_b1276f3772.jpg    flickr_username: "hansco" realname: "Hans"
+image_url: http://farm5.staticflickr.com/4061/4604990276_fced825cd1.jpg    flickr_username: "Bender.Secondlife" realname: "Ferd Frederix"

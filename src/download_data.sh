@@ -26,7 +26,7 @@ for f in *.txt; do
 		filename="$dir_n$file_prefix$file_number"
 
 		# echo $filename
-	    wget -bqc -nc --read-timeout=10 -t 2 -O $filename $url;
+	    wget -nc --read-timeout=10 -t 2 -O $filename $url;
 
 	done < $f
 done;

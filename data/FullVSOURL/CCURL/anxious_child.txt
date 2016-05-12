@@ -1,6 +1,0 @@
-image_url: http://farm4.staticflickr.com/3374/3210130205_20a54b87fb.jpg    flickr_username: "Gulf Coast Regional Blood Center" realname: ""
-image_url: http://farm3.staticflickr.com/2775/4101792314_226bfccac4.jpg    flickr_username: "GleesonLibraryRBR" realname: ""
-image_url: http://farm5.staticflickr.com/4028/4265327611_165ffb2d14.jpg    flickr_username: "IronRodArt - Royce Bair ("Star Shooter")" realname: "Royce Bair"
-image_url: http://farm5.staticflickr.com/4085/5009097055_7056f88f13.jpg    flickr_username: "rorowe8" realname: ""
-image_url: http://farm4.staticflickr.com/3436/5800613079_bd741e6187.jpg    flickr_username: "gogoloopie" realname: ""
-image_url: http://farm9.staticflickr.com/8317/7949817782_351686063d.jpg    flickr_username: "FtCarsonPAO" realname: "Fort Carson"

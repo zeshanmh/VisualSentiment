@@ -1,8 +1,0 @@
-image_url: http://farm2.staticflickr.com/1351/1047307144_9909f5647b.jpg    flickr_username: "Zellaby" realname: "David Zellaby"
-image_url: http://farm1.staticflickr.com/76/207520024_bf6cb25648.jpg    flickr_username: "Messiah Divine" realname: "Messiah Divine"
-image_url: http://farm4.staticflickr.com/3234/2855585646_f83a4f09a4.jpg    flickr_username: "Ha-Wee" realname: "Howie Le"
-image_url: http://farm1.staticflickr.com/166/395508566_56dd6428fe.jpg    flickr_username: "palmasco" realname: ""
-image_url: http://farm5.staticflickr.com/4125/5000068884_d619ee57a0.jpg    flickr_username: "karenchristine552" realname: "Karen Christine  Hibbard"
-image_url: http://farm2.staticflickr.com/1199/5168225860_2c5dc3fa7e.jpg    flickr_username: "cza36" realname: ""
-image_url: http://farm5.staticflickr.com/4106/5193696917_e19d736e77.jpg    flickr_username: "Thomas Hawk" realname: "Thomas Hawk"
-image_url: http://farm1.staticflickr.com/42/82386736_5410e5d46b.jpg    flickr_username: "dickuhne" realname: ""

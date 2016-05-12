@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2123/2308234857_abbaa9e1b7.jpg    flickr_username: "andy_kyte_uk" realname: "Andy Kyte"
-image_url: http://farm3.staticflickr.com/2341/2434893035_ccb1a90bdb.jpg    flickr_username: "~no bullshit~" realname: ""
-image_url: http://farm1.staticflickr.com/109/299037234_0e097515ac.jpg    flickr_username: "maxmorphing" realname: "Massimiliano Tanzini"
-image_url: http://farm5.staticflickr.com/4071/4323208112_b0778911fa.jpg    flickr_username: "lrargerich" realname: "Luis Argerich"
-image_url: http://farm6.staticflickr.com/5071/5902132526_99bf09f54e.jpg    flickr_username: "Liz Brooks" realname: "Liz Brooks"
-image_url: http://farm8.staticflickr.com/7020/6599976063_220757064a.jpg    flickr_username: "Steven Tan (maethlin)" realname: "Steven Tan"
-image_url: http://farm8.staticflickr.com/7060/6909880309_9696d081c8.jpg    flickr_username: "Glory Cycles" realname: "Glory Cycles"
-image_url: http://farm1.staticflickr.com/42/74577185_750d7cc5e4.jpg    flickr_username: "Lord Biro" realname: "Paul Boxley"

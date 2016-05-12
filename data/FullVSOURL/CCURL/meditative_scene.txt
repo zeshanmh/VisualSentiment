@@ -1,6 +1,0 @@
-image_url: http://farm5.staticflickr.com/4006/4427407479_5a59c89a4d.jpg    flickr_username: "MLibrary" realname: ""
-image_url: http://farm5.staticflickr.com/4013/4427410363_450d543c35.jpg    flickr_username: "MLibrary" realname: ""
-image_url: http://farm3.staticflickr.com/2711/4428171174_9c29e948b5.jpg    flickr_username: "MLibrary" realname: ""
-image_url: http://farm3.staticflickr.com/2798/4428172214_cf350ec875.jpg    flickr_username: "MLibrary" realname: ""
-image_url: http://farm5.staticflickr.com/4015/4428173624_61ce6c36d0.jpg    flickr_username: "MLibrary" realname: ""
-image_url: http://farm2.staticflickr.com/1367/803082508_d1bdabd142.jpg    flickr_username: "Greg Gladman" realname: "Greg Gladman"

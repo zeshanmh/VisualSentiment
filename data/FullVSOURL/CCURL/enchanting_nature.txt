@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3059/2967395402_a1e2e8068f.jpg    flickr_username: "Vicki's Nature" realname: "Vicki DeLoach"
-image_url: http://farm3.staticflickr.com/2009/3618374440_580f8f0ebc.jpg    flickr_username: "Molly258" realname: ""
-image_url: http://farm4.staticflickr.com/3345/3630933188_1239f0d3c0.jpg    flickr_username: "Molly258" realname: ""
-image_url: http://farm5.staticflickr.com/4087/5211697311_739505865c.jpg    flickr_username: "vickyshirley71" realname: "Vicky Shirley"
-image_url: http://farm9.staticflickr.com/8014/7548644498_0b1196fa9e.jpg    flickr_username: "Romana Correale" realname: "Francesca Romana Correale"

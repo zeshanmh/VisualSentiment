@@ -1,8 +1,0 @@
-image_url: http://farm2.staticflickr.com/1250/1120899952_9e9db37c4f.jpg    flickr_username: "Ross2085" realname: ""
-image_url: http://farm3.staticflickr.com/2514/4075298502_5e3a2cddb1.jpg    flickr_username: "Yellow.Cat" realname: ""
-image_url: http://farm3.staticflickr.com/2757/4123862024_2eee381f13.jpg    flickr_username: "Images by John 'K'" realname: ""
-image_url: http://farm5.staticflickr.com/4016/4316196354_830b800028.jpg    flickr_username: "gurdonark" realname: "Robert Nunnally"
-image_url: http://farm5.staticflickr.com/4092/4948847537_784fdb917c.jpg    flickr_username: "axshuzaifa" realname: "Huzaifa Das"
-image_url: http://farm6.staticflickr.com/5221/5657644453_6678e4a84a.jpg    flickr_username: "rainerwiege" realname: "Rainer Wiege"
-image_url: http://farm7.staticflickr.com/6240/6306942834_b48e76b4a2.jpg    flickr_username: "lufcwls" realname: ""
-image_url: http://farm2.staticflickr.com/1235/641310002_22caf52086.jpg    flickr_username: "Gorse Fox" realname: ""

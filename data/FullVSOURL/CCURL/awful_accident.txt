@@ -1,5 +1,0 @@
-image_url: http://farm2.staticflickr.com/1005/1376054370_7d761c0687.jpg    flickr_username: "jajacks62" realname: "John Jackson"
-image_url: http://farm3.staticflickr.com/2088/2111664682_b2e30f5f6d.jpg    flickr_username: "Listen Missy!" realname: "Missy S."
-image_url: http://farm4.staticflickr.com/3013/2692237947_f60d05fa0d.jpg    flickr_username: "囧-Jean-囧" realname: "Jean Wang"
-image_url: http://farm6.staticflickr.com/5070/5778997966_c2d34f0683.jpg    flickr_username: "thienzieyung" realname: "To see all my photos, search for 'thienzieyung'! :D"
-image_url: http://farm1.staticflickr.com/3/5824238_3c04f03141.jpg    flickr_username: "ReSurge International" realname: "ReSurge International"

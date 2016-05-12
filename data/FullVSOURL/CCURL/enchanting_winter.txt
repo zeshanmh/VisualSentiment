@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3187/3076358060_bcb70b47b5.jpg    flickr_username: "dreamsjung" realname: "Jason Taellious"
-image_url: http://farm7.staticflickr.com/6049/5882209538_5e219dabdd.jpg    flickr_username: "lrargerich" realname: "Luis Argerich"
-image_url: http://farm7.staticflickr.com/6103/6221979876_0efc01792a.jpg    flickr_username: "Elric Anatine" realname: "Elric Anatine"
-image_url: http://farm8.staticflickr.com/7152/6568730563_1d4b8b2ccb.jpg    flickr_username: "danishdynamite" realname: ""
-image_url: http://farm1.staticflickr.com/37/82487752_94e9c52f66.jpg    flickr_username: "Jan Spooren" realname: "Jan Spooren"

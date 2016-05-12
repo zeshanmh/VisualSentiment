@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2318/2115516507_9bb2290016.jpg    flickr_username: "studiomayer" realname: "Michael Mayer"
-image_url: http://farm4.staticflickr.com/3224/2790249781_ca90fa25c1.jpg    flickr_username: "Alan Stanton" realname: "Alan Stanton"
-image_url: http://farm8.staticflickr.com/7149/6780730959_3fbc5c6081.jpg    flickr_username: "PunkToad" realname: ""
-image_url: http://farm9.staticflickr.com/8203/8159487524_4e7e9e817e.jpg    flickr_username: "City of Prince George" realname: "City of Prince George"

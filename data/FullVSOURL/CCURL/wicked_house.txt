@@ -1,3 +1,0 @@
-image_url: http://farm1.staticflickr.com/53/151976139_3e8cdac8af.jpg    flickr_username: "Chachki" realname: ""
-image_url: http://farm4.staticflickr.com/3204/3142993212_960cfb83ee.jpg    flickr_username: "jackie_oh" realname: "Jakobien van der Weijden"
-image_url: http://farm1.staticflickr.com/128/340699136_16c3d2cb86.jpg    flickr_username: "Frances Hui" realname: "Frances Hui"

@@ -1,6 +1,0 @@
-image_url: http://farm3.staticflickr.com/2405/2376085777_7581e32dca.jpg    flickr_username: "Feltbug" realname: "Mandy Prowse"
-image_url: http://farm1.staticflickr.com/157/407899503_77f10129e0.jpg    flickr_username: "brapps" realname: "Ben and Rachel Apps"
-image_url: http://farm1.staticflickr.com/163/407899504_d2b84ceb74.jpg    flickr_username: "brapps" realname: "Ben and Rachel Apps"
-image_url: http://farm1.staticflickr.com/180/407899506_73ba30debe.jpg    flickr_username: "brapps" realname: "Ben and Rachel Apps"
-image_url: http://farm6.staticflickr.com/5284/5370048048_88d4c8b7b7.jpg    flickr_username: "Vainsang" realname: "Vincent Brassinne"
-image_url: http://farm8.staticflickr.com/7069/6949831899_f22d952c74.jpg    flickr_username: "MarkGuitarPhoto" realname: ""

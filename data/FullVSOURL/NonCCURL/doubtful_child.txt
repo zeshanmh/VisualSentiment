@@ -1,2 +1,0 @@
-image_url: http://farm2.staticflickr.com/1003/1426521497_de16201c30.jpg    flickr_username: "Paolo's Photos Diary" realname: ""
-image_url: http://farm6.staticflickr.com/5268/5588797158_bfac246033.jpg    flickr_username: "gusthed" realname: "Bo Kage Carlson"

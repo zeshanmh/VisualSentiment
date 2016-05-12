@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3327/3190380710_09b23c4c52.jpg    flickr_username: "kuddlyteddybear2004" realname: "Mark K."
-image_url: http://farm4.staticflickr.com/3436/3285566297_156a1ccd9d.jpg    flickr_username: "Brianna Beresford" realname: ""
-image_url: http://farm4.staticflickr.com/3315/3305284922_4eb12148c0.jpg    flickr_username: "Brianna Beresford" realname: ""

@@ -1,4 +1,0 @@
-image_url: http://farm1.staticflickr.com/51/151477374_5df5f008f3.jpg    flickr_username: "Hachimaki" realname: "Rob Fahey"
-image_url: http://farm4.staticflickr.com/3001/2709003612_153cee952c.jpg    flickr_username: "jon_a_ross" realname: "Jon Ross"
-image_url: http://farm4.staticflickr.com/3387/3411961434_5f0c0e97f7.jpg    flickr_username: "*liane*" realname: ""
-image_url: http://farm7.staticflickr.com/6113/6218988726_bc9afbc6bb.jpg    flickr_username: "Michael Bentley" realname: ""

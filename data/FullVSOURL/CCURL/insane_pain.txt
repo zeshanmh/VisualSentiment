@@ -1,6 +1,0 @@
-image_url: http://farm3.staticflickr.com/2370/2414964319_7879ba67f4.jpg    flickr_username: "Shoes on Wires" realname: "Justus Hayes"
-image_url: http://farm3.staticflickr.com/2329/2495814526_838843dc96.jpg    flickr_username: "I_vow_to_You" realname: ""
-image_url: http://farm4.staticflickr.com/3290/2689238864_52a0821cf0.jpg    flickr_username: "Shoes on Wires" realname: "Justus Hayes"
-image_url: http://farm4.staticflickr.com/3376/3655917772_e5d433d308.jpg    flickr_username: "Pulpolux !!!" realname: ""
-image_url: http://farm5.staticflickr.com/4008/4321047005_7d492c08e9.jpg    flickr_username: "Viofiddler" realname: "Alvin Wong"
-image_url: http://farm5.staticflickr.com/4104/4948254181_40244777da.jpg    flickr_username: "Rakesh Rocky" realname: "Entrepreneurial  Dreams."

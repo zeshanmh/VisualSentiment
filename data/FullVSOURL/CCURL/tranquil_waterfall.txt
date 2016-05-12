@@ -1,7 +1,0 @@
-image_url: http://farm2.staticflickr.com/1324/1402760447_8a5716b399.jpg    flickr_username: "Raxzje" realname: ""
-image_url: http://farm5.staticflickr.com/4037/4404868994_7314514b32.jpg    flickr_username: "jimcrotty.com" realname: "Jim Crotty"
-image_url: http://farm5.staticflickr.com/4012/4404873854_5112b73ecb.jpg    flickr_username: "jimcrotty.com" realname: "Jim Crotty"
-image_url: http://farm5.staticflickr.com/4138/5011651967_723d146d12.jpg    flickr_username: "Knowsphotos" realname: ""
-image_url: http://farm7.staticflickr.com/6035/6263789953_1574109881.jpg    flickr_username: "ukgardenphotos" realname: ""
-image_url: http://farm7.staticflickr.com/6218/6263790835_9cf5257152.jpg    flickr_username: "ukgardenphotos" realname: ""
-image_url: http://farm8.staticflickr.com/7142/6499648563_069abf5382.jpg    flickr_username: "AcousticDimensions" realname: "Acoustic Dimensions"

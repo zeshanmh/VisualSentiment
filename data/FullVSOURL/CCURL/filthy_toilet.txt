@@ -1,2 +1,0 @@
-image_url: http://farm3.staticflickr.com/2404/1605355552_a26d4cd3a2.jpg    flickr_username: "chris strouth" realname: "chris strouth"
-image_url: http://farm4.staticflickr.com/3083/3130539600_ac90a895e6.jpg    flickr_username: "joanneteh_32(loving Laduree)" realname: ""

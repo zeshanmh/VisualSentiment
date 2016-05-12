@@ -1,2 +1,0 @@
-image_url: http://farm3.staticflickr.com/2714/4227915669_882c513e4c.jpg    flickr_username: "Jawed Shah" realname: ""
-image_url: http://farm5.staticflickr.com/4013/4615464349_eac4dfc12c.jpg    flickr_username: "City of San Jose Public Art Program" realname: ""

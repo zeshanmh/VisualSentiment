@@ -1,8 +1,0 @@
-image_url: http://farm2.staticflickr.com/1011/1414682296_c31997cc53.jpg    flickr_username: "so lets hang out" realname: ""
-image_url: http://farm2.staticflickr.com/1434/1425684810_19eb8a1f24.jpg    flickr_username: "so lets hang out" realname: ""
-image_url: http://farm3.staticflickr.com/2294/2038194076_20d57be052.jpg    flickr_username: "so lets hang out" realname: ""
-image_url: http://farm3.staticflickr.com/2143/2193259438_de1bb2892d.jpg    flickr_username: "so lets hang out" realname: ""
-image_url: http://farm4.staticflickr.com/3102/3200445106_d529336f68.jpg    flickr_username: "bugmancx" realname: ""
-image_url: http://farm4.staticflickr.com/3400/3263113513_bcbab91c4a.jpg    flickr_username: "samanthanicolethompson" realname: ""
-image_url: http://farm5.staticflickr.com/4075/4870263655_10e9a4fb8e.jpg    flickr_username: "Heather on the go!" realname: ""
-image_url: http://farm6.staticflickr.com/5013/5444935417_9d5d525b86.jpg    flickr_username: "johnbruckler" realname: "John Bruckler"

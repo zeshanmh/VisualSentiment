@@ -1,5 +1,0 @@
-image_url: http://farm3.staticflickr.com/2576/4222308274_ebe8bb9ca6.jpg    flickr_username: "Jon & Alison" realname: "Jon Thomson"
-image_url: http://farm5.staticflickr.com/4099/4910029332_23980b7a85.jpg    flickr_username: "Ari Helminen" realname: "Ari Helminen"
-image_url: http://farm6.staticflickr.com/5212/5387458375_bb955bdbc7.jpg    flickr_username: "by Ophelia photos" realname: ""
-image_url: http://farm7.staticflickr.com/6071/6093701243_e16a16541c.jpg    flickr_username: "wiremoons" realname: "Simon Rowe"
-image_url: http://farm9.staticflickr.com/8315/7923576238_909290e042.jpg    flickr_username: "HolySkittles" realname: "Eve"

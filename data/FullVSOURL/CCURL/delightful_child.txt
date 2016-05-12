@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2293/2432175591_3a86dcc133.jpg    flickr_username: "alanhantz" realname: "Alan Hantz"
-image_url: http://farm1.staticflickr.com/122/278483106_0e57683472.jpg    flickr_username: "abibrooks" realname: "Abi"
-image_url: http://farm1.staticflickr.com/117/312450736_e3aa87079f.jpg    flickr_username: "fran.west" realname: "fran west"
-image_url: http://farm4.staticflickr.com/3624/3458429788_fcd59040fa.jpg    flickr_username: "secretagentmoof" realname: "moof"
-image_url: http://farm3.staticflickr.com/2594/3802304174_c34d30d6b7.jpg    flickr_username: "peterjr1961" realname: "Peter Roan"
-image_url: http://farm2.staticflickr.com/1122/5103836424_03b9209105.jpg    flickr_username: "PanchabiV" realname: "Panchabi V Nathan"
-image_url: http://farm6.staticflickr.com/5143/5685778196_a47918eafc.jpg    flickr_username: "Royston Rascals" realname: ""
-image_url: http://farm1.staticflickr.com/5/6223544_d444927cfd.jpg    flickr_username: "ReSurge International" realname: "ReSurge International"

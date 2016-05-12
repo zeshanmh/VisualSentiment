@@ -1,2 +1,0 @@
-image_url: http://farm4.staticflickr.com/3279/2612024550_40b4cee49c.jpg    flickr_username: "scottleonardi" realname: ""
-image_url: http://farm1.staticflickr.com/1/3003601_4e69b0bd22.jpg    flickr_username: "Still Heidi" realname: "Heidi"

@@ -1,6 +1,0 @@
-image_url: http://farm3.staticflickr.com/2003/2252062208_971912fe8c.jpg    flickr_username: "Esteban Suero" realname: ""
-image_url: http://farm4.staticflickr.com/3078/2919315019_6d6bd4bc02.jpg    flickr_username: "odolfus" realname: "Olof Eelman"
-image_url: http://farm3.staticflickr.com/2503/3723790540_1b74a4c1ea.jpg    flickr_username: "Catch the dream" realname: "Mohammad Moniruzzaman"
-image_url: http://farm7.staticflickr.com/6105/6271956134_c75cde6802.jpg    flickr_username: "as i see dying" realname: "saptarshi gupta"
-image_url: http://farm8.staticflickr.com/7192/6947479001_2271295518.jpg    flickr_username: "wilcolley" realname: "Will Colley"
-image_url: http://farm9.staticflickr.com/8173/8027647763_0b0df6a4a0.jpg    flickr_username: "Arwa.H" realname: "Arwa Sewar"

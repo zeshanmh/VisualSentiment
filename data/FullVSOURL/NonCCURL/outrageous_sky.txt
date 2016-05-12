@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3027/2659029517_b102cfa03c.jpg    flickr_username: "Meuh Yeah Yeah" realname: ""
-image_url: http://farm4.staticflickr.com/3142/2885094003_b000f3eb80.jpg    flickr_username: "airsteen" realname: ""
-image_url: http://farm4.staticflickr.com/3663/3319753747_2532ed6b96.jpg    flickr_username: "ffotograffer" realname: "ffinlo Kilner"
-image_url: http://farm3.staticflickr.com/2570/4035815016_c6afaa6d3f.jpg    flickr_username: "Enhanced Reality" realname: ""
-image_url: http://farm5.staticflickr.com/4013/4279776188_0c85aacba7.jpg    flickr_username: "akunkle99" realname: ""

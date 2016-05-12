@@ -1,4 +1,0 @@
-image_url: http://farm4.staticflickr.com/3255/2576997045_a6da010f49.jpg    flickr_username: "Peggy Collins" realname: ""
-image_url: http://farm4.staticflickr.com/3253/2610429618_d94b9a8544.jpg    flickr_username: "MarkusR." realname: "Markus"
-image_url: http://farm3.staticflickr.com/2527/3722713874_cd5e0fc21d.jpg    flickr_username: "Jack-imageX" realname: ""
-image_url: http://farm8.staticflickr.com/7130/6948226354_73c09f4a25.jpg    flickr_username: "rafischatz" realname: "Rafi"

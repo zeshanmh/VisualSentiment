@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2043/2071459526_413d1adb99.jpg    flickr_username: "nirmalmane" realname: ""
-image_url: http://farm4.staticflickr.com/3233/3026552133_ea29c18ff1.jpg    flickr_username: "HeyNix" realname: "Marnix"
-image_url: http://farm3.staticflickr.com/2551/3758882014_e4f2787d9f.jpg    flickr_username: "~FreeBirD®~" realname: "Mani Babbar"
-image_url: http://farm3.staticflickr.com/2471/3850337568_b8d602aa70.jpg    flickr_username: "gfpeck" realname: ""
-image_url: http://farm5.staticflickr.com/4003/4405559853_1c472cfbce.jpg    flickr_username: "Licht.Bildner" realname: ""
-image_url: http://farm3.staticflickr.com/2723/4465625661_9dcd03fa7d.jpg    flickr_username: "satosphere" realname: "Sathish J"
-image_url: http://farm6.staticflickr.com/5181/5737849398_c3b43235e3.jpg    flickr_username: "Loozrboy" realname: ""
-image_url: http://farm7.staticflickr.com/6231/6310497005_b995186cbc.jpg    flickr_username: "The Exo Guy" realname: ""

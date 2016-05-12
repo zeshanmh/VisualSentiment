@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3002/2845578549_927f2bbe1b.jpg    flickr_username: "J. Stephen Conn" realname: "J. Stephen Conn"
-image_url: http://farm5.staticflickr.com/4092/4969718483_7ea49b99f4.jpg    flickr_username: "Grace of SUN" realname: ""
-image_url: http://farm7.staticflickr.com/6192/6071390752_639cfa55d2.jpg    flickr_username: "Paul Albertella" realname: "Paul Albertella"
-image_url: http://farm9.staticflickr.com/8162/7525225608_89e160a4f8.jpg    flickr_username: "Steve Parker" realname: "Steve Parker"
-image_url: http://farm2.staticflickr.com/1022/803397910_9ff0b86006.jpg    flickr_username: "dotpolka" realname: ""

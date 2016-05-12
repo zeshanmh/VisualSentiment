@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3306/4612760102_90831d3e15.jpg    flickr_username: "sharna.shumona (off for a while because of net pro" realname: "Shumona Sharna"
-image_url: http://farm6.staticflickr.com/5213/5522138528_6b78c3e605.jpg    flickr_username: "gopal1035" realname: "Gopal Aggarwal"
-image_url: http://farm6.staticflickr.com/5040/5867337098_9f8fd3e833.jpg    flickr_username: "rosmary" realname: ""

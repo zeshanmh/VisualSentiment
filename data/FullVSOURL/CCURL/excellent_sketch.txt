@@ -1,2 +1,0 @@
-image_url: http://farm2.staticflickr.com/1373/1360590466_7f3355076b.jpg    flickr_username: "Sgt. Pepperedjane" realname: ""
-image_url: http://farm5.staticflickr.com/4061/4590298619_bd4b233a32.jpg    flickr_username: "Peter E. Lee" realname: "Peter Lee"

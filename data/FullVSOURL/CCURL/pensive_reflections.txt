@@ -1,7 +1,0 @@
-image_url: http://farm1.staticflickr.com/35/122328456_62c9212093.jpg    flickr_username: "TheMarque" realname: "Mark Walz"
-image_url: http://farm1.staticflickr.com/69/171601969_a82571f1de.jpg    flickr_username: "Fenners1984" realname: "Paul Fenton"
-image_url: http://farm4.staticflickr.com/3180/2356012242_2af4e589a2.jpg    flickr_username: "schatz" realname: "Richard Schatzberger"
-image_url: http://farm1.staticflickr.com/22/28127626_e1bf969bc3.jpg    flickr_username: "Mindful One" realname: "Kathryn Harper"
-image_url: http://farm4.staticflickr.com/3489/3209880576_3eb800e25a.jpg    flickr_username: "kewfriend" realname: ""
-image_url: http://farm5.staticflickr.com/4104/5061059811_86d03fce92.jpg    flickr_username: "Aunt Teena" realname: "Teena Wildman"
-image_url: http://farm8.staticflickr.com/7085/7166619540_25fe89a597.jpg    flickr_username: "flickr Sam7" realname: "Jonathan Samuels"

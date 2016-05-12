@@ -1,3 +1,0 @@
-image_url: http://farm3.staticflickr.com/2452/3976960363_d856f5be21.jpg    flickr_username: "greenfaerietree" realname: "Deborah"
-image_url: http://farm5.staticflickr.com/4041/4572307441_859f2d9537.jpg    flickr_username: "kelpenhagen" realname: "Kelly"
-image_url: http://farm2.staticflickr.com/1321/802607185_ebfc0e2b86.jpg    flickr_username: "dospaz" realname: ""

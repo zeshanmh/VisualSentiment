@@ -1,7 +1,0 @@
-image_url: http://farm1.staticflickr.com/44/127790504_e7a98f5424.jpg    flickr_username: "greenshutterbug" realname: ""
-image_url: http://farm3.staticflickr.com/2401/2219646637_c9c39212db.jpg    flickr_username: "amberimage" realname: ""
-image_url: http://farm4.staticflickr.com/3173/3099381191_0d7f14f16f.jpg    flickr_username: "Grooover" realname: "Jerry Seaman"
-image_url: http://farm2.staticflickr.com/1275/4712261603_0f8272e713.jpg    flickr_username: "Andreas_Schalber" realname: "Andreas Schalber"
-image_url: http://farm5.staticflickr.com/4096/4861243000_626df8d9b5.jpg    flickr_username: "Nadsat#1" realname: ""
-image_url: http://farm5.staticflickr.com/4139/4919315557_c822b6258c.jpg    flickr_username: "SEVIORAseviora_CD2/10" realname: "seviora citra"
-image_url: http://farm8.staticflickr.com/7219/7163050779_4daf518752.jpg    flickr_username: "inoebene" realname: "Wishnu  Dwi Marendra"

@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2291/1582911899_45e12f6e1e.jpg    flickr_username: "Jack Black's Stunt Double" realname: ""
-image_url: http://farm1.staticflickr.com/135/394260860_e66bc596b2.jpg    flickr_username: "Mister-E" realname: "Chris Eason"
-image_url: http://farm1.staticflickr.com/144/395511956_3cc22f4d28.jpg    flickr_username: "andre.vanrooyen" realname: "André van Rooyen"
-image_url: http://farm4.staticflickr.com/3523/4055663697_a2e61c40e6.jpg    flickr_username: "Cross Duck" realname: ""
-image_url: http://farm1.staticflickr.com/170/423964151_bf1eb4fb9d.jpg    flickr_username: "RichardWillis" realname: ""
-image_url: http://farm1.staticflickr.com/237/516752171_1c568ec7be.jpg    flickr_username: "Peter Gene" realname: "Pete"
-image_url: http://farm6.staticflickr.com/5171/5439248051_105b53d820.jpg    flickr_username: "ClickFlashPhotos / Nicki Varkevisser" realname: ""
-image_url: http://farm7.staticflickr.com/6092/6218102893_96a052a779.jpg    flickr_username: "tj.blackwell" realname: "Tom Blackwell"

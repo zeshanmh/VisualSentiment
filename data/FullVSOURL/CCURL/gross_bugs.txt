@@ -1,7 +1,0 @@
-image_url: http://farm3.staticflickr.com/2034/2472115634_52f0692abb.jpg    flickr_username: "abbyladybug" realname: ""
-image_url: http://farm4.staticflickr.com/3635/3590291737_bce6015f67.jpg    flickr_username: "stupidmommy" realname: ""
-image_url: http://farm1.staticflickr.com/149/419615899_f0709ef9a9.jpg    flickr_username: "zacharmstrong" realname: ""
-image_url: http://farm1.staticflickr.com/181/419615934_ffa1108eaa.jpg    flickr_username: "zacharmstrong" realname: ""
-image_url: http://farm5.staticflickr.com/4116/4816366469_a4faef24a1.jpg    flickr_username: "Ruin Raider" realname: ""
-image_url: http://farm6.staticflickr.com/5218/5467864460_1464b7c29d.jpg    flickr_username: "nokapixel" realname: "Jono Kane"
-image_url: http://farm8.staticflickr.com/7178/7057546807_01eee91866.jpg    flickr_username: "tyle_r" realname: ""

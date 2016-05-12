@@ -1,8 +1,0 @@
-image_url: http://farm2.staticflickr.com/1388/1483712254_1a10cc6f1e.jpg    flickr_username: "jacqueline_d" realname: ""
-image_url: http://farm4.staticflickr.com/3043/3025954692_0916c30919.jpg    flickr_username: "PlutostheBubbleman" realname: "Simon Tilcock"
-image_url: http://farm4.staticflickr.com/3239/3119221670_ffc8dfafde.jpg    flickr_username: "colleenhodgins" realname: ""
-image_url: http://farm5.staticflickr.com/4009/4573538135_7c8e683bf6.jpg    flickr_username: "fuscipes" realname: ""
-image_url: http://farm5.staticflickr.com/4135/4740906497_370a56f3be.jpg    flickr_username: "kivoton" realname: ""
-image_url: http://farm8.staticflickr.com/7160/6699235227_9fe263bc2a.jpg    flickr_username: "ChillinInDC" realname: "Chillin' in DC"
-image_url: http://farm8.staticflickr.com/7175/6743495599_b006e3a36e.jpg    flickr_username: "Mister Mushroom" realname: ""
-image_url: http://farm1.staticflickr.com/37/82935486_6afe2c7875.jpg    flickr_username: "doc18" realname: ""

@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2326/2012727393_696244f0b2.jpg    flickr_username: "sudeip" realname: ""
-image_url: http://farm3.staticflickr.com/2159/2348266961_319fd663ee.jpg    flickr_username: "Tatters:)" realname: "Tatiana Gerus"
-image_url: http://farm4.staticflickr.com/3152/2835012051_8b280e2d62.jpg    flickr_username: "vierka_osterka" realname: ""
-image_url: http://farm5.staticflickr.com/4137/4866280589_eea5ce3e94.jpg    flickr_username: "Tambako the Jaguar" realname: "Tambako The Jaguar"
-image_url: http://farm6.staticflickr.com/5298/5453412318_a3728f92ae.jpg    flickr_username: "Heidi Mellish" realname: "Heidi Mellish"
-image_url: http://farm6.staticflickr.com/5023/5616990107_7486af19a1.jpg    flickr_username: "101bob" realname: ""
-image_url: http://farm2.staticflickr.com/1025/594823639_e30ff4b4e0.jpg    flickr_username: "AlecsS" realname: "Alexandre Pizzera"
-image_url: http://farm9.staticflickr.com/8346/8280552591_84ed6e5706.jpg    flickr_username: "Tambako the Jaguar" realname: "Tambako The Jaguar"

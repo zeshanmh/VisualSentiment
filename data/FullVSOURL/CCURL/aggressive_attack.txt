@@ -1,3 +1,0 @@
-image_url: http://farm3.staticflickr.com/2213/2415306482_6b7923d6f6.jpg    flickr_username: "bluemonkey." realname: ""
-image_url: http://farm1.staticflickr.com/172/468124894_8bdf02a357.jpg    flickr_username: "Dog Company" realname: "Dalton"
-image_url: http://farm7.staticflickr.com/6225/6280941664_65e09c63b3.jpg    flickr_username: "NavyLookout" realname: ""

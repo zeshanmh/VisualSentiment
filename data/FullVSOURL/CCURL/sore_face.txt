@@ -1,6 +1,0 @@
-image_url: http://farm2.staticflickr.com/1188/1458573785_9a9bc9f15d.jpg    flickr_username: "the tartanpodcast" realname: "Mark Hunter"
-image_url: http://farm1.staticflickr.com/10/15381604_c1d5b46ddf.jpg    flickr_username: "timtak" realname: "Timothy Takemoto"
-image_url: http://farm4.staticflickr.com/3209/2713849107_dac5a0bf1b.jpg    flickr_username: "Spider.Dog" realname: ""
-image_url: http://farm4.staticflickr.com/3354/3607014554_51b06036ce.jpg    flickr_username: "littledropofpoison" realname: "Emma Alonze"
-image_url: http://farm1.staticflickr.com/121/369248480_d953586804.jpg    flickr_username: "usedcarspecialist" realname: "Sarah"
-image_url: http://farm3.staticflickr.com/2582/3699098842_61b980261c.jpg    flickr_username: "Deborah Main" realname: ""

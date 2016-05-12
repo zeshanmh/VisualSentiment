@@ -1,6 +1,0 @@
-image_url: http://farm1.staticflickr.com/103/304288776_d983d016b0.jpg    flickr_username: "hyku" realname: "Josh Hallett"
-image_url: http://farm4.staticflickr.com/3393/3198724005_b3743352df.jpg    flickr_username: "j.twist" realname: ""
-image_url: http://farm4.staticflickr.com/3617/3303637871_ffac9de2ef.jpg    flickr_username: "markdphotoguy" realname: ""
-image_url: http://farm1.staticflickr.com/184/447607215_115843c8bb.jpg    flickr_username: "quite peculiar" realname: ""
-image_url: http://farm4.staticflickr.com/3399/4649879248_4a3c52d20d.jpg    flickr_username: "Luke McKernan" realname: ""
-image_url: http://farm5.staticflickr.com/4111/5052820731_2d2ff3db6b.jpg    flickr_username: "ooitschristina" realname: ""

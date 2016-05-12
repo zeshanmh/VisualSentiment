@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2286/2026568586_a49bca4219.jpg    flickr_username: "KennethMoyle" realname: "Kenneth Moyle"
-image_url: http://farm4.staticflickr.com/3096/2885042383_9834dc07e3.jpg    flickr_username: "jcbear2" realname: ""
-image_url: http://farm4.staticflickr.com/3284/2960993336_120ee33b26.jpg    flickr_username: "Jared Zimmerman" realname: "Jared Zimmerman"
-image_url: http://farm3.staticflickr.com/2321/5752485592_4b9e28ee44.jpg    flickr_username: "ian boyd" realname: "Ian Boyd"

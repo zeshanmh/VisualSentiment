@@ -1,4 +1,0 @@
-image_url: http://farm2.staticflickr.com/1275/1251376020_7f0a759d10.jpg    flickr_username: "sole3" realname: "marisol q"
-image_url: http://farm1.staticflickr.com/30/50951965_fadea0f693.jpg    flickr_username: "iamthechad" realname: "Chad Johnston"
-image_url: http://farm8.staticflickr.com/7150/6542076229_ec090a5b69.jpg    flickr_username: "Nagarjun" realname: "Nagarjun Kandukuru"
-image_url: http://farm9.staticflickr.com/8473/8102990932_27fbd6ceb3.jpg    flickr_username: "harryalverson" realname: "Harry Alverson"

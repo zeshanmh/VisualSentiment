@@ -1,2 +1,0 @@
-image_url: http://farm4.staticflickr.com/3234/2689429862_1c1ba85315.jpg    flickr_username: "schmish" realname: ""
-image_url: http://farm7.staticflickr.com/6142/5932222246_65c722a572.jpg    flickr_username: "PrettyMuchSmiles" realname: ""

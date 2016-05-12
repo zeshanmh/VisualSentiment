@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3262/2888872308_397871aa59.jpg    flickr_username: "sgtgary" realname: ""
-image_url: http://farm4.staticflickr.com/3646/3680903957_89ce1fcde2.jpg    flickr_username: "turbo.beagle" realname: ""
-image_url: http://farm3.staticflickr.com/2583/4117086542_bd212ae0fd.jpg    flickr_username: "asos_obs1" realname: "Matthew Hartman"
-image_url: http://farm5.staticflickr.com/4011/4260767637_e35b436111.jpg    flickr_username: "niiicedave" realname: "David Prasad"
-image_url: http://farm3.staticflickr.com/2781/4261506700_672b733bb5.jpg    flickr_username: "niiicedave" realname: "David Prasad"

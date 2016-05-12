@@ -1,4 +1,0 @@
-image_url: http://farm1.staticflickr.com/66/182411410_e1c59eece8.jpg    flickr_username: "toolmantim" realname: "Tim Lucas"
-image_url: http://farm5.staticflickr.com/4028/4210543281_e0c2d4b760.jpg    flickr_username: "Live.Work.Play" realname: "Fusion  Detroit"
-image_url: http://farm3.staticflickr.com/2662/4211309296_f0e478e8a1.jpg    flickr_username: "Live.Work.Play" realname: "Fusion  Detroit"
-image_url: http://farm3.staticflickr.com/2755/4311338535_4f774b5615.jpg    flickr_username: "kern.justin" realname: "Justin Kern"

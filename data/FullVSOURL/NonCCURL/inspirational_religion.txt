@@ -1,2 +1,0 @@
-image_url: http://farm1.staticflickr.com/13/13988784_b521c7a13d.jpg    flickr_username: "Leia" realname: "Leia Scofield"
-image_url: http://farm4.staticflickr.com/3295/3051491588_b2e7ce3184.jpg    flickr_username: "Graeme Warren" realname: ""

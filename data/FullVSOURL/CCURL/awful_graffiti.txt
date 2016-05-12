@@ -1,2 +1,0 @@
-image_url: http://farm4.staticflickr.com/3646/3414260271_02729e7e75.jpg    flickr_username: "Darren Foreman" realname: "Darren Foreman"
-image_url: http://farm5.staticflickr.com/4058/4462286508_2ca9b921e7.jpg    flickr_username: "ryanxchow" realname: "Ryan Chow"

@@ -1,1 +1,0 @@
-image_url: http://farm1.staticflickr.com/43/83864513_67541a1a22.jpg    flickr_username: "mRio" realname: "mario"

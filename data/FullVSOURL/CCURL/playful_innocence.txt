@@ -1,3 +1,0 @@
-image_url: http://farm3.staticflickr.com/2375/1797072978_f410106904.jpg    flickr_username: "kurichan+" realname: "Christian"
-image_url: http://farm4.staticflickr.com/3437/3362142089_347e59645b.jpg    flickr_username: "kurichan+" realname: "Christian"
-image_url: http://farm7.staticflickr.com/6036/5877826083_67a9514aff.jpg    flickr_username: "Tambako the Jaguar" realname: "Tambako The Jaguar"

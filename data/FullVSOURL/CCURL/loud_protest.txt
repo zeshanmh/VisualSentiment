@@ -1,7 +1,0 @@
-image_url: http://farm1.staticflickr.com/80/229318469_5001b5330e.jpg    flickr_username: "Sanne van der Beek" realname: "Sanne van der Beek"
-image_url: http://farm4.staticflickr.com/3122/2754948154_0dc21b76bc.jpg    flickr_username: "ainudil" realname: ""
-image_url: http://farm1.staticflickr.com/110/300941022_1962011e54.jpg    flickr_username: "color line" realname: ""
-image_url: http://farm1.staticflickr.com/149/395318086_7fc74148f3.jpg    flickr_username: "appelquist" realname: "Dan Appelquist"
-image_url: http://farm5.staticflickr.com/4150/5058027819_a64fde5474.jpg    flickr_username: "casey_eisenreich" realname: "Casey Eisenreich"
-image_url: http://farm6.staticflickr.com/5257/5403703804_53578fca87.jpg    flickr_username: "modenadude" realname: "Asim Bharwani"
-image_url: http://farm8.staticflickr.com/7125/8162562985_969c2fba8a.jpg    flickr_username: "ohsarahrose" realname: "Sarah-Rose"

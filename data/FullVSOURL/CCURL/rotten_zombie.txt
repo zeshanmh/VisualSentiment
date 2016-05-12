@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3396/3197335057_ba50c2a82e.jpg    flickr_username: "ojimbo" realname: "Jim Sheely"
-image_url: http://farm1.staticflickr.com/187/417968685_9a677e5375.jpg    flickr_username: "Ack Ook" realname: "Dylan Ashe"
-image_url: http://farm6.staticflickr.com/5169/5232169187_1ecd13da21.jpg    flickr_username: "Andi Licious" realname: "Andreas Wieser"

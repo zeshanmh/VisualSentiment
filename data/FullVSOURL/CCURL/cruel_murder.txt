@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3100/2924032439_a18ae747d6.jpg    flickr_username: "pinkcigarette" realname: ""
-image_url: http://farm5.staticflickr.com/4021/4671857595_139a912cf1.jpg    flickr_username: "✁☄ KAIRUUINZURO ✁☄" realname: "STOP VIVISECTION-USE YUPPIES Goretomb"
-image_url: http://farm6.staticflickr.com/5098/5390268035_a565eebbae.jpg    flickr_username: "SS&SS" realname: ""

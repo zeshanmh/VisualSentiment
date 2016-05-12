@@ -1,4 +1,0 @@
-image_url: http://farm1.staticflickr.com/41/104296936_b09f961ff2.jpg    flickr_username: "WaveBreaker" realname: "Dennis Sitarevich"
-image_url: http://farm4.staticflickr.com/3271/2627893069_5fb6bdcfa0.jpg    flickr_username: "cj.sveningsson" realname: "Carl-Johan Sveningsson"
-image_url: http://farm3.staticflickr.com/2474/3884281989_edf613e95a.jpg    flickr_username: "Mikal Salazar" realname: "Mikal Salazar"
-image_url: http://farm1.staticflickr.com/178/430661916_17311f76e8.jpg    flickr_username: "kaiyen" realname: "Allan Chen"

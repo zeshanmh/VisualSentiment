@@ -1,2 +1,0 @@
-image_url: http://farm4.staticflickr.com/3424/3240223057_9eb323049a.jpg    flickr_username: "iansand" realname: "Ian Sanderson"
-image_url: http://farm7.staticflickr.com/6013/5975783820_134c3041b5.jpg    flickr_username: "OSU Master Gardener" realname: "Gail Langellotto"

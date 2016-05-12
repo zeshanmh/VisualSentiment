@@ -1,2 +1,0 @@
-image_url: http://farm1.staticflickr.com/33/35857103_ec715d6337.jpg    flickr_username: "massdistraction" realname: "sharyn morrow"
-image_url: http://farm3.staticflickr.com/2686/4431386176_8aaafec94c.jpg    flickr_username: "dugsong" realname: "Dug Song"

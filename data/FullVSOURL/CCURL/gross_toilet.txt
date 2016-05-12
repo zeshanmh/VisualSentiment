@@ -1,2 +1,0 @@
-image_url: http://farm2.staticflickr.com/1244/1368621536_85592fc7e9.jpg    flickr_username: "pixxiestails" realname: ""
-image_url: http://farm3.staticflickr.com/2400/2201061572_998cbaa6d2.jpg    flickr_username: "kacleaveland" realname: "Kitty Cleaveland"

@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2153/2025023780_7d20d3057e.jpg    flickr_username: "rowland_rick" realname: "Rick Rowland"
-image_url: http://farm4.staticflickr.com/3067/2823500296_51e68d2e2d.jpg    flickr_username: "J. Stephen Conn" realname: "J. Stephen Conn"
-image_url: http://farm1.staticflickr.com/135/370658038_52671b4660.jpg    flickr_username: "retro traveler" realname: "Kolby"
-image_url: http://farm4.staticflickr.com/3426/3899464792_da5a1c3f26.jpg    flickr_username: "Raptor Alpha" realname: ""
-image_url: http://farm3.staticflickr.com/2624/3980947074_c7ba141e34.jpg    flickr_username: "reh navard e shoq" realname: "Muhammad Imran Saeed"
-image_url: http://farm5.staticflickr.com/4123/4904892677_0688392378.jpg    flickr_username: "Bruce McKay Yellow Snow Photography" realname: "Bruce McKay"
-image_url: http://farm5.staticflickr.com/4031/5164785222_acd05ed194.jpg    flickr_username: "flickrPrince" realname: "Raj"
-image_url: http://farm8.staticflickr.com/7068/6902181965_7b42904784.jpg    flickr_username: "CLF" realname: ""

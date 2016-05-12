@@ -1,7 +1,0 @@
-image_url: http://farm2.staticflickr.com/1179/1396817305_e00cccd7c6.jpg    flickr_username: "Racchio" realname: ""
-image_url: http://farm3.staticflickr.com/2309/2384843624_ce08d1f371.jpg    flickr_username: "jaycoxfilm" realname: "Jay Cox"
-image_url: http://farm4.staticflickr.com/3115/2880730443_a2b87a98ee.jpg    flickr_username: "shakestercody" realname: "Cody Long"
-image_url: http://farm4.staticflickr.com/3544/3507168561_5844635965.jpg    flickr_username: "Iwan Gabovitch" realname: "Iwan Gabovitch"
-image_url: http://farm1.staticflickr.com/146/400341186_10867a8c57.jpg    flickr_username: "BrittneyBush" realname: "Brittney Bush Bollay"
-image_url: http://farm7.staticflickr.com/6191/6106624180_8933da723f.jpg    flickr_username: "Emyan" realname: "Irene Mei"
-image_url: http://farm9.staticflickr.com/8288/7617190474_b52388d647.jpg    flickr_username: "Proxy Indian" realname: "Steve Browne & John Verkleir"

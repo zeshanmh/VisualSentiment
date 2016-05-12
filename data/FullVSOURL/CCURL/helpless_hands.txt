@@ -1,2 +1,0 @@
-image_url: http://farm4.staticflickr.com/3494/3752656122_07388ecff6.jpg    flickr_username: "Runs With Scissors" realname: "Ken"
-image_url: http://farm1.staticflickr.com/184/406681303_a84a86f81b.jpg    flickr_username: "An Ode To Aphrodite.." realname: "Charudatta Galande"

@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2262/1780978853_aba1cf34b9.jpg    flickr_username: "peretzpup" realname: "Eugene Peretz"
-image_url: http://farm3.staticflickr.com/2139/1781821030_92116f7ac0.jpg    flickr_username: "peretzpup" realname: "Eugene Peretz"
-image_url: http://farm3.staticflickr.com/2115/2375005775_18aa29c912.jpg    flickr_username: "RuTemple" realname: "Ruth Temple"
-image_url: http://farm1.staticflickr.com/21/27863096_ee4ef22d8e.jpg    flickr_username: ".evenwestvang" realname: "Even Westvang"
-image_url: http://farm4.staticflickr.com/3164/2944451155_c7047f827d.jpg    flickr_username: "bobsee" realname: "Bob Leckridge"
-image_url: http://farm1.staticflickr.com/32/42140586_33ddf785f4.jpg    flickr_username: "schizoform" realname: ""
-image_url: http://farm5.staticflickr.com/4053/4368554999_532073d950.jpg    flickr_username: "BrotherMagneto" realname: ""
-image_url: http://farm8.staticflickr.com/7273/7104020273_7c8f231a98.jpg    flickr_username: "doryexmachina" realname: "Mike Dory"

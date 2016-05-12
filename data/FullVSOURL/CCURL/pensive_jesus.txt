@@ -1,4 +1,0 @@
-image_url: http://farm4.staticflickr.com/3649/3614787213_1a802bf58c.jpg    flickr_username: "istorija" realname: "darius norvilas"
-image_url: http://farm4.staticflickr.com/3314/3615580966_b0710912c5.jpg    flickr_username: "istorija" realname: "darius norvilas"
-image_url: http://farm4.staticflickr.com/3325/3615603610_7f99c71138.jpg    flickr_username: "istorija" realname: "darius norvilas"
-image_url: http://farm3.staticflickr.com/2470/3615604918_93e1766fdd.jpg    flickr_username: "istorija" realname: "darius norvilas"

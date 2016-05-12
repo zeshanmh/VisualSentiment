@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2357/2044783468_6004fd8a4e.jpg    flickr_username: "DrewTM" realname: "Drew Morgan"
-image_url: http://farm4.staticflickr.com/3218/3157189785_e3e811445b.jpg    flickr_username: "Stephen Downes" realname: "Stephen Downes"
-image_url: http://farm5.staticflickr.com/4014/4694124248_616c8ac1c3.jpg    flickr_username: "jennyrotten" realname: ""
-image_url: http://farm1.staticflickr.com/29/99788112_aebc36eb90.jpg    flickr_username: "atomicjeep" realname: ""

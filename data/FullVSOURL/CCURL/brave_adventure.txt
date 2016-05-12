@@ -1,3 +1,0 @@
-image_url: http://farm1.staticflickr.com/64/170455571_01ad1dd462.jpg    flickr_username: "wallyg" realname: "Wally Gobetz"
-image_url: http://farm4.staticflickr.com/3532/3853891625_f137ca9fb7.jpg    flickr_username: "Live♥Laugh♥Love" realname: "Sabrina S"
-image_url: http://farm5.staticflickr.com/4073/4864791595_f3658e0ea8.jpg    flickr_username: "Walt Jabsco" realname: ""

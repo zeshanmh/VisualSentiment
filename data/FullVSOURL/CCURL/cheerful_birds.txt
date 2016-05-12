@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2595/4090280117_e6731b056e.jpg    flickr_username: "judy_and_ed" realname: ""
-image_url: http://farm7.staticflickr.com/6153/6182881041_688595fd50.jpg    flickr_username: "Cherokeeh Asteria" realname: ""
-image_url: http://farm7.staticflickr.com/6055/6358501559_a5f9da341d.jpg    flickr_username: "woolbrain knitter" realname: ""
-image_url: http://farm2.staticflickr.com/1158/672621854_7c98226115.jpg    flickr_username: "BinaryApe" realname: "Pete Birkinshaw"

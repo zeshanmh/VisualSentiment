@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3236/3132375589_71c71ae122.jpg    flickr_username: "doctorious" realname: "Matthew Gilbert"
-image_url: http://farm5.staticflickr.com/4148/4997245602_367396a21c.jpg    flickr_username: "Vankuso (Dominik Starosz)" realname: "Dominik Starosz"
-image_url: http://farm8.staticflickr.com/7248/7485296648_aa898e7847.jpg    flickr_username: "stewickie" realname: "Stewart and Vickie Carrington"

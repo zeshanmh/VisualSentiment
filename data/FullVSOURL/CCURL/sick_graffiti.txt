@@ -1,5 +1,0 @@
-image_url: http://farm3.staticflickr.com/2190/2114551522_463215b24a.jpg    flickr_username: "studiomayer" realname: "Michael Mayer"
-image_url: http://farm3.staticflickr.com/2064/2116529738_b9fdf155fd.jpg    flickr_username: "studiomayer" realname: "Michael Mayer"
-image_url: http://farm4.staticflickr.com/3300/3229378025_6549373dc9.jpg    flickr_username: "Shawn Whisenant" realname: ""
-image_url: http://farm3.staticflickr.com/2522/3952101915_616ee36f5c.jpg    flickr_username: "Ajay Tallam" realname: "Ajay Tallam"
-image_url: http://farm8.staticflickr.com/7071/7154740005_d722cea116.jpg    flickr_username: "Larry He's So Fine" realname: "Malcolm"

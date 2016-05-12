@@ -1,2 +1,0 @@
-image_url: http://farm6.staticflickr.com/5292/5414748192_3c864e596d.jpg    flickr_username: "daveynin" realname: ""
-image_url: http://farm6.staticflickr.com/5137/5414748450_a6724e7b39.jpg    flickr_username: "daveynin" realname: ""

@@ -1,2 +1,0 @@
-image_url: http://farm3.staticflickr.com/2088/2471037671_b2963fb559.jpg    flickr_username: "qwertman" realname: ""
-image_url: http://farm6.staticflickr.com/5065/5751221619_1771e59a21.jpg    flickr_username: "summonedbyfells" realname: ""

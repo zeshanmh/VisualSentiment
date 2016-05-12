@@ -1,4 +1,0 @@
-image_url: http://farm4.staticflickr.com/3109/2868263598_bcf8b59e38.jpg    flickr_username: "JBlaze B" realname: "Juan Barahona"
-image_url: http://farm4.staticflickr.com/3015/3043878281_62f1817b4b.jpg    flickr_username: "Gribiche" realname: "Rob Sinclair"
-image_url: http://farm5.staticflickr.com/4113/4951886109_7f9413acf5.jpg    flickr_username: "Heinrock" realname: ""
-image_url: http://farm8.staticflickr.com/7107/7490287234_f23bc7ac09.jpg    flickr_username: "ToddMcCann" realname: "Todd McCann"

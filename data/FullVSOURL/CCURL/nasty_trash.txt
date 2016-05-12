@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3154/2431011415_f2b628e06c.jpg    flickr_username: "Joe Pemberton" realname: "Joe Pemberton"
-image_url: http://farm4.staticflickr.com/3186/2716924111_458802e030.jpg    flickr_username: "Travelin' Librarian" realname: "Michael Sauers"
-image_url: http://farm5.staticflickr.com/4030/4627389801_b2ea304333.jpg    flickr_username: "Boogies with Fish" realname: "Jan Messersmith"

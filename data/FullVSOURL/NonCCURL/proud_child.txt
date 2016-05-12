@@ -1,3 +1,0 @@
-image_url: http://farm5.staticflickr.com/4134/4913707307_1aabb145a7.jpg    flickr_username: "markbrown1" realname: "Mark Brown"
-image_url: http://farm1.staticflickr.com/28/60349990_64978688fb.jpg    flickr_username: "mafnood.com" realname: ""
-image_url: http://farm9.staticflickr.com/8217/8309909642_980b6e81c7.jpg    flickr_username: "shane_eagan" realname: ""

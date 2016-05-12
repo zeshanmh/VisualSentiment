@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3040/2919348388_70483b6876.jpg    flickr_username: "Dodson Family OBX" realname: ""
-image_url: http://farm1.staticflickr.com/169/466305934_95f5fc869d.jpg    flickr_username: "blue_pinafores" realname: ""
-image_url: http://farm7.staticflickr.com/6060/6891159264_c62aaa0cdc.jpg    flickr_username: "Freddy Clark" realname: "Freddy Clark"

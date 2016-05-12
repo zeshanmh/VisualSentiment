@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2174/1734176276_fb90978d01.jpg    flickr_username: "jhderojas" realname: ""
-image_url: http://farm3.staticflickr.com/2123/2165634520_f340e19285.jpg    flickr_username: "Telstar Logistics" realname: "Todd Lappin"
-image_url: http://farm3.staticflickr.com/2151/2229249212_f6ce33fe5d.jpg    flickr_username: "randomduck" realname: "Rudi Riet"
-image_url: http://farm1.staticflickr.com/106/299948900_1915d9bb36.jpg    flickr_username: "Smallbird" realname: ""
-image_url: http://farm5.staticflickr.com/4126/5019598657_5abfa8098d.jpg    flickr_username: "Land Rover Our Planet" realname: ""
-image_url: http://farm5.staticflickr.com/4055/5075536115_eaa26cc547.jpg    flickr_username: "MSVG" realname: "Michael Gil"
-image_url: http://farm6.staticflickr.com/5164/5341870060_3cc21b8f9f.jpg    flickr_username: "cjdc" realname: ""
-image_url: http://farm6.staticflickr.com/5252/5431419148_87765fce09.jpg    flickr_username: "Urban Woodswalker" realname: "Mary Anne Enriquez"

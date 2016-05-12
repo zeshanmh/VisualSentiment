@@ -1,8 +1,0 @@
-image_url: http://farm1.staticflickr.com/87/257552435_d876d50cba.jpg    flickr_username: "christielockwood" realname: ""
-image_url: http://farm4.staticflickr.com/3128/2609132799_3f3abff628.jpg    flickr_username: "Mrs. Jenny Ryan" realname: "Jenny"
-image_url: http://farm4.staticflickr.com/3113/2731328911_e06f385d9c.jpg    flickr_username: "kateintaipei04" realname: "Kate Chang"
-image_url: http://farm4.staticflickr.com/3625/3403865105_a954ff3b6f.jpg    flickr_username: "shootist.co.uk" realname: "Steve Thomas"
-image_url: http://farm3.staticflickr.com/2723/4375969921_d386485fbb.jpg    flickr_username: "Caps!" realname: ""
-image_url: http://farm6.staticflickr.com/5212/5458775929_b679d97d40.jpg    flickr_username: "zevzevzevzev" realname: "Z. B."
-image_url: http://farm8.staticflickr.com/7238/7168106411_a783473b7c.jpg    flickr_username: "DECONSTRUCTING ROY LICHTENSTEIN David Barsalou MFA" realname: "David Barsalou MFA"
-image_url: http://farm9.staticflickr.com/8162/7180827987_22fd7b42db.jpg    flickr_username: "DECONSTRUCTING ROY LICHTENSTEIN David Barsalou MFA" realname: "David Barsalou MFA"

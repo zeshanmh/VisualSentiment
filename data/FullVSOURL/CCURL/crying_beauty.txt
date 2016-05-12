@@ -1,3 +1,0 @@
-image_url: http://farm5.staticflickr.com/4033/4388409181_6d00f86804.jpg    flickr_username: "信心謙怡" realname: ""
-image_url: http://farm1.staticflickr.com/196/466540242_ece828b6c1.jpg    flickr_username: "epicture's (on & off)" realname: ""
-image_url: http://farm9.staticflickr.com/8036/7959720160_c5d6c03c1f.jpg    flickr_username: "jessicahayssen" realname: "Jessica Hayssen"

@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3138/3000139838_cc6a0f6022.jpg    flickr_username: "outcast104" realname: ""
-image_url: http://farm3.staticflickr.com/2698/4063415525_4b3f2b5136.jpg    flickr_username: "Ganymedes Costagravas" realname: ""
-image_url: http://farm3.staticflickr.com/2793/4064164452_2543b88f8e.jpg    flickr_username: "Ganymedes Costagravas" realname: ""

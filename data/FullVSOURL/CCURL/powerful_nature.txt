@@ -1,7 +1,0 @@
-image_url: http://farm1.staticflickr.com/102/279237469_2ad2f56e86.jpg    flickr_username: "dariuszka" realname: "Daria"
-image_url: http://farm4.staticflickr.com/3016/3115519562_c896a19102.jpg    flickr_username: "highstorm" realname: "brenton"
-image_url: http://farm3.staticflickr.com/2601/4110404192_fc7e700b06.jpg    flickr_username: "Pranjal Mahna" realname: "Pranjal Mahna"
-image_url: http://farm5.staticflickr.com/4044/4671731103_ef4e0b7a62.jpg    flickr_username: "Outburner" realname: "Bernhard Latzko"
-image_url: http://farm6.staticflickr.com/5181/5684148965_6716a6a7a5.jpg    flickr_username: "Mijonju" realname: "Michel Jones"
-image_url: http://farm8.staticflickr.com/7028/6413204561_db216c9870.jpg    flickr_username: "Outburner" realname: "Bernhard Latzko"
-image_url: http://farm9.staticflickr.com/8175/7977096012_c817f270b3.jpg    flickr_username: "Bering Land Bridge National Preserve" realname: "Bering Land Bridge National Preserve"

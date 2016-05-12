@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2407/2191474870_c725d7f81a.jpg    flickr_username: "Stevesworldofphotos" realname: ""
-image_url: http://farm3.staticflickr.com/2531/3805528722_5cc5ccc2b9.jpg    flickr_username: "calamity_hane" realname: "Hane C. Lee"
-image_url: http://farm4.staticflickr.com/3442/3889479192_00b74d3241.jpg    flickr_username: "bouncysteve" realname: "Steve Holmes"
-image_url: http://farm6.staticflickr.com/5285/5284160151_e3b612e3ed.jpg    flickr_username: "me and the sysop" realname: "Chelsea Oakes"

@@ -1,7 +1,0 @@
-image_url: http://farm3.staticflickr.com/2292/2117466878_29fdde845c.jpg    flickr_username: "shannonkringen" realname: "Shannon Kringen"
-image_url: http://farm1.staticflickr.com/88/262444489_e987506ea4.jpg    flickr_username: "christopherhuffman" realname: "Chris Huffman"
-image_url: http://farm3.staticflickr.com/2606/3871364886_fe15f14444.jpg    flickr_username: "AlicePopkorn" realname: "Cornelia Kopp"
-image_url: http://farm3.staticflickr.com/2625/4029512853_2d98e021a2.jpg    flickr_username: "Big Grey Mare" realname: "Carol Von Canon"
-image_url: http://farm3.staticflickr.com/2687/4474287448_0f88d39181.jpg    flickr_username: "alejandrotaveras" realname: ""
-image_url: http://farm5.staticflickr.com/4120/4779737615_a2db62237e.jpg    flickr_username: "3dom" realname: ""
-image_url: http://farm7.staticflickr.com/6172/6202883804_a1db0d81d1.jpg    flickr_username: "rosenblum68" realname: "Jeff"

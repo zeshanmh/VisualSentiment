@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3658/3299398198_5bdedd433a.jpg    flickr_username: "storyvillegirl" realname: "Bridget Coila"
-image_url: http://farm1.staticflickr.com/153/422433386_48974668da.jpg    flickr_username: "striatic" realname: "hobvias sudoneighm"
-image_url: http://farm3.staticflickr.com/2771/4302203932_80da3c9acc.jpg    flickr_username: "mkrigsman" realname: "Michael Krigsman"
-image_url: http://farm6.staticflickr.com/5169/5271159067_181ee1e235.jpg    flickr_username: "bhikku" realname: "Duca di Spinaci"
-image_url: http://farm7.staticflickr.com/6019/6362405371_724da8917e.jpg    flickr_username: "Tom Mooring" realname: ""

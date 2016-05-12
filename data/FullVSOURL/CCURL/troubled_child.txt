@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2220/1858685882_35f2f01bca.jpg    flickr_username: "PhOtOnQuAnTiQuE" realname: "PhOtOnQuAnTiQuE"
-image_url: http://farm1.staticflickr.com/13/20077773_bd568afa9e.jpg    flickr_username: "ezola" realname: "Reuben Strayer"
-image_url: http://farm3.staticflickr.com/2117/2043916447_62995bda35.jpg    flickr_username: "Radio Rover" realname: ""
-image_url: http://farm4.staticflickr.com/3289/2968192724_5b082b16f5.jpg    flickr_username: "tigerplish" realname: ""
-image_url: http://farm4.staticflickr.com/3219/3002725787_288c43816d.jpg    flickr_username: "Chevysmom" realname: ""
-image_url: http://farm1.staticflickr.com/182/414245563_a9d60571ed.jpg    flickr_username: "Tom Marcello" realname: "Tom Marcello"
-image_url: http://farm5.staticflickr.com/4154/5035875952_7a89c2cd28.jpg    flickr_username: "CoreForce" realname: "Falk Lademann"
-image_url: http://farm6.staticflickr.com/5151/5906278306_5f2b4ca4ab.jpg    flickr_username: "Stwayne Keubrick" realname: "Stanislas Bick"

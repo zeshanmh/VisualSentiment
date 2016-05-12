@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2367/2065099895_4e060a9aef.jpg    flickr_username: "nadi0" realname: ""
-image_url: http://farm1.staticflickr.com/151/350582989_df16b01bf4.jpg    flickr_username: "jenarnold" realname: "jennifer arnold"
-image_url: http://farm3.staticflickr.com/2365/3528103169_f7433c085d.jpg    flickr_username: "Yogue_style" realname: "Insiya Rasiwala-Finn"
-image_url: http://farm2.staticflickr.com/1172/4721059324_c98d51ec59.jpg    flickr_username: "edcleve" realname: ""
-image_url: http://farm5.staticflickr.com/4124/4985813286_34c1ac592d.jpg    flickr_username: "cactusbeetroot" realname: "daryl"
-image_url: http://farm6.staticflickr.com/5287/5336606873_ebfb058034.jpg    flickr_username: "Montreal Photo Chick" realname: "Christine Jackowski"
-image_url: http://farm6.staticflickr.com/5108/5592683121_8b55dd70c2.jpg    flickr_username: "Rob, Joyce, Alex & Nova" realname: ""
-image_url: http://farm7.staticflickr.com/6179/6164415245_4d7fdaa553.jpg    flickr_username: "frannyrodri" realname: ""

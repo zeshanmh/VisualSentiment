@@ -1,2 +1,0 @@
-image_url: http://farm7.staticflickr.com/6099/6292797068_8ca1165b4f.jpg    flickr_username: "Castaway in Scotland" realname: ""
-image_url: http://farm9.staticflickr.com/8033/8041262874_f94a1a8341.jpg    flickr_username: "ann marie boyle" realname: ""

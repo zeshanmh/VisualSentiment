@@ -1,5 +1,0 @@
-image_url: http://farm3.staticflickr.com/2558/4217896224_9ef5d29eb8.jpg    flickr_username: "karen horton" realname: "Karen Horton"
-image_url: http://farm3.staticflickr.com/2697/4217897876_9b26ec0ce5.jpg    flickr_username: "karen horton" realname: "Karen Horton"
-image_url: http://farm5.staticflickr.com/4095/4927888449_aa92f7536f.jpg    flickr_username: "karen horton" realname: "Karen Horton"
-image_url: http://farm5.staticflickr.com/4107/4971714783_3ef721c457.jpg    flickr_username: "karen horton" realname: "Karen Horton"
-image_url: http://farm7.staticflickr.com/6155/6190307487_8dcb85c655.jpg    flickr_username: "karen horton" realname: "Karen Horton"

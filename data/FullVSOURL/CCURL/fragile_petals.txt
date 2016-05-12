@@ -1,5 +1,0 @@
-image_url: http://farm1.staticflickr.com/65/153158912_197bc1cb6c.jpg    flickr_username: "withrow" realname: "Marilylle Soveran"
-image_url: http://farm3.staticflickr.com/2116/2408665352_f846e69f9a.jpg    flickr_username: "dog.happy.art" realname: "PINKÉ"
-image_url: http://farm2.staticflickr.com/1420/4600517360_69e92c0f49.jpg    flickr_username: "LaughingRhoda" realname: ""
-image_url: http://farm5.staticflickr.com/4068/4689198066_9d80a3218a.jpg    flickr_username: "George Jisho Robertson" realname: "George Jisho Robertson"
-image_url: http://farm8.staticflickr.com/7275/6862765940_4d964f2eb1.jpg    flickr_username: "HelenMarie1286" realname: "Marie"

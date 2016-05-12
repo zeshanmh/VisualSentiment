@@ -1,2 +1,0 @@
-image_url: http://farm5.staticflickr.com/4076/4867988557_3fc2ef9163.jpg    flickr_username: "Luca Venturi Oslo" realname: "Luca Venturi"
-image_url: http://farm6.staticflickr.com/5121/5354370346_c4fcb73676.jpg    flickr_username: "-RejiK" realname: "Reji K. A"

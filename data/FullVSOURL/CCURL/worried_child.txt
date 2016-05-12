@@ -1,1 +1,0 @@
-image_url: http://farm3.staticflickr.com/2194/2437960631_484b49b687.jpg    flickr_username: "mrcharly" realname: "Charles Pieters"

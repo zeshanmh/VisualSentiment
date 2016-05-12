@@ -1,3 +1,0 @@
-image_url: http://farm2.staticflickr.com/1211/1223701625_e5c651f9e8.jpg    flickr_username: "gioanola" realname: "Maurizio Manetti"
-image_url: http://farm3.staticflickr.com/2138/2495871023_6e416fee23.jpg    flickr_username: "pnay_gem" realname: ""
-image_url: http://farm5.staticflickr.com/4153/4980078802_b9823baa61.jpg    flickr_username: "chemisti" realname: ""

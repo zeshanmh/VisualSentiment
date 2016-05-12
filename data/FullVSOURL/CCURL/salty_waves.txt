@@ -1,3 +1,0 @@
-image_url: http://farm5.staticflickr.com/4039/4320305991_6fc0f99a40.jpg    flickr_username: "Rafael Acorsi" realname: "Rafael Acorsi"
-image_url: http://farm3.staticflickr.com/2724/4330411826_577cd28f28.jpg    flickr_username: "CameliaTWU" realname: ""
-image_url: http://farm6.staticflickr.com/5023/5612835676_cf95b71cd5.jpg    flickr_username: "matrianklw" realname: "Matthew Kang"

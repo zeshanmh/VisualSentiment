@@ -1,4 +1,0 @@
-image_url: http://farm2.staticflickr.com/1377/1057157135_f88218862f.jpg    flickr_username: "Hangar 9 Productions" realname: "Tylor Larson"
-image_url: http://farm1.staticflickr.com/90/261266084_dca183de53.jpg    flickr_username: "abbobro" realname: "Adam Bradley"
-image_url: http://farm3.staticflickr.com/2712/4332915373_bcc780a245.jpg    flickr_username: "kekko64" realname: "Francesco Carrani"
-image_url: http://farm5.staticflickr.com/4127/5000696511_b104f234b3.jpg    flickr_username: "Ross Hill" realname: "Ross Hill"

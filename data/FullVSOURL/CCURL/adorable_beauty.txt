@@ -1,2 +1,0 @@
-image_url: http://farm1.staticflickr.com/31/67781268_b9d840148b.jpg    flickr_username: "Banana Custard" realname: "Robin Woltman"
-image_url: http://farm1.staticflickr.com/30/67781297_d7c54e005d.jpg    flickr_username: "Banana Custard" realname: "Robin Woltman"

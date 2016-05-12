@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3167/2705560337_deb904ef19.jpg    flickr_username: "NeilsPhotography" realname: ""
-image_url: http://farm6.staticflickr.com/5053/5493109557_bbbd44e1e9.jpg    flickr_username: "owenstache" realname: "Owen Lin"
-image_url: http://farm7.staticflickr.com/6122/5945599082_346fb1c4cd.jpg    flickr_username: "CEBImagery.com" realname: "Cedward Brice"

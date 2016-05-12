@@ -1,2 +1,0 @@
-image_url: http://farm3.staticflickr.com/2568/3917690728_d05688d101.jpg    flickr_username: "Creativity+ Timothy K Hamilton" realname: "Tim Hamilton"
-image_url: http://farm9.staticflickr.com/8295/7835268642_a97b084487.jpg    flickr_username: "slightly everything" realname: "kate hiscock"

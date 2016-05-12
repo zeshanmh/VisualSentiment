@@ -1,7 +1,0 @@
-image_url: http://farm2.staticflickr.com/1094/1376070515_9c8c435de9.jpg    flickr_username: "MightyBoyBrian" realname: "Brian Wolfe"
-image_url: http://farm3.staticflickr.com/2214/1740334402_cbc403c60f.jpg    flickr_username: "CuriousGeoff" realname: "Geoffrey"
-image_url: http://farm4.staticflickr.com/3261/2648021097_bb285630ec.jpg    flickr_username: "mseasons" realname: "Melanie Seasons"
-image_url: http://farm1.staticflickr.com/99/293301363_074d6413bc.jpg    flickr_username: "craig1black" realname: "Adrian Black"
-image_url: http://farm4.staticflickr.com/3232/3148975655_e254d6affd.jpg    flickr_username: "matt.hintsa" realname: "Matt Hintsa"
-image_url: http://farm1.staticflickr.com/225/456561129_8d7b01936c.jpg    flickr_username: "Lil' El" realname: ""
-image_url: http://farm1.staticflickr.com/33/57351206_6936b505d0.jpg    flickr_username: "Nika" realname: "Nika Vee"

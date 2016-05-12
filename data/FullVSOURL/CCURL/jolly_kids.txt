@@ -1,7 +1,0 @@
-image_url: http://farm4.staticflickr.com/3193/3038597619_7eea0d12e9.jpg    flickr_username: "lmnop88a" realname: ""
-image_url: http://farm3.staticflickr.com/2519/3950330722_dac495fdb7.jpg    flickr_username: "quite peculiar" realname: ""
-image_url: http://farm4.staticflickr.com/3110/4069421833_3c530919ff.jpg    flickr_username: "humbert15" realname: "Martin Thomas"
-image_url: http://farm9.staticflickr.com/8062/8163210075_4c196fe900.jpg    flickr_username: "khufram" realname: "Al"
-image_url: http://farm8.staticflickr.com/7115/8163233231_788d867553.jpg    flickr_username: "khufram" realname: "Al"
-image_url: http://farm9.staticflickr.com/8344/8163243174_e62fedb492.jpg    flickr_username: "khufram" realname: "Al"
-image_url: http://farm8.staticflickr.com/7113/8163266586_dd8eb26bbf.jpg    flickr_username: "khufram" realname: "Al"

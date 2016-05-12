@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3657/3380539610_6db26819e6.jpg    flickr_username: "· · · — — — · · ·" realname: ""
-image_url: http://farm8.staticflickr.com/7135/6932631528_2789007972.jpg    flickr_username: "jean13byb" realname: "carlos gomez"
-image_url: http://farm1.staticflickr.com/8/7463502_7d3d78fa6e.jpg    flickr_username: "duncan" realname: "duncan c"

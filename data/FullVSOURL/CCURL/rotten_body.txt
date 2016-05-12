@@ -1,2 +1,0 @@
-image_url: http://farm3.staticflickr.com/2158/2196952767_62964b1dfa.jpg    flickr_username: "Blossfeldiana" realname: "Stuart"
-image_url: http://farm3.staticflickr.com/2637/3744047008_82b48dbbda.jpg    flickr_username: "me and the sysop" realname: "Chelsea Oakes"

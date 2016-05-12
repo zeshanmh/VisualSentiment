@@ -1,6 +1,0 @@
-image_url: http://farm3.staticflickr.com/2169/2018450816_a1b775c8e2.jpg    flickr_username: "Bill "DOZER" Brock" realname: ""
-image_url: http://farm4.staticflickr.com/3160/2689606335_b170fdd156.jpg    flickr_username: "ghostfishdancer" realname: ""
-image_url: http://farm4.staticflickr.com/3096/3239139169_82a439e529.jpg    flickr_username: "hansolo1l5" realname: "julian labounty"
-image_url: http://farm5.staticflickr.com/4066/4587223356_8643894b51.jpg    flickr_username: "A mands" realname: ""
-image_url: http://farm8.staticflickr.com/7044/6928521065_1a1f6ba64b.jpg    flickr_username: "Truus, Bob & Jan too!" realname: "Truus, Bob & Jan of Holland"
-image_url: http://farm9.staticflickr.com/8059/8220925789_f66d22d9bb.jpg    flickr_username: "Pippypippy" realname: "Pippy"

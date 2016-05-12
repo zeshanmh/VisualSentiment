@@ -1,7 +1,0 @@
-image_url: http://farm9.staticflickr.com/8487/8182195155_cf07908e20.jpg    flickr_username: "frankfarm" realname: "Frank Farm"
-image_url: http://farm9.staticflickr.com/8346/8182197537_53fd2c0a12.jpg    flickr_username: "frankfarm" realname: "Frank Farm"
-image_url: http://farm9.staticflickr.com/8488/8182210923_eb117cb957.jpg    flickr_username: "frankfarm" realname: "Frank Farm"
-image_url: http://farm9.staticflickr.com/8484/8182237346_08cb8cdcce.jpg    flickr_username: "frankfarm" realname: "Frank Farm"
-image_url: http://farm9.staticflickr.com/8202/8182243100_a82af77b13.jpg    flickr_username: "frankfarm" realname: "Frank Farm"
-image_url: http://farm9.staticflickr.com/8201/8182245314_e04834e62e.jpg    flickr_username: "frankfarm" realname: "Frank Farm"
-image_url: http://farm9.staticflickr.com/8349/8182250950_e739b3e217.jpg    flickr_username: "frankfarm" realname: "Frank Farm"

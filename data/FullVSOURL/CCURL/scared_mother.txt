@@ -1,4 +1,0 @@
-image_url: http://farm1.staticflickr.com/49/147246358_69bfc3fe6e.jpg    flickr_username: "XN3CITY" realname: ""
-image_url: http://farm3.staticflickr.com/2387/2537511401_38c8f1fb14.jpg    flickr_username: "joysaphine" realname: ""
-image_url: http://farm1.staticflickr.com/211/477174095_25f6e37483.jpg    flickr_username: "treehouse1977" realname: "Jim Champion"
-image_url: http://farm8.staticflickr.com/7095/7224473894_f57a60221e.jpg    flickr_username: "M A Uddin" realname: "M A Uddin"

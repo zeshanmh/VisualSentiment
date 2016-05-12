@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2099/2333529388_ccb5e0333a.jpg    flickr_username: "havenholidays" realname: ""
-image_url: http://farm4.staticflickr.com/3462/3405318887_ca00c0093f.jpg    flickr_username: "suffering_socrates" realname: "Vijay S"
-image_url: http://farm3.staticflickr.com/2577/4202815593_35e396f2a2.jpg    flickr_username: "catchesthelight" realname: "BEV  Norton"
-image_url: http://farm2.staticflickr.com/1186/963145005_6eae486c87.jpg    flickr_username: "Dave_S." realname: ""

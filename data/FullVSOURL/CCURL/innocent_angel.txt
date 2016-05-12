@@ -1,7 +1,0 @@
-image_url: http://farm3.staticflickr.com/2226/2063578633_9a7c0b4bdc.jpg    flickr_username: "lissalou66" realname: "Melissa"
-image_url: http://farm3.staticflickr.com/2232/2506512639_e71827820d.jpg    flickr_username: "kiara_obi_mia" realname: ""
-image_url: http://farm1.staticflickr.com/133/338258855_5be1dc88ef.jpg    flickr_username: "summerly noon" realname: ""
-image_url: http://farm3.staticflickr.com/2474/4011496757_2c9d2cab2d.jpg    flickr_username: "stagshop" realname: "Stag Shop"
-image_url: http://farm3.staticflickr.com/2675/4012268826_ac9454b7cb.jpg    flickr_username: "stagshop" realname: "Stag Shop"
-image_url: http://farm3.staticflickr.com/2786/4133592177_da434cded1.jpg    flickr_username: "stagshop" realname: "Stag Shop"
-image_url: http://farm2.staticflickr.com/1433/534412043_f2b46eccfe.jpg    flickr_username: "nikki birdflu" realname: ""

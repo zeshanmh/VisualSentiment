@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3172/2728357675_e5320655ba.jpg    flickr_username: "dearanxiety" realname: "s-ron mckellar"
-image_url: http://farm4.staticflickr.com/3175/3064006726_fea569275e.jpg    flickr_username: "dpstyles™" realname: "dennis crowley"
-image_url: http://farm6.staticflickr.com/5265/5672176525_f26ecdede4.jpg    flickr_username: "Strandell" realname: "Jonas Strandell"

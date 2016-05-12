@@ -1,4 +1,0 @@
-image_url: http://farm1.staticflickr.com/68/194394019_1d6fe94a8e.jpg    flickr_username: "Liz Henry" realname: "Liz Henry"
-image_url: http://farm5.staticflickr.com/4039/4233987198_4992d6ac07.jpg    flickr_username: "Kim.Wood" realname: "Kim Wood"
-image_url: http://farm8.staticflickr.com/7249/7573438366_62deb4592c.jpg    flickr_username: "fukapon" realname: "Ryo FUKAsawa"
-image_url: http://farm9.staticflickr.com/8319/8065935598_8c5006287f.jpg    flickr_username: "fukapon" realname: "Ryo FUKAsawa"

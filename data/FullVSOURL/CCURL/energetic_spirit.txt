@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3088/2519430976_5b5f6ceede.jpg    flickr_username: "gb_packards" realname: "Mike"
-image_url: http://farm5.staticflickr.com/4146/4949482112_9fd0861271.jpg    flickr_username: "pennstatelive" realname: "Penn State"
-image_url: http://farm2.staticflickr.com/1162/528630665_6791e48df2.jpg    flickr_username: "danperry.com" realname: "Dan Perry"

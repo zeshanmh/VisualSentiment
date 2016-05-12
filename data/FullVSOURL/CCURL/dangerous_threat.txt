@@ -1,7 +1,0 @@
-image_url: http://farm4.staticflickr.com/3245/2472634091_08ca5048ea.jpg    flickr_username: "avinashkunnath" realname: "Avinash Kunnath"
-image_url: http://farm4.staticflickr.com/3162/2576145317_9cb77ba6d9.jpg    flickr_username: "dugspr — Home for Good" realname: "Douglas Sprott"
-image_url: http://farm4.staticflickr.com/3190/2576148101_9506f2a1e5.jpg    flickr_username: "dugspr — Home for Good" realname: "Douglas Sprott"
-image_url: http://farm4.staticflickr.com/3178/2576149377_eee297a1c3.jpg    flickr_username: "dugspr — Home for Good" realname: "Douglas Sprott"
-image_url: http://farm4.staticflickr.com/3185/2576975570_a9ce3d2bf9.jpg    flickr_username: "dugspr — Home for Good" realname: "Douglas Sprott"
-image_url: http://farm4.staticflickr.com/3444/3973862418_82e93aca70.jpg    flickr_username: "roberthuffstutter" realname: "ROBERT HUFFSTUTTER"
-image_url: http://farm9.staticflickr.com/8055/8103271417_b5ba9d2f97.jpg    flickr_username: "TORCH MAGAZINE" realname: ""

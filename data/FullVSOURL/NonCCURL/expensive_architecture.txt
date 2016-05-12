@@ -1,6 +1,0 @@
-image_url: http://farm1.staticflickr.com/67/201272124_1cf5c27669.jpg    flickr_username: "squiggly_crayon" realname: ""
-image_url: http://farm5.staticflickr.com/4031/4532587635_e7e3674838.jpg    flickr_username: "dbrekke" realname: "Dennis Brekke"
-image_url: http://farm2.staticflickr.com/1037/529903097_865af74e72.jpg    flickr_username: "ame@muc" realname: "anette metzger"
-image_url: http://farm6.staticflickr.com/5264/5639241249_7e9fa9a009.jpg    flickr_username: "EdayMex" realname: ""
-image_url: http://farm8.staticflickr.com/7023/6491305145_1316f4299d.jpg    flickr_username: "Jens Wende" realname: ""
-image_url: http://farm1.staticflickr.com/34/72419132_73ec9e4716.jpg    flickr_username: "the belafonte" realname: "Nicholas Hofstede"

@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2225/2038075453_65b965fb97.jpg    flickr_username: "joiseyshowaa" realname: ""
-image_url: http://farm8.staticflickr.com/7145/6756723179_e7f9fe49b0.jpg    flickr_username: "Mark, Vicki, Ellaura and Mason" realname: ""
-image_url: http://farm8.staticflickr.com/7003/6756728671_034534c7fb.jpg    flickr_username: "Mark, Vicki, Ellaura and Mason" realname: ""
-image_url: http://farm8.staticflickr.com/7023/6756734989_fbcc3e1e1a.jpg    flickr_username: "Mark, Vicki, Ellaura and Mason" realname: ""

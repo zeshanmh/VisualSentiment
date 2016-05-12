@@ -1,7 +1,0 @@
-image_url: http://farm4.staticflickr.com/3274/2859988594_1aa611ef9f.jpg    flickr_username: "Waltzing Broomhilda" realname: ""
-image_url: http://farm3.staticflickr.com/2501/4176287234_3c9e5447d4.jpg    flickr_username: "Mikec77" realname: "Mike Childs"
-image_url: http://farm5.staticflickr.com/4049/4374239784_c078cd076f.jpg    flickr_username: "sanjins" realname: "Sanjin"
-image_url: http://farm3.staticflickr.com/2767/4409881267_06f70fae4e.jpg    flickr_username: "keithhull" realname: ""
-image_url: http://farm6.staticflickr.com/5016/5491670741_bcc2b14421.jpg    flickr_username: "Grudnick" realname: ""
-image_url: http://farm7.staticflickr.com/6017/5955441626_90301271db.jpg    flickr_username: "anorakin" realname: "Andy Chetwyn"
-image_url: http://farm9.staticflickr.com/8221/8340396547_c2a7025a1f.jpg    flickr_username: "Lori Michele" realname: "Lori  Campbell"

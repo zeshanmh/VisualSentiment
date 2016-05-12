@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2125/2179525246_955359d199.jpg    flickr_username: "brianwestcott" realname: "Brian Westcott"
-image_url: http://farm4.staticflickr.com/3049/2384625596_f4c649f3ce.jpg    flickr_username: "thrig" realname: "Jeremy Mates"
-image_url: http://farm1.staticflickr.com/91/242670234_a17bf87a3f.jpg    flickr_username: "buck82" realname: ""
-image_url: http://farm4.staticflickr.com/3271/2551867652_d3d8f263f6.jpg    flickr_username: "icedsoul photography .:teymur madjderey" realname: "Teymur Madjderey"
-image_url: http://farm4.staticflickr.com/3050/2925428518_3dbf73545f.jpg    flickr_username: "rouadec" realname: "antoine"
-image_url: http://farm5.staticflickr.com/4009/4318786999_3751bcc13f.jpg    flickr_username: "Ross Tucknott" realname: ""
-image_url: http://farm1.staticflickr.com/26/48580387_67f3090f56.jpg    flickr_username: "do.se" realname: ""
-image_url: http://farm1.staticflickr.com/228/498193683_1c632de80e.jpg    flickr_username: "i eated a cookie" realname: "Russell Bernice"

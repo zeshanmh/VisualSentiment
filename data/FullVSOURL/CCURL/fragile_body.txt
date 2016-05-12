@@ -1,3 +1,0 @@
-image_url: http://farm3.staticflickr.com/2035/2291095406_66f6b728d9.jpg    flickr_username: "Lawrence OP" realname: ""
-image_url: http://farm2.staticflickr.com/1065/685902657_af061338c8.jpg    flickr_username: "uckhet" realname: ""
-image_url: http://farm8.staticflickr.com/7099/7347806704_85346d1e33.jpg    flickr_username: "Lawrence OP" realname: ""

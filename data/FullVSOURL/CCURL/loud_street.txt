@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2203/2265167829_cca72de3f3.jpg    flickr_username: "reflexer" realname: "Christian"
-image_url: http://farm4.staticflickr.com/3014/2319750356_9cb36c52b6.jpg    flickr_username: "seanaes" realname: "Sean Salmon"
-image_url: http://farm4.staticflickr.com/3124/2852707112_d9cd56b02e.jpg    flickr_username: "The Other Dan" realname: ""
-image_url: http://farm4.staticflickr.com/3214/2899198133_4f264dff4c.jpg    flickr_username: "caffeina" realname: "Caffeinatrix"

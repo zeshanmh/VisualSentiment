@@ -1,6 +1,0 @@
-image_url: http://farm2.staticflickr.com/1418/1324338992_ef756eda5d.jpg    flickr_username: "The MacKay Way" realname: ""
-image_url: http://farm4.staticflickr.com/3154/2897748734_496b9957d5.jpg    flickr_username: "miss_leslie" realname: "Leslie Johnston"
-image_url: http://farm4.staticflickr.com/3170/2906398060_271039194f.jpg    flickr_username: "New Internationalist" realname: "New Internationalist Magazine"
-image_url: http://farm3.staticflickr.com/2490/3686952065_e31de29a16.jpg    flickr_username: "Anyaka" realname: "Angela Thomas"
-image_url: http://farm3.staticflickr.com/2124/5697654283_461bfcd7af.jpg    flickr_username: "Clyde Bentley" realname: "Clyde Bentley"
-image_url: http://farm7.staticflickr.com/6212/6331535105_d4447a055f.jpg    flickr_username: "Jim Linwood" realname: "Jim Linwood"

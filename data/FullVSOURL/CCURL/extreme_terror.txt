@@ -1,2 +1,0 @@
-image_url: http://farm7.staticflickr.com/6179/6133484979_59cc07b080.jpg    flickr_username: "torbakhopper" realname: ""
-image_url: http://farm9.staticflickr.com/8463/8101359579_19e01367c1.jpg    flickr_username: "Thomas's Pics" realname: ""

@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3063/2370412992_08368dd328.jpg    flickr_username: "Ariaski" realname: "Roberto Arias"
-image_url: http://farm6.staticflickr.com/5125/5331337828_edfe0c91e6.jpg    flickr_username: "JoreJj Z. Elprehzleinn" realname: "JoreJj Z.  Elprehzleinn"
-image_url: http://farm9.staticflickr.com/8347/8198096679_9b86de571a.jpg    flickr_username: "goaliej54" realname: "Jessica"

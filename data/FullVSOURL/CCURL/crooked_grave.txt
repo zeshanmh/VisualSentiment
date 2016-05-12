@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3275/2683667991_d2c1855528.jpg    flickr_username: "katie cowden" realname: "Katie Cowden"
-image_url: http://farm5.staticflickr.com/4035/4441409952_3c5a351a8f.jpg    flickr_username: "Speculum Mundi" realname: "Amelia Wells"
-image_url: http://farm2.staticflickr.com/1320/970529772_14b774f113.jpg    flickr_username: "andrewmalone" realname: "Andrew Malone"

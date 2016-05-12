@@ -1,6 +1,0 @@
-image_url: http://farm1.staticflickr.com/115/286528497_7285e73857.jpg    flickr_username: "egroj" realname: "Jorge"
-image_url: http://farm3.staticflickr.com/2548/3937017798_3c25dc5cd0.jpg    flickr_username: "Carlosinho" realname: "Karol K"
-image_url: http://farm5.staticflickr.com/4069/4406636920_0e8a72d840.jpg    flickr_username: "Herman Rhoids" realname: "Herman Rhoids"
-image_url: http://farm5.staticflickr.com/4144/4962920232_2cc575d000.jpg    flickr_username: "J Jackson Photography" realname: "Jerald Jackson"
-image_url: http://farm2.staticflickr.com/1202/533288034_3c793e7327.jpg    flickr_username: "Matt Niemi" realname: "Matthew Niemi"
-image_url: http://farm7.staticflickr.com/6131/6012482852_0ccef0c5f9.jpg    flickr_username: "gogoloopie" realname: ""

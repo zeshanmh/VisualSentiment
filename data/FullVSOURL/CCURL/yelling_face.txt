@@ -1,4 +1,0 @@
-image_url: http://farm4.staticflickr.com/3215/3123260148_1bc129f08e.jpg    flickr_username: "stefernie" realname: ""
-image_url: http://farm9.staticflickr.com/8004/7183029699_aaa5bb8cfe.jpg    flickr_username: "ccarlstead" realname: ""
-image_url: http://farm9.staticflickr.com/8146/7606341918_ae5b7a0a92.jpg    flickr_username: "Catherine Soehner" realname: "Catherine  Soehner"
-image_url: http://farm9.staticflickr.com/8475/8114272223_759a8d688d.jpg    flickr_username: "randylane" realname: "Randy Lane"

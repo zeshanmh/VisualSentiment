@@ -1,6 +1,0 @@
-image_url: http://farm1.staticflickr.com/70/159507169_c2bbd175f5.jpg    flickr_username: "Xerones" realname: ""
-image_url: http://farm3.staticflickr.com/2514/3736715561_1ae85f7f85.jpg    flickr_username: "SweetCakery" realname: ""
-image_url: http://farm5.staticflickr.com/4020/4244613217_76bcb5a0d6.jpg    flickr_username: "todo.esto.por.un.flickr" realname: "Ezequiel Puertas H"
-image_url: http://farm5.staticflickr.com/4007/4248612849_e817fcbccf.jpg    flickr_username: "PatrickYHC" realname: ""
-image_url: http://farm3.staticflickr.com/2699/4443448139_275e9af74b.jpg    flickr_username: "Caro Wallis" realname: "Caro Wallis"
-image_url: http://farm5.staticflickr.com/4031/4453130827_cb305bcf49.jpg    flickr_username: "stephenvance" realname: "Stephen Vance"

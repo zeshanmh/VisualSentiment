@@ -1,2 +1,0 @@
-image_url: http://farm2.staticflickr.com/1423/1428762897_6e52c99383.jpg    flickr_username: "Heinrock" realname: ""
-image_url: http://farm9.staticflickr.com/8310/8041264756_5e3fb28bee.jpg    flickr_username: "ann marie boyle" realname: ""

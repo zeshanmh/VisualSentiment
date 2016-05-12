@@ -1,8 +1,0 @@
-image_url: http://farm5.staticflickr.com/4048/4336506733_1d2a9e847f.jpg    flickr_username: "friendship.stone" realname: "Friendship_stone"
-image_url: http://farm3.staticflickr.com/2733/4336506791_ee85d304dc.jpg    flickr_username: "friendship.stone" realname: "Friendship_stone"
-image_url: http://farm5.staticflickr.com/4057/4336506869_c726be7d06.jpg    flickr_username: "friendship.stone" realname: "Friendship_stone"
-image_url: http://farm5.staticflickr.com/4056/4337251596_11435a0db9.jpg    flickr_username: "friendship.stone" realname: "Friendship_stone"
-image_url: http://farm3.staticflickr.com/2787/4337251684_7f4cbdf3fb.jpg    flickr_username: "friendship.stone" realname: "Friendship_stone"
-image_url: http://farm5.staticflickr.com/4052/4337251886_2990cd043a.jpg    flickr_username: "friendship.stone" realname: "Friendship_stone"
-image_url: http://farm7.staticflickr.com/6074/6068929922_9eb4c6028a.jpg    flickr_username: "wawrus" realname: "Terry Wong"
-image_url: http://farm8.staticflickr.com/7194/6922307089_bc2dae6b86.jpg    flickr_username: "[ HarlowHeslop.com ]" realname: ""

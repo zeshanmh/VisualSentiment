@@ -1,1 +1,0 @@
-image_url: http://farm2.staticflickr.com/1264/699739661_4fbf60a0da.jpg    flickr_username: "wallyg" realname: "Wally Gobetz"

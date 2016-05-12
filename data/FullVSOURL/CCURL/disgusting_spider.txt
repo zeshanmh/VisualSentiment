@@ -1,4 +1,0 @@
-image_url: http://farm4.staticflickr.com/3253/3146430303_d0f3339d57.jpg    flickr_username: "ashkyd" realname: "Ash Kyd"
-image_url: http://farm4.staticflickr.com/3603/3315574124_7d54a30917.jpg    flickr_username: "johnandwaz" realname: ""
-image_url: http://farm7.staticflickr.com/6139/6013924048_08cef3f0c1.jpg    flickr_username: "cheesy42" realname: "Christine und David Schmitt"
-image_url: http://farm9.staticflickr.com/8049/8142498671_723b0f4a54.jpg    flickr_username: "70023venus2009" realname: ""

@@ -1,8 +1,0 @@
-image_url: http://farm2.staticflickr.com/1378/1453248883_cdc7882798.jpg    flickr_username: "geoaxis" realname: "Shahzada Hatim"
-image_url: http://farm2.staticflickr.com/1201/1475081204_983960acaa.jpg    flickr_username: "iamkopaka" realname: ""
-image_url: http://farm4.staticflickr.com/3470/3228197986_50a4553874.jpg    flickr_username: "Arthaey" realname: "Arthaey Angosii"
-image_url: http://farm4.staticflickr.com/3387/3334867869_fed50bf7ce.jpg    flickr_username: "mjs" realname: "Michael Stillwell"
-image_url: http://farm1.staticflickr.com/146/389939759_1a70d8d1e5.jpg    flickr_username: "The Gonger" realname: ""
-image_url: http://farm4.staticflickr.com/3311/4582668615_f1f4a7013b.jpg    flickr_username: "jazzijava" realname: "Sarah R"
-image_url: http://farm6.staticflickr.com/5143/5810294008_4b2af7169b.jpg    flickr_username: "Dallas_Foodie" realname: ""
-image_url: http://farm8.staticflickr.com/7168/6624164901_cb43fb3db2.jpg    flickr_username: "Dallas_Foodie" realname: ""

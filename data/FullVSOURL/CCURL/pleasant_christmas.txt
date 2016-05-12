@@ -1,2 +1,0 @@
-image_url: http://farm1.staticflickr.com/2/2511587_c0d64f229c.jpg    flickr_username: "striatic" realname: "hobvias sudoneighm"
-image_url: http://farm1.staticflickr.com/26/57316788_6a817a3124.jpg    flickr_username: "Sherlock77 (James)" realname: "James Tworow"

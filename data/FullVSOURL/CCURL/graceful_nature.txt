@@ -1,3 +1,0 @@
-image_url: http://farm1.staticflickr.com/144/319066442_189e7548b5.jpg    flickr_username: "Renée S." realname: "Renée S."
-image_url: http://farm3.staticflickr.com/2547/4002054331_2a5d0a3d7b.jpg    flickr_username: "Alice Merkel" realname: ""
-image_url: http://farm3.staticflickr.com/2501/4198032483_be4eaa889c.jpg    flickr_username: "Igal Koshevoy" realname: ""

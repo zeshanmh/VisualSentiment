@@ -1,2 +1,0 @@
-image_url: http://farm5.staticflickr.com/4131/5056086685_191faedf7a.jpg    flickr_username: "Nonage Soul" realname: "Nonage Soul"
-image_url: http://farm9.staticflickr.com/8448/7898549228_ddbe5fcbfe.jpg    flickr_username: "Katrin Ray" realname: "Katrin Shumakov"

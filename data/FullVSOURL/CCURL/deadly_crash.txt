@@ -1,4 +1,0 @@
-image_url: http://farm4.staticflickr.com/3101/2674290321_e2c043d640.jpg    flickr_username: "v i p e z" realname: ""
-image_url: http://farm4.staticflickr.com/3167/2777248091_ab37bb16f7.jpg    flickr_username: "Rocky Mountain News" realname: ""
-image_url: http://farm4.staticflickr.com/3349/3655018973_01251c4cab.jpg    flickr_username: "Make Lemons" realname: ""
-image_url: http://farm4.staticflickr.com/3322/3655019371_ba468028a4.jpg    flickr_username: "Make Lemons" realname: ""

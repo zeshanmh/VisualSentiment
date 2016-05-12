@@ -1,6 +1,0 @@
-image_url: http://farm3.staticflickr.com/2377/2063782856_ad5adaa13f.jpg    flickr_username: "bluestar_tam" realname: "Bluestar Tam"
-image_url: http://farm4.staticflickr.com/3192/2860362067_11ab21d198.jpg    flickr_username: "Abulic Monkey" realname: ""
-image_url: http://farm3.staticflickr.com/2459/3653334852_43f067f0d9.jpg    flickr_username: "Emery Co Photo" realname: "J.K. Califf"
-image_url: http://farm1.staticflickr.com/189/467893244_8826b4d8dc.jpg    flickr_username: "drewesque" realname: "Drew Allen"
-image_url: http://farm7.staticflickr.com/6082/6115601069_aa30fa4ac8.jpg    flickr_username: "jimforest" realname: "Jim Forest"
-image_url: http://farm9.staticflickr.com/8474/8147669579_00cbf896ef.jpg    flickr_username: "tanakawho" realname: ""

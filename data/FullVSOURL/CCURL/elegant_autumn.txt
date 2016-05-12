@@ -1,4 +1,0 @@
-image_url: http://farm7.staticflickr.com/6225/6421902001_2675be8d56.jpg    flickr_username: "|| UggBoy♥UggGirl || PHOTO || WORLD || TRAVEL ||" realname: ""
-image_url: http://farm8.staticflickr.com/7003/6422566947_f55fd1f584.jpg    flickr_username: "|| UggBoy♥UggGirl || PHOTO || WORLD || TRAVEL ||" realname: ""
-image_url: http://farm7.staticflickr.com/6038/6422771287_1919bdfa38.jpg    flickr_username: "|| UggBoy♥UggGirl || PHOTO || WORLD || TRAVEL ||" realname: ""
-image_url: http://farm8.staticflickr.com/7022/6422911973_93a45d00b8.jpg    flickr_username: "|| UggBoy♥UggGirl || PHOTO || WORLD || TRAVEL ||" realname: ""

@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3085/2683662702_0d500ec244.jpg    flickr_username: "Federico Mosconi" realname: "Federico Mosconi"
-image_url: http://farm3.staticflickr.com/2780/4391514243_48bbcede84.jpg    flickr_username: "fukapon" realname: "Ryo FUKAsawa"
-image_url: http://farm6.staticflickr.com/5292/5469640676_dbbc5861f0.jpg    flickr_username: "Ikhlasul Amal" realname: "Ikhlasul Amal"

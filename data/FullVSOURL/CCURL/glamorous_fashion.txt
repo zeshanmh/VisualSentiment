@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3172/3105933514_d058aef275.jpg    flickr_username: "victor candela" realname: "victor candela"
-image_url: http://farm7.staticflickr.com/6051/6272374669_088f4b56c8.jpg    flickr_username: "Sem Vandekerckhove" realname: "Sem Vandekerckhove"
-image_url: http://farm8.staticflickr.com/7018/6400335165_2b4f4e16e8.jpg    flickr_username: "geralditellys" realname: ""

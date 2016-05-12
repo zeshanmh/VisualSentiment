@@ -1,3 +1,0 @@
-image_url: http://farm1.staticflickr.com/42/105245092_3ccb0413c4.jpg    flickr_username: "gemsling" realname: "Nathan Jones"
-image_url: http://farm3.staticflickr.com/2556/3942822599_994511006b.jpg    flickr_username: "emilybean" realname: "Emily"
-image_url: http://farm1.staticflickr.com/25/53703506_142ca4381b.jpg    flickr_username: "sheena bizarre" realname: "Sheena Bizarre"

@@ -1,7 +1,0 @@
-image_url: http://farm1.staticflickr.com/109/308183596_48d3bf6d7b.jpg    flickr_username: "petitshoo" realname: "Jennifer Pack"
-image_url: http://farm4.staticflickr.com/3248/3136918087_4ca42f2cc3.jpg    flickr_username: "kaiserinB" realname: ""
-image_url: http://farm3.staticflickr.com/2540/4212316675_1aca9092f8.jpg    flickr_username: "nicolasconnault" realname: "Nicolas Connault"
-image_url: http://farm1.staticflickr.com/165/430395189_742c974711.jpg    flickr_username: "sakura_chihaya+" realname: ""
-image_url: http://farm2.staticflickr.com/1206/4594411416_579c343289.jpg    flickr_username: "Tapestry Dude" realname: "Howard Lewis Ship"
-image_url: http://farm8.staticflickr.com/7161/6675315729_3f614d0e0d.jpg    flickr_username: "patti haskins" realname: "patti haskins"
-image_url: http://farm8.staticflickr.com/7028/6675315767_ed0cd32a55.jpg    flickr_username: "patti haskins" realname: "patti haskins"

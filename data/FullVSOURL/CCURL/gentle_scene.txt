@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3342/3331431933_59d4e49b38.jpg    flickr_username: "emilio labrador" realname: "Emilio Labrador"
-image_url: http://farm4.staticflickr.com/3619/3592985941_4dc21c0cf2.jpg    flickr_username: "Chicago Man" realname: "John W. Iwanski"
-image_url: http://farm3.staticflickr.com/2710/4237523087_7a373e120a.jpg    flickr_username: "peterjr1961" realname: "Peter Roan"
-image_url: http://farm3.staticflickr.com/2793/4237533497_bbedee92d9.jpg    flickr_username: "peterjr1961" realname: "Peter Roan"
-image_url: http://farm5.staticflickr.com/4001/4238304890_9095627422.jpg    flickr_username: "peterjr1961" realname: "Peter Roan"

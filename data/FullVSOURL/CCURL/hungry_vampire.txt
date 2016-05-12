@@ -1,2 +1,0 @@
-image_url: http://farm4.staticflickr.com/3087/2636334945_290d6b97e5.jpg    flickr_username: "greenkozi" realname: "green kozi"
-image_url: http://farm7.staticflickr.com/6129/5977369896_9eb17437d2.jpg    flickr_username: "artgorgeous" realname: "Artyom Galstyan"

@@ -1,3 +1,0 @@
-image_url: http://farm3.staticflickr.com/2022/2232325341_221c6d18c1.jpg    flickr_username: "Titimo" realname: "Timo D"
-image_url: http://farm3.staticflickr.com/2163/2538419505_6e8a9cd05e.jpg    flickr_username: "Lara Sobel" realname: "Lara Sobel"
-image_url: http://farm1.staticflickr.com/109/305420219_c0b62a90ce.jpg    flickr_username: "Narisa" realname: ""

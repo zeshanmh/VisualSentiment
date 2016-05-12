@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3137/2652259540_04775d7d15.jpg    flickr_username: "djst33l" realname: "Max Stahl"
-image_url: http://farm4.staticflickr.com/3260/2683203735_d6df8fbd61.jpg    flickr_username: "Fiskars007" realname: ""
-image_url: http://farm2.staticflickr.com/1439/3265269768_8de27777e5.jpg    flickr_username: "DG Jones" realname: "David Jones"
-image_url: http://farm4.staticflickr.com/3599/3326655380_24f02f4719.jpg    flickr_username: "Josh Mishell" realname: "Josh"
-image_url: http://farm4.staticflickr.com/3385/3593478746_d7b76fb5a6.jpg    flickr_username: "noii's" realname: "ben dalton"

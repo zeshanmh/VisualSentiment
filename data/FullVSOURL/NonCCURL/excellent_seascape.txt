@@ -1,2 +1,0 @@
-image_url: http://farm4.staticflickr.com/3183/3058310902_3d1083cb2c.jpg    flickr_username: "2minutes" realname: ""
-image_url: http://farm4.staticflickr.com/3314/3233019573_d0ff77aab5.jpg    flickr_username: "Salva del Saz" realname: "Salvador del Saz"

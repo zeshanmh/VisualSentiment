@@ -1,6 +1,0 @@
-image_url: http://farm1.staticflickr.com/53/144298121_b876721cbd.jpg    flickr_username: "Krug6" realname: ""
-image_url: http://farm1.staticflickr.com/12/17139626_4c0bba9ffe.jpg    flickr_username: "PDR" realname: ""
-image_url: http://farm3.staticflickr.com/2244/2079752031_1c4a1ac17c.jpg    flickr_username: "jolyon_russ" realname: "Jolyon Russ"
-image_url: http://farm3.staticflickr.com/2368/2225175996_8de66da7bd.jpg    flickr_username: "tychay" realname: "Terry Chay"
-image_url: http://farm6.staticflickr.com/5301/5560969868_0e4c530081.jpg    flickr_username: "朱一鸣" realname: "一鸣 朱"
-image_url: http://farm8.staticflickr.com/7197/6947150709_424c159dfc.jpg    flickr_username: "Paleo-Crossfit-Omnivore-Lowcarb-NonVegan-Meat-Diet" realname: "Gedgaudas Croxton"

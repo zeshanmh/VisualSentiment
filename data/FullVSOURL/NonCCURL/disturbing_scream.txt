@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3589/3480404511_22c1505d59.jpg    flickr_username: "Ared T" realname: ""
-image_url: http://farm4.staticflickr.com/3514/4000873461_5310e94b5f.jpg    flickr_username: "Mademoiselle Julia" realname: "Julia"
-image_url: http://farm9.staticflickr.com/8365/8473015447_5505446c28.jpg    flickr_username: "Ambar Surastri" realname: "Ambar Surastri"

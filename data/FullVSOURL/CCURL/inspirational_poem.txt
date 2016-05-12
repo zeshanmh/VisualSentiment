@@ -1,6 +1,0 @@
-image_url: http://farm4.staticflickr.com/3424/3371043735_35ac7d99eb.jpg    flickr_username: "Nick Chill Photography" realname: "Nick Chill"
-image_url: http://farm4.staticflickr.com/3426/3881288552_4e980891ac.jpg    flickr_username: "heraldpost" realname: "Herald Post"
-image_url: http://farm1.staticflickr.com/137/407719098_6872fc3cca.jpg    flickr_username: "DerrickT" realname: "Derrick Tyson"
-image_url: http://farm7.staticflickr.com/6081/6100775640_119eeaa20c.jpg    flickr_username: "VintageAura" realname: "Shanaz AL"
-image_url: http://farm8.staticflickr.com/7096/7186300997_f7ca652555.jpg    flickr_username: "Jon Betts" realname: "Jon Betts"
-image_url: http://farm9.staticflickr.com/8209/8166472837_3b23494086.jpg    flickr_username: "chuckthewriter" realname: "Chuck Miller"

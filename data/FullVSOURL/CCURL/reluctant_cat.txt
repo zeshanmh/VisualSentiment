@@ -1,4 +1,0 @@
-image_url: http://farm4.staticflickr.com/3120/3161829021_baaeae296c.jpg    flickr_username: "Scott Butner" realname: "Scott Butner"
-image_url: http://farm4.staticflickr.com/3128/3161829775_de4d080317.jpg    flickr_username: "Scott Butner" realname: "Scott Butner"
-image_url: http://farm3.staticflickr.com/2583/3736558411_c049414e14.jpg    flickr_username: "flashboy" realname: "Tom Phillips"
-image_url: http://farm5.staticflickr.com/4138/4816893877_732a707e65.jpg    flickr_username: "HA! Designs - Artbyheather" realname: ""

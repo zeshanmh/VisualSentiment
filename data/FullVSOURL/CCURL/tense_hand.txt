@@ -1,2 +1,0 @@
-image_url: http://farm7.staticflickr.com/6082/6024348231_ce027d0b8c.jpg    flickr_username: "Matt Carman" realname: ""
-image_url: http://farm7.staticflickr.com/6236/6245039881_cd0346d9fb.jpg    flickr_username: "The New School" realname: ""

@@ -1,2 +1,0 @@
-image_url: http://farm5.staticflickr.com/4138/4798824159_5daf78e8b6.jpg    flickr_username: "stev.ie" realname: "Steve Winton"
-image_url: http://farm5.staticflickr.com/4142/4799458442_2c108e1596.jpg    flickr_username: "stev.ie" realname: "Steve Winton"

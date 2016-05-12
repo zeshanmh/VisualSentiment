@@ -1,5 +1,0 @@
-image_url: http://farm1.staticflickr.com/50/157020753_f7bf458528.jpg    flickr_username: "HeySandra" realname: "Sandra Leong"
-image_url: http://farm3.staticflickr.com/2089/2473805361_0781484072.jpg    flickr_username: "Vincent van den Berg" realname: ""
-image_url: http://farm1.staticflickr.com/28/37591078_226cd6a9a1.jpg    flickr_username: "iambents" realname: "Bentley Smith"
-image_url: http://farm3.staticflickr.com/2746/4479558788_b32a5c2205.jpg    flickr_username: "beggs" realname: "Brian Jeffery Beggerly"
-image_url: http://farm5.staticflickr.com/4140/4826289753_ecdc932c42.jpg    flickr_username: "MagIcReBirth" realname: "MIkele"

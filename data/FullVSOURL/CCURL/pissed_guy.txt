@@ -1,2 +1,0 @@
-image_url: http://farm4.staticflickr.com/3252/2601847901_8ffde4872a.jpg    flickr_username: "eike koenig" realname: "HORT"
-image_url: http://farm1.staticflickr.com/114/314693492_605903d7d9.jpg    flickr_username: "dagbo" realname: "Dagbo"

@@ -1,7 +1,0 @@
-image_url: http://farm1.staticflickr.com/92/237946513_5b301ac1e1.jpg    flickr_username: "jez.atkinson" realname: "Jeremy Atkinson"
-image_url: http://farm4.staticflickr.com/3094/2550018524_1565dcb488.jpg    flickr_username: "Ed Yourdon" realname: "Ed Yourdon"
-image_url: http://farm4.staticflickr.com/3179/2550071408_ae6b6406bf.jpg    flickr_username: "Ed Yourdon" realname: "Ed Yourdon"
-image_url: http://farm3.staticflickr.com/2473/3689504546_7e844e2af6.jpg    flickr_username: "Abdulrahman BinSlmah" realname: "عبدالرحمن بن سلمه"
-image_url: http://farm3.staticflickr.com/2606/3960562389_0d31342e01.jpg    flickr_username: "danorbit." realname: ""
-image_url: http://farm1.staticflickr.com/218/511354112_2556e166b5.jpg    flickr_username: "RachelH_" realname: ""
-image_url: http://farm6.staticflickr.com/5298/5460457934_9632f4a197.jpg    flickr_username: "Allen McGregor" realname: "Allen McGregor"

@@ -1,7 +1,0 @@
-image_url: http://farm3.staticflickr.com/2153/1922775498_79f768cac3.jpg    flickr_username: "cod_gabriel" realname: "Gabriel"
-image_url: http://farm4.staticflickr.com/3082/2649167561_122bb88ccb.jpg    flickr_username: "tourist_on_earth" realname: ""
-image_url: http://farm5.staticflickr.com/4069/4351856494_58d814367d.jpg    flickr_username: "Dru!" realname: ""
-image_url: http://farm1.staticflickr.com/28/45502035_fe244545bb.jpg    flickr_username: "KeeferNet" realname: ""
-image_url: http://farm2.staticflickr.com/1180/5129264378_ab3e937cf7.jpg    flickr_username: "JL Johnson | User47" realname: "JL Johnson"
-image_url: http://farm7.staticflickr.com/6091/6364538917_4360754788.jpg    flickr_username: "Ocal" realname: ""
-image_url: http://farm9.staticflickr.com/8335/8111799905_2b9a63c3c0.jpg    flickr_username: "Lesage Stefaan" realname: "Stefaan Lesage"

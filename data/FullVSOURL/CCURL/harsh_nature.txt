@@ -1,2 +1,0 @@
-image_url: http://farm1.staticflickr.com/85/257748951_f9e12749d2.jpg    flickr_username: "dariuszka" realname: "Daria"
-image_url: http://farm1.staticflickr.com/186/478858613_45f7139fae.jpg    flickr_username: "december_snowdrift" realname: ""

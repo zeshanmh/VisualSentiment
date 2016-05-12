@@ -1,8 +1,0 @@
-image_url: http://farm1.staticflickr.com/1/128219738_3d22140683.jpg    flickr_username: "eclectic echoes" realname: "Eric Heupel"
-image_url: http://farm2.staticflickr.com/1154/1448991749_6f785ebe5b.jpg    flickr_username: "le dieu" realname: "paula le dieu"
-image_url: http://farm3.staticflickr.com/2409/2169237531_863faaa29c.jpg    flickr_username: "Walt Jabsco" realname: ""
-image_url: http://farm1.staticflickr.com/82/245445979_d9f1e2e651.jpg    flickr_username: "Walt Jabsco" realname: ""
-image_url: http://farm4.staticflickr.com/3069/3016076099_0dc6e6ebca.jpg    flickr_username: "cliff1066™" realname: "Cliff"
-image_url: http://farm6.staticflickr.com/5045/5313392800_1990f73799.jpg    flickr_username: "brizzle born and bred" realname: "Paul Townsend"
-image_url: http://farm4.staticflickr.com/3069/5865687125_8f9e4e0b19.jpg    flickr_username: "dynamosquito" realname: ""
-image_url: http://farm8.staticflickr.com/7006/6476332247_f70ee1ffb5.jpg    flickr_username: "Tambako the Jaguar" realname: "Tambako The Jaguar"

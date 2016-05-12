@@ -1,6 +1,0 @@
-image_url: http://farm1.staticflickr.com/46/113372321_903e20d647.jpg    flickr_username: "Extra Medium" realname: ""
-image_url: http://farm4.staticflickr.com/3134/2764556146_a76d38283a.jpg    flickr_username: "M J M" realname: "Mike"
-image_url: http://farm1.staticflickr.com/108/303486852_176562fad0.jpg    flickr_username: "sixintheworld" realname: "Six intheworld"
-image_url: http://farm3.staticflickr.com/2564/4223017119_75799daca0.jpg    flickr_username: "Robert R Gigliotti, RRGPhotography.com" realname: "Robert R Gigliotti"
-image_url: http://farm6.staticflickr.com/5124/5300585845_fd3268c8c0.jpg    flickr_username: "NASA Goddard Photo and Video" realname: "NASA Goddard Space Flight Center"
-image_url: http://farm1.staticflickr.com/35/72309004_2d8eb5e397.jpg    flickr_username: "Cool breeze pics" realname: "Michael Hayes"

@@ -1,2 +1,0 @@
-image_url: http://farm6.staticflickr.com/5084/5333388199_641a00b8a3.jpg    flickr_username: "davetographer" realname: "David"
-image_url: http://farm8.staticflickr.com/7065/6929787717_87cd788242.jpg    flickr_username: "foreverdeployed" realname: "Nate Meadows"

@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3622/3567893843_1e48ed3fc2.jpg    flickr_username: "Ed Yourdon" realname: "Ed Yourdon"
-image_url: http://farm3.staticflickr.com/2571/3949577587_2a3702d74f.jpg    flickr_username: "Nickster 2000" realname: ""
-image_url: http://farm5.staticflickr.com/4055/4300383514_3746ab9fba.jpg    flickr_username: "Helen K" realname: ""

@@ -1,5 +1,0 @@
-image_url: http://farm2.staticflickr.com/1184/1368897499_96aba4c4b7.jpg    flickr_username: "mattlemmon" realname: "Matt Lemmon"
-image_url: http://farm1.staticflickr.com/158/431013256_125080ff5c.jpg    flickr_username: ".michael.newman." realname: "Michael Newman"
-image_url: http://farm5.staticflickr.com/4104/4836620167_e5fef4b838.jpg    flickr_username: "heraldpost" realname: "Herald Post"
-image_url: http://farm1.staticflickr.com/212/513622453_2b5b39459b.jpg    flickr_username: "Angelina :)" realname: ""
-image_url: http://farm4.staticflickr.com/3106/5742276208_206f0466be.jpg    flickr_username: "pricerelli" realname: "Mark Price"

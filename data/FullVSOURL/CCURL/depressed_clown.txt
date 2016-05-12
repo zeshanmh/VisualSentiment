@@ -1,3 +1,0 @@
-image_url: http://farm1.staticflickr.com/47/241079222_c92c3388d7.jpg    flickr_username: "TheGiantVermin" realname: ""
-image_url: http://farm4.staticflickr.com/3143/2793912870_3c29d72a63.jpg    flickr_username: "lism." realname: "Lis Ferla"
-image_url: http://farm3.staticflickr.com/2791/4416611748_eccd940633.jpg    flickr_username: "Angie安姬" realname: "Angie Hu"

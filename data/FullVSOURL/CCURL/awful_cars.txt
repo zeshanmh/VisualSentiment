@@ -1,6 +1,0 @@
-image_url: http://farm1.staticflickr.com/86/259513012_d31313596c.jpg    flickr_username: "Jon's pics" realname: ""
-image_url: http://farm4.staticflickr.com/3462/3708839028_92a9ccb03f.jpg    flickr_username: "jbabin3xd" realname: "Jonathan Babin"
-image_url: http://farm3.staticflickr.com/2661/3953490591_19ddb5ab85.jpg    flickr_username: "musical photo man" realname: "Simon"
-image_url: http://farm1.staticflickr.com/29/52393584_f2405caffe.jpg    flickr_username: "everyplace" realname: "Erin Sparling"
-image_url: http://farm6.staticflickr.com/5086/5313850316_6134e9f425.jpg    flickr_username: "MSVG" realname: "Michael Gil"
-image_url: http://farm8.staticflickr.com/7188/6858884813_183d2bae68.jpg    flickr_username: "Colorray" realname: "Raymond Wald"

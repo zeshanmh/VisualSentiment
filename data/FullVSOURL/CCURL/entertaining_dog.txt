@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2340/2092071731_53bf30803d.jpg    flickr_username: "davidagalvan" realname: "David Galvan"
-image_url: http://farm3.staticflickr.com/2216/2394425414_971a0c0767.jpg    flickr_username: "energeticspell" realname: "cinty ionescu"
-image_url: http://farm1.staticflickr.com/125/355585881_c8d48c8e3b.jpg    flickr_username: "wvs" realname: "Sam Javanrouh"
-image_url: http://farm5.staticflickr.com/4059/4710900649_27d9d21e9e.jpg    flickr_username: "crystalmartel" realname: "Crystal Martel"

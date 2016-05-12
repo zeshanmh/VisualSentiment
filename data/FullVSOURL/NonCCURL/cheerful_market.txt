@@ -1,7 +1,0 @@
-image_url: http://farm3.staticflickr.com/2258/2114975599_245e8c8da9.jpg    flickr_username: "Araleya" realname: ""
-image_url: http://farm4.staticflickr.com/3203/2415902634_3fe7d5421c.jpg    flickr_username: "Scarycrow" realname: "Davey"
-image_url: http://farm5.staticflickr.com/4135/4911245785_f946d8422c.jpg    flickr_username: "ruth hurd" realname: "Ruth Hurd"
-image_url: http://farm5.staticflickr.com/4118/4911848676_d0fe43bdd4.jpg    flickr_username: "ruth hurd" realname: "Ruth Hurd"
-image_url: http://farm2.staticflickr.com/1425/652634725_44c9f620fd.jpg    flickr_username: "Cee" realname: "Carolyn"
-image_url: http://farm9.staticflickr.com/8164/7609083016_34ddc52b46.jpg    flickr_username: "tonyluan1990" realname: "Siyao (Anthony) Luan"
-image_url: http://farm9.staticflickr.com/8283/7697312488_8a7e38ff71.jpg    flickr_username: "tonyluan1990" realname: "Siyao (Anthony) Luan"

@@ -1,7 +1,0 @@
-image_url: http://farm1.staticflickr.com/78/196737982_b3b5eaa4db.jpg    flickr_username: "Narisa" realname: ""
-image_url: http://farm4.staticflickr.com/3294/2840222093_91da31275e.jpg    flickr_username: "insect safari" realname: "Don Ehlen"
-image_url: http://farm4.staticflickr.com/3179/3521403707_37fd780a21.jpg    flickr_username: "sankax" realname: ""
-image_url: http://farm4.staticflickr.com/3589/3545925240_11998bd9fc.jpg    flickr_username: "sankax" realname: ""
-image_url: http://farm3.staticflickr.com/2704/4255911952_0e0da5e369.jpg    flickr_username: "minlynn071502" realname: "Mindy Roth"
-image_url: http://farm5.staticflickr.com/4147/4836262473_459d529d7b.jpg    flickr_username: "shieldkitten" realname: "Jolene"
-image_url: http://farm2.staticflickr.com/1034/528787133_389ce3d3d8.jpg    flickr_username: "Jo Munday" realname: "Jo Munday"

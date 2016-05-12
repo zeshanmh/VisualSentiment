@@ -1,3 +1,0 @@
-image_url: http://farm1.staticflickr.com/177/474670415_310e66c8d3.jpg    flickr_username: "sjdunphy" realname: "Shaun Dunphy"
-image_url: http://farm3.staticflickr.com/2048/5718453937_baee425a3e.jpg    flickr_username: "▲ e-basak" realname: "Eylem Başak Ekinci"
-image_url: http://farm8.staticflickr.com/7196/6901146349_11f41869f0.jpg    flickr_username: "kiarabazz" realname: "chiara"

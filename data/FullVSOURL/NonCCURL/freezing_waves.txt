@@ -1,2 +1,0 @@
-image_url: http://farm1.staticflickr.com/43/115627355_6c189b5e97.jpg    flickr_username: "dobak" realname: "Derek Bakken"
-image_url: http://farm9.staticflickr.com/8503/8320297933_2b3d24ce7b.jpg    flickr_username: "Butterflyblue4" realname: ""

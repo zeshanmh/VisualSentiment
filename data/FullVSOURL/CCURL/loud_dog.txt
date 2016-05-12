@@ -1,7 +1,0 @@
-image_url: http://farm3.staticflickr.com/2385/2163240707_459ed65c94.jpg    flickr_username: "fredcamino" realname: "Frederick Dennstedt"
-image_url: http://farm4.staticflickr.com/3262/3227706468_735354e486.jpg    flickr_username: "towse" realname: "Sal Towse"
-image_url: http://farm3.staticflickr.com/2698/4148735887_14182a9bc9.jpg    flickr_username: "wiseleyb" realname: "ben wiseley"
-image_url: http://farm3.staticflickr.com/2763/4345302830_b80cef631a.jpg    flickr_username: "faith goble" realname: "Faith Goble"
-image_url: http://farm7.staticflickr.com/6144/6043575734_4d297a0900.jpg    flickr_username: "alexmontjohn" realname: ""
-image_url: http://farm8.staticflickr.com/7018/6462287565_d5bdcf3e80.jpg    flickr_username: "elycefeliz" realname: ""
-image_url: http://farm6.staticflickr.com/5160/7203272682_f4b66100db.jpg    flickr_username: "mclanea" realname: "Adam McLane"

@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3234/2749278966_3127c10c1c.jpg    flickr_username: "4rj4n" realname: "Arjan"
-image_url: http://farm1.staticflickr.com/114/297877608_288fbd43e1.jpg    flickr_username: "BethanyWeeks" realname: "Bethany Weeks"
-image_url: http://farm3.staticflickr.com/2725/4203860740_8a5c317dc2.jpg    flickr_username: "me'nthedogs" realname: "Mark Robinson"
-image_url: http://farm5.staticflickr.com/4100/4828169762_c4999c275c.jpg    flickr_username: "tubb" realname: ""
-image_url: http://farm6.staticflickr.com/5211/5412215620_aa3905e89d.jpg    flickr_username: "Brian Sahagun" realname: "Brian Sahagun"

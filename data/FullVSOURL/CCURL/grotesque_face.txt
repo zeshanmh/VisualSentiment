@@ -1,8 +1,0 @@
-image_url: http://farm2.staticflickr.com/1131/1111892539_635711b70e.jpg    flickr_username: "JohnBurke" realname: "John Burke"
-image_url: http://farm1.staticflickr.com/57/208345359_3fa0599d12.jpg    flickr_username: "◄Kentigern►" realname: "Alan Campbell"
-image_url: http://farm4.staticflickr.com/3025/2678872203_d779fd4606.jpg    flickr_username: "TheFatnick" realname: "Nick"
-image_url: http://farm4.staticflickr.com/3256/2679689996_056120b377.jpg    flickr_username: "TheFatnick" realname: "Nick"
-image_url: http://farm3.staticflickr.com/2426/3893472859_a9b867e50c.jpg    flickr_username: "Julie70" realname: "Julie Kertesz"
-image_url: http://farm5.staticflickr.com/4014/4475029280_1c5f8db84d.jpg    flickr_username: "Drewhound" realname: "Drew"
-image_url: http://farm5.staticflickr.com/4080/5415642662_e9fc38d5f7.jpg    flickr_username: "FontFont" realname: "FontFont"
-image_url: http://farm7.staticflickr.com/6151/6249927272_97e3afde4c.jpg    flickr_username: "Exile on James Street" realname: "James Evans"

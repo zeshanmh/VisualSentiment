@@ -1,7 +1,0 @@
-image_url: http://farm3.staticflickr.com/2721/4139937352_2d87df7a85.jpg    flickr_username: "JohnE777" realname: "John Eisenschenk"
-image_url: http://farm7.staticflickr.com/6225/6220010071_887f1aa023.jpg    flickr_username: "Raccatography" realname: "Ryan Racca"
-image_url: http://farm7.staticflickr.com/6107/6220010649_bba9bc520d.jpg    flickr_username: "Raccatography" realname: "Ryan Racca"
-image_url: http://farm7.staticflickr.com/6048/6220011711_e8b754b5be.jpg    flickr_username: "Raccatography" realname: "Ryan Racca"
-image_url: http://farm7.staticflickr.com/6114/6220531196_d0c7366f6e.jpg    flickr_username: "Raccatography" realname: "Ryan Racca"
-image_url: http://farm7.staticflickr.com/6160/6220532590_ffc6252e69.jpg    flickr_username: "Raccatography" realname: "Ryan Racca"
-image_url: http://farm7.staticflickr.com/6042/7025483611_13f7c25080.jpg    flickr_username: "Morning Calm News" realname: "Morning Calm Weekly Newspaper Installation Management Command, U.S. Army"

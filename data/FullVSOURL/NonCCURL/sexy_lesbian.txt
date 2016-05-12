@@ -1,6 +1,0 @@
-image_url: http://farm3.staticflickr.com/2412/2117217384_ddbea75c4b.jpg    flickr_username: "richard-ugadawg 1990" realname: "Richard"
-image_url: http://farm1.staticflickr.com/107/310173984_7edc8a0169.jpg    flickr_username: "blousemusic" realname: ""
-image_url: http://farm1.staticflickr.com/105/310173985_5c0ab446e9.jpg    flickr_username: "blousemusic" realname: ""
-image_url: http://farm6.staticflickr.com/5066/5602713431_3a2e7dcbdd.jpg    flickr_username: "makesamesslikenobodysbusiness" realname: ""
-image_url: http://farm6.staticflickr.com/5182/5602713441_523b0d1b64.jpg    flickr_username: "makesamesslikenobodysbusiness" realname: ""
-image_url: http://farm9.staticflickr.com/8356/8394448533_6c36eedbc4.jpg    flickr_username: "BMP T-Shirts" realname: "BMP T-Shirts"

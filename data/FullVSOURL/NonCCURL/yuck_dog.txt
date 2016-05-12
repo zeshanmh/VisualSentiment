@@ -1,4 +1,0 @@
-image_url: http://farm4.staticflickr.com/3123/3084319797_9ab49576bd.jpg    flickr_username: "DJTigger" realname: ""
-image_url: http://farm1.staticflickr.com/143/329618996_0e3a9651a3.jpg    flickr_username: "magst" realname: "Maggie Thaden"
-image_url: http://farm3.staticflickr.com/2649/4219129063_114f18e99b.jpg    flickr_username: "njr wallace" realname: ""
-image_url: http://farm8.staticflickr.com/7223/7306469756_ee6236a286.jpg    flickr_username: "Eddie Murdock" realname: ""

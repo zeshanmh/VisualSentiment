@@ -1,7 +1,0 @@
-image_url: http://farm2.staticflickr.com/1356/1241073241_4899bd10ab.jpg    flickr_username: "SteveR-" realname: ""
-image_url: http://farm4.staticflickr.com/3053/2445321655_1aa787f78e.jpg    flickr_username: "Gattou - Lucie Provencher" realname: "Lucie Provencher"
-image_url: http://farm5.staticflickr.com/4034/4303516490_388f5b657d.jpg    flickr_username: "singlestitches" realname: ""
-image_url: http://farm5.staticflickr.com/4082/4938683921_0d08367067.jpg    flickr_username: "unertlkm" realname: "Kim Unertl"
-image_url: http://farm8.staticflickr.com/7017/6619953677_74483f4666.jpg    flickr_username: "tess_marie" realname: "Tess Shebaylo"
-image_url: http://farm8.staticflickr.com/7157/6754505887_ab6187e6f8.jpg    flickr_username: "grongar" realname: "Rebecca Siegel"
-image_url: http://farm8.staticflickr.com/7182/6971815923_57e48dbfd2.jpg    flickr_username: "qwazymonkey" realname: "Jonathan Ooi"

@@ -1,2 +1,0 @@
-image_url: http://farm1.staticflickr.com/13/19996864_a9378be858.jpg    flickr_username: "Jan Tik" realname: "Jan Tik"
-image_url: http://farm3.staticflickr.com/2010/2401281768_458f5eb2d7.jpg    flickr_username: "donnaidh_sidhe" realname: ""

@@ -1,2 +1,0 @@
-image_url: http://farm1.staticflickr.com/38/149751046_7edf06e869.jpg    flickr_username: "Caro Spark" realname: "Caro"
-image_url: http://farm5.staticflickr.com/4069/4478923127_fe6c95abf9.jpg    flickr_username: "Pulpolux !!!" realname: ""

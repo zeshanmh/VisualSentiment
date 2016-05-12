@@ -1,8 +1,0 @@
-image_url: http://farm2.staticflickr.com/1400/1476355995_51e3c9fd0b.jpg    flickr_username: "cherryred ♥'s beardy" realname: ""
-image_url: http://farm4.staticflickr.com/3150/2403618505_3d372ccd17.jpg    flickr_username: "kc7fys" realname: ""
-image_url: http://farm3.staticflickr.com/2403/2495360553_1e5a4a1940.jpg    flickr_username: "Annie Mole" realname: "Annie Mole"
-image_url: http://farm4.staticflickr.com/3295/2784571997_57105e2087.jpg    flickr_username: "Martin Deutsch" realname: ""
-image_url: http://farm3.staticflickr.com/2736/4079415013_3265062cb4.jpg    flickr_username: "kattebelletje" realname: "kattebelletje"
-image_url: http://farm6.staticflickr.com/5041/5367732360_7c53b11a2e.jpg    flickr_username: "esquetee" realname: "Sara Thompson"
-image_url: http://farm1.staticflickr.com/40/78052945_7804a0304c.jpg    flickr_username: "u m a m i" realname: "umami"
-image_url: http://farm9.staticflickr.com/8308/7928818550_1f1de45e84.jpg    flickr_username: "Guph Smells Good" realname: ""

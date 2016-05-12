@@ -1,7 +1,0 @@
-image_url: http://farm3.staticflickr.com/2320/1792054664_2f9b90b826.jpg    flickr_username: "China Chas" realname: "Chas Pope"
-image_url: http://farm4.staticflickr.com/3428/3928114847_ccd3cb4306.jpg    flickr_username: "living.amongst.the.crowd" realname: ""
-image_url: http://farm8.staticflickr.com/7274/6865072298_34649654a1.jpg    flickr_username: "numbler" realname: ""
-image_url: http://farm9.staticflickr.com/8181/8045026319_f839535d6c.jpg    flickr_username: "Boadecea Macleod" realname: ""
-image_url: http://farm9.staticflickr.com/8179/8045028078_2f996ccbd8.jpg    flickr_username: "Boadecea Macleod" realname: ""
-image_url: http://farm9.staticflickr.com/8039/8045030263_2a51cebfc0.jpg    flickr_username: "Boadecea Macleod" realname: ""
-image_url: http://farm9.staticflickr.com/8458/8045033532_585d7bdb0a.jpg    flickr_username: "Boadecea Macleod" realname: ""

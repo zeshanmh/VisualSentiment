@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2314/1510351210_46af9f62c1.jpg    flickr_username: "ShaneRounce.com Design and Photography" realname: "Shane Rounce"
-image_url: http://farm1.staticflickr.com/14/15647799_6c428f3e9a.jpg    flickr_username: "stevec77" realname: "Steve Calcott"
-image_url: http://farm8.staticflickr.com/7036/6932172487_b08681cf98.jpg    flickr_username: "tarzxf" realname: "Neal Krummell"
-image_url: http://farm8.staticflickr.com/7225/7266069296_b4ec56f291.jpg    flickr_username: "Fifth World Art" realname: "Robert Neff"

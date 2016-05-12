@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2206/1781889795_4711c70d1d.jpg    flickr_username: "alexmontjohn" realname: ""
-image_url: http://farm4.staticflickr.com/3126/2367236777_2eca90e9e0.jpg    flickr_username: "anaxolotl" realname: ""
-image_url: http://farm8.staticflickr.com/7010/6700336211_d2cde516c1.jpg    flickr_username: "UGArdener" realname: "JR P"
-image_url: http://farm9.staticflickr.com/8011/7451412892_cc602b3142.jpg    flickr_username: "jeanphony" realname: ""

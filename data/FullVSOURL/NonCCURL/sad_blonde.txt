@@ -1,5 +1,0 @@
-image_url: http://farm3.staticflickr.com/2167/2461295414_7c8b434e0f.jpg    flickr_username: "letslookupandsmile" realname: ""
-image_url: http://farm7.staticflickr.com/6127/5966778575_dc26aac340.jpg    flickr_username: "Books & ArT & People & Things" realname: "Books and ArT and People and Things"
-image_url: http://farm8.staticflickr.com/7149/6468064719_617736e086.jpg    flickr_username: "Jailbird_12" realname: ""
-image_url: http://farm8.staticflickr.com/7002/6542377915_10529b2506.jpg    flickr_username: "supah" realname: "amy beth"
-image_url: http://farm2.staticflickr.com/1414/931691190_089b56d164.jpg    flickr_username: "adam szilagyi" realname: "adam szilagyi"

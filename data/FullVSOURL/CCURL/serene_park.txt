@@ -1,6 +1,0 @@
-image_url: http://farm4.staticflickr.com/3180/3047264684_d514c9dea9.jpg    flickr_username: "J. Stephen Conn" realname: "J. Stephen Conn"
-image_url: http://farm4.staticflickr.com/3502/3247404725_5e2261a876.jpg    flickr_username: "Akarsh Simha" realname: "Akarsh Simha"
-image_url: http://farm3.staticflickr.com/2577/3886511672_9f0c43e9d4.jpg    flickr_username: "niseag03" realname: "Denise Mattox"
-image_url: http://farm3.staticflickr.com/2606/4212498028_7792a87bf5.jpg    flickr_username: "niseag03" realname: "Denise Mattox"
-image_url: http://farm6.staticflickr.com/5010/5226202817_436aa89e64.jpg    flickr_username: "vinzcha" realname: "charlie vinz"
-image_url: http://farm6.staticflickr.com/5281/5226796056_5bc6be9b6b.jpg    flickr_username: "vinzcha" realname: "charlie vinz"

@@ -1,6 +1,0 @@
-image_url: http://farm3.staticflickr.com/2159/1964875305_4b15cbfbf9.jpg    flickr_username: "jonathan_moreau" realname: "Jonathan Moreau"
-image_url: http://farm4.staticflickr.com/3112/2324826445_3c6cbb1a20.jpg    flickr_username: "BramstonePhotography" realname: "Ian Foss"
-image_url: http://farm4.staticflickr.com/3261/2901118018_0420cecb24.jpg    flickr_username: "▓▒░ TORLEY ░▒▓" realname: ""
-image_url: http://farm4.staticflickr.com/3085/3201405003_3473dccee3.jpg    flickr_username: "Robin Iversen Rönnlund" realname: "Robin"
-image_url: http://farm3.staticflickr.com/2624/4094647434_6432ea2b96.jpg    flickr_username: "Tony Fischer Photography" realname: "Tony Fischer"
-image_url: http://farm2.staticflickr.com/1326/704360869_04a4b3636e.jpg    flickr_username: "Marshall Astor - Food Fetishist" realname: "Marshall Astor"

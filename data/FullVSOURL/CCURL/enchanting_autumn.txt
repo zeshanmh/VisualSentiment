@@ -1,2 +1,0 @@
-image_url: http://farm7.staticflickr.com/6233/6306617394_6975e50b75.jpg    flickr_username: "*Psycho Delia*" realname: "Liz"
-image_url: http://farm7.staticflickr.com/6040/6343680760_40140c9406.jpg    flickr_username: "flamesworddragon" realname: "Mark Kent"

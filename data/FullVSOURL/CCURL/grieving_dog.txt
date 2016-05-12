@@ -1,2 +1,0 @@
-image_url: http://farm4.staticflickr.com/3116/2781580381_6cc26b69c4.jpg    flickr_username: "weegeebored" realname: ""
-image_url: http://farm5.staticflickr.com/4062/5075167082_d28f3bccd8.jpg    flickr_username: "shelly kennedy/drooz studio" realname: ""

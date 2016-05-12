@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2035/2258844620_35c29c8674.jpg    flickr_username: "Yannig Van de Wouwer" realname: "Yannig Van de Wouwer"
-image_url: http://farm1.staticflickr.com/99/303031388_db6a8d9398.jpg    flickr_username: "Thomas Claveirole" realname: "Thomas Claveirole"
-image_url: http://farm4.staticflickr.com/3059/3082249120_b8ef2ca5b8.jpg    flickr_username: "Federico Mosconi" realname: "Federico Mosconi"
-image_url: http://farm3.staticflickr.com/2497/3931322394_d97089482e.jpg    flickr_username: "carlotardani" realname: "Carlo Tardani"

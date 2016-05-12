@@ -1,7 +1,0 @@
-image_url: http://farm1.staticflickr.com/64/223848782_d1f22522e4.jpg    flickr_username: "mstresbabette" realname: ""
-image_url: http://farm4.staticflickr.com/3150/2332181593_76817d5e4e.jpg    flickr_username: "mrRobot" realname: ""
-image_url: http://farm1.staticflickr.com/112/299273249_65d9d6c2c1.jpg    flickr_username: "Bellah" realname: "gabriella travaline"
-image_url: http://farm4.staticflickr.com/3413/3338926034_ab4767f649.jpg    flickr_username: "Vintage Lulu" realname: ""
-image_url: http://farm4.staticflickr.com/3493/3470756782_76e89fd499.jpg    flickr_username: "mstabbycat" realname: "Tabatha Patterson"
-image_url: http://farm6.staticflickr.com/5216/5386692926_82e99ea8bb.jpg    flickr_username: "Hammonton Photography" realname: ""
-image_url: http://farm6.staticflickr.com/5143/5553954769_77c204bb74.jpg    flickr_username: "Penquista Insomne" realname: "Gerson Guzmán"

@@ -1,2 +1,0 @@
-image_url: http://farm1.staticflickr.com/212/489302930_29d42a8bba.jpg    flickr_username: "sunchild_dd" realname: ""
-image_url: http://farm8.staticflickr.com/7159/6596316271_24aef5b57c.jpg    flickr_username: "etienne_pacifico" realname: "Etienne Girardet"

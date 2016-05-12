@@ -1,7 +1,0 @@
-image_url: http://farm2.staticflickr.com/1205/1303117758_e79f7c95e7.jpg    flickr_username: "Peter Eich" realname: "Peter Eich"
-image_url: http://farm1.staticflickr.com/51/149302148_9bdde2f3d9.jpg    flickr_username: "sirbranderson" realname: ""
-image_url: http://farm1.staticflickr.com/2/1524108_103b437dbb.jpg    flickr_username: "pwinn" realname: "Phillip Winn"
-image_url: http://farm1.staticflickr.com/112/316982772_e0d7603cab.jpg    flickr_username: "Dennis Knake" realname: "Dennis Knake"
-image_url: http://farm3.staticflickr.com/2701/4185352263_e7a0b7af39.jpg    flickr_username: "eggrole" realname: "Mark"
-image_url: http://farm1.staticflickr.com/163/424367746_230aee5367.jpg    flickr_username: "wisze" realname: "Edwin Wisse"
-image_url: http://farm7.staticflickr.com/6174/6201532068_9b1ef9f2fa.jpg    flickr_username: "Michael Voelker" realname: ""

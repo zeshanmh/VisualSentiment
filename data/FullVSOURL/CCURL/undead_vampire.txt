@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3015/3010982104_c084463f62.jpg    flickr_username: "RedCraig" realname: ""
-image_url: http://farm4.staticflickr.com/3439/3953720583_e4b88ef20f.jpg    flickr_username: "tedmurphy" realname: "Ted Murphy"
-image_url: http://farm5.staticflickr.com/4109/5087400096_cf07098eb1.jpg    flickr_username: "icethim" realname: ""
-image_url: http://farm7.staticflickr.com/6104/6276767715_4cdb452b3b.jpg    flickr_username: "partymonstrrrr" realname: "Charles Rodstrom"
-image_url: http://farm7.staticflickr.com/6058/7036320557_84ae6b0387.jpg    flickr_username: "Molly Des Jardin" realname: "non-euclidean photography"

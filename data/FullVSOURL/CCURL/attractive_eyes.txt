@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3235/3280051912_3bbd409498.jpg    flickr_username: "My Private Geek" realname: ""
-image_url: http://farm3.staticflickr.com/2772/4070016544_1865297187.jpg    flickr_username: "jpellgen" realname: ""
-image_url: http://farm5.staticflickr.com/4075/4919398699_0619893574.jpg    flickr_username: "epSos.de" realname: "epSos .de"
-image_url: http://farm1.staticflickr.com/30/54233678_2da49bd247.jpg    flickr_username: "dogwelder" realname: "Luke Gattuso"
-image_url: http://farm1.staticflickr.com/3/6947802_42d9bffadd.jpg    flickr_username: "Nigel Jones" realname: "Nigel Jones"

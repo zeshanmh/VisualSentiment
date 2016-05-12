@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2367/1768316111_faf08b8ea8.jpg    flickr_username: "thaths" realname: ""
-image_url: http://farm4.staticflickr.com/3572/3407521425_aa6635fe8f.jpg    flickr_username: "MissBlythe" realname: "Patricia Carvalho"
-image_url: http://farm1.staticflickr.com/134/399218468_31681dd12b.jpg    flickr_username: "dj drüe" realname: "DJ Drüe"
-image_url: http://farm9.staticflickr.com/8024/7306376690_49a3a6fdc2.jpg    flickr_username: "Tinker*Tailor loves Lalka" realname: ""

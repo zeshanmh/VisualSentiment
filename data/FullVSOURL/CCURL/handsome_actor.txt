@@ -1,8 +1,0 @@
-image_url: http://farm1.staticflickr.com/57/198371871_88042fe4e9.jpg    flickr_username: "Here in Van Nuys" realname: ""
-image_url: http://farm4.staticflickr.com/3625/3308851719_112a5c16da.jpg    flickr_username: "cliff1066™" realname: "Cliff"
-image_url: http://farm4.staticflickr.com/3301/3451615646_93731711fb.jpg    flickr_username: "RubyGoes" realname: ""
-image_url: http://farm3.staticflickr.com/2595/3733832213_bedf7e052e.jpg    flickr_username: "peterjr1961" realname: "Peter Roan"
-image_url: http://farm3.staticflickr.com/2665/3734574130_d475f16a8e.jpg    flickr_username: "peterjr1961" realname: "Peter Roan"
-image_url: http://farm5.staticflickr.com/4009/4306774517_86cd6a7bb1.jpg    flickr_username: "D'oh Boy" realname: ""
-image_url: http://farm6.staticflickr.com/5041/5317172847_98848a3f03.jpg    flickr_username: "glennwilliamspdx" realname: "Glenn Scofield Williams"
-image_url: http://farm6.staticflickr.com/5048/5317757362_11c6e2d402.jpg    flickr_username: "glennwilliamspdx" realname: "Glenn Scofield Williams"

@@ -1,8 +1,0 @@
-image_url: http://farm5.staticflickr.com/4106/4947806065_f932310392.jpg    flickr_username: "Train Chartering & Private Rail Cars" realname: "Simon Pielow"
-image_url: http://farm5.staticflickr.com/4122/4947806353_2b83660074.jpg    flickr_username: "Train Chartering & Private Rail Cars" realname: "Simon Pielow"
-image_url: http://farm5.staticflickr.com/4129/4947806559_4e4f3cff6a.jpg    flickr_username: "Train Chartering & Private Rail Cars" realname: "Simon Pielow"
-image_url: http://farm5.staticflickr.com/4144/4947807129_807fb5591c.jpg    flickr_username: "Train Chartering & Private Rail Cars" realname: "Simon Pielow"
-image_url: http://farm5.staticflickr.com/4154/4947807299_61e337f02b.jpg    flickr_username: "Train Chartering & Private Rail Cars" realname: "Simon Pielow"
-image_url: http://farm5.staticflickr.com/4088/4948395256_b14a231cdd.jpg    flickr_username: "Train Chartering & Private Rail Cars" realname: "Simon Pielow"
-image_url: http://farm5.staticflickr.com/4145/4948396296_ba45ca1eac.jpg    flickr_username: "Train Chartering & Private Rail Cars" realname: "Simon Pielow"
-image_url: http://farm5.staticflickr.com/4129/4948396806_faf94eaebb.jpg    flickr_username: "Train Chartering & Private Rail Cars" realname: "Simon Pielow"

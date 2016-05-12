@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3648/3671543691_d35a254e7e.jpg    flickr_username: "badbadivy" realname: ""
-image_url: http://farm3.staticflickr.com/2509/3735714835_62f0b3357b.jpg    flickr_username: "ashleighb77" realname: "Ashleigh Bennett"
-image_url: http://farm5.staticflickr.com/4073/4780602497_c82b36a8b3.jpg    flickr_username: "diluvienne" realname: "Mélanie"

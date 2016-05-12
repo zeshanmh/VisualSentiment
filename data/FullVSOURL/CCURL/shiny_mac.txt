@@ -1,5 +1,0 @@
-image_url: http://farm1.staticflickr.com/47/119228321_6c482ddc26.jpg    flickr_username: "roxeteer" realname: "Visa Kopu"
-image_url: http://farm3.staticflickr.com/2018/1787398051_aaeb6ba7d5.jpg    flickr_username: "MJRoberts55" realname: ""
-image_url: http://farm4.staticflickr.com/3124/2591716133_0ee1478859.jpg    flickr_username: "spo0nman" realname: "Pankaj Kaushal"
-image_url: http://farm3.staticflickr.com/2460/3640307971_7d0f764c5e.jpg    flickr_username: "*tamara*" realname: "Tamara Polajnar"
-image_url: http://farm8.staticflickr.com/7229/7154781298_063aa28b6e.jpg    flickr_username: "mrsdkrebs" realname: "Denise Krebs"

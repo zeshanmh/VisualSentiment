@@ -1,6 +1,0 @@
-image_url: http://farm3.staticflickr.com/2409/2240827843_3d079d142f.jpg    flickr_username: "Gil_Woolley" realname: "Gil Woolley"
-image_url: http://farm4.staticflickr.com/3404/3242031727_6b9ac37270.jpg    flickr_username: "Zé Maciel" realname: "José Maciel"
-image_url: http://farm2.staticflickr.com/1373/5103607954_47033be08f.jpg    flickr_username: "daydreamernessa" realname: "vanessa"
-image_url: http://farm2.staticflickr.com/1316/669882903_ef48c7899b.jpg    flickr_username: "hazymat" realname: "Mat Smith"
-image_url: http://farm9.staticflickr.com/8036/8014827482_72465b6142.jpg    flickr_username: "raymunday2010" realname: "Ray Munday"
-image_url: http://farm9.staticflickr.com/8310/8041264756_5e3fb28bee.jpg    flickr_username: "ann marie boyle" realname: ""

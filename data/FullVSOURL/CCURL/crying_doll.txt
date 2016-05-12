@@ -1,3 +1,0 @@
-image_url: http://farm3.staticflickr.com/2244/2345196397_4d5174e7ae.jpg    flickr_username: "nglacrosse23" realname: ""
-image_url: http://farm6.staticflickr.com/5205/5331315622_2021507b74.jpg    flickr_username: "spiritflare" realname: ""
-image_url: http://farm7.staticflickr.com/6131/5962618162_abe16fe537.jpg    flickr_username: "dave_7" realname: ""

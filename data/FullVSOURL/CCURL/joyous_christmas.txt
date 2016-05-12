@@ -1,3 +1,0 @@
-image_url: http://farm4.staticflickr.com/3006/3086360209_c9326e729d.jpg    flickr_username: "williamcho" realname: "William Cho"
-image_url: http://farm5.staticflickr.com/4044/4211880571_314da66f4b.jpg    flickr_username: "Eustaquio Santimano" realname: "Eustaquio Santimano"
-image_url: http://farm8.staticflickr.com/7162/6479087999_f158d008ac.jpg    flickr_username: "The Texas Collection, Baylor University" realname: ""

@@ -1,5 +1,0 @@
-image_url: http://farm3.staticflickr.com/2169/2216815876_c6feae80e0.jpg    flickr_username: "Menage a Moi" realname: "Simon James"
-image_url: http://farm3.staticflickr.com/2287/2389427784_1536cfd505.jpg    flickr_username: "Funky64 (www.lucarossato.com)" realname: "Luca Rossato"
-image_url: http://farm3.staticflickr.com/2531/4017773509_de6efef636.jpg    flickr_username: "Redfishingboat (Mick O)" realname: ""
-image_url: http://farm5.staticflickr.com/4049/4304340245_e86146a28b.jpg    flickr_username: "andres musta" realname: "andres musta"
-image_url: http://farm9.staticflickr.com/8014/6999560040_6d8db01076.jpg    flickr_username: "BohemianDolls" realname: ""

@@ -1,3 +1,0 @@
-image_url: http://farm1.staticflickr.com/71/217129977_6e375c1641.jpg    flickr_username: "Hugues Michel" realname: ""
-image_url: http://farm1.staticflickr.com/84/253933008_eea7de2836.jpg    flickr_username: "bo_stern" realname: "Bo Stern"
-image_url: http://farm4.staticflickr.com/3635/3587323013_4e2a73fc4c.jpg    flickr_username: "jr conlin" realname: "JR Conlin"

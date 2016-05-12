@@ -1,1 +1,0 @@
-image_url: http://farm3.staticflickr.com/2203/2254290078_636a85cdbd.jpg    flickr_username: "half_empty" realname: "Alan"

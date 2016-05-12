@@ -1,4 +1,0 @@
-image_url: http://farm6.staticflickr.com/5250/5227552500_75207d79a1.jpg    flickr_username: "voinonen" realname: "Virpi Oinonen"
-image_url: http://farm6.staticflickr.com/5202/5229658997_78306acd39.jpg    flickr_username: "voinonen" realname: "Virpi Oinonen"
-image_url: http://farm3.staticflickr.com/2481/5776895746_2f2995cecc.jpg    flickr_username: "voinonen" realname: "Virpi Oinonen"
-image_url: http://farm7.staticflickr.com/6171/6155431243_7ecf20096b.jpg    flickr_username: "mykaul" realname: ""

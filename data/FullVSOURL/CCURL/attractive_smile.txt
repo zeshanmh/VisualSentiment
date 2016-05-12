@@ -1,3 +1,0 @@
-image_url: http://farm1.staticflickr.com/71/219759461_ddb13da46a.jpg    flickr_username: "RonaldWong" realname: "Ronald Wong"
-image_url: http://farm4.staticflickr.com/3533/3768921393_5cff03c9ec.jpg    flickr_username: "roberthuffstutter" realname: "ROBERT HUFFSTUTTER"
-image_url: http://farm8.staticflickr.com/7055/6960421029_2b49798111.jpg    flickr_username: "WADZO" realname: ""

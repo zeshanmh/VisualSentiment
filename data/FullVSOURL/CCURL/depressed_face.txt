@@ -1,2 +1,0 @@
-image_url: http://farm4.staticflickr.com/3226/3026602484_52bb4fcb71.jpg    flickr_username: "JillOW" realname: "Jill"
-image_url: http://farm3.staticflickr.com/2562/3878938040_1d838f80d4.jpg    flickr_username: "David Cumps" realname: "David Cumps"

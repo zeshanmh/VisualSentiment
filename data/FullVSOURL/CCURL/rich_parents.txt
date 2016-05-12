@@ -1,4 +1,0 @@
-image_url: http://farm2.staticflickr.com/1381/1437299695_4769f6724a.jpg    flickr_username: "drewesque" realname: "Drew Allen"
-image_url: http://farm3.staticflickr.com/2764/4469312292_77d578204d.jpg    flickr_username: "mohamedn" realname: "Mohamed Nanabhay"
-image_url: http://farm5.staticflickr.com/4035/4540134396_b53924449a.jpg    flickr_username: "satosphere" realname: "Sathish J"
-image_url: http://farm9.staticflickr.com/8335/8096591375_db9f0c7514.jpg    flickr_username: "Kris Haamer" realname: "Kris Haamer"

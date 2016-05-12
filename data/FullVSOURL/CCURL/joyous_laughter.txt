@@ -1,4 +1,0 @@
-image_url: http://farm3.staticflickr.com/2364/3583536581_6f24fecb98.jpg    flickr_username: "isurusen" realname: "Isuru Senevi"
-image_url: http://farm1.staticflickr.com/171/478739612_ff1072391c.jpg    flickr_username: "Mr. Ducke" realname: "Matt"
-image_url: http://farm5.staticflickr.com/4131/5080048022_4c05240aae.jpg    flickr_username: "Boogies with Fish" realname: "Jan Messersmith"
-image_url: http://farm3.staticflickr.com/2159/5770229264_69b86b980a.jpg    flickr_username: "Wheeler Cowperthwaite" realname: "Wheeler Cowperthwaite"

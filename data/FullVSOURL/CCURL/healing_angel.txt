@@ -1,3 +1,0 @@
-image_url: http://farm3.staticflickr.com/2069/2182285092_96bf7dff78.jpg    flickr_username: "blueskiessmiling77" realname: "anica"
-image_url: http://farm3.staticflickr.com/2515/4487789406_f6918f7abc.jpg    flickr_username: "Whitethorn Scratch" realname: "Patrick Gibbons"
-image_url: http://farm8.staticflickr.com/7188/6871387368_186dce7c6a.jpg    flickr_username: "elycefeliz" realname: ""

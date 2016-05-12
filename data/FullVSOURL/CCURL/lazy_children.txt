@@ -1,6 +1,0 @@
-image_url: http://farm3.staticflickr.com/2318/2204847272_3915ccc686.jpg    flickr_username: "signalstation" realname: "Michael Van Vleet"
-image_url: http://farm3.staticflickr.com/2372/2244222137_2a81e4a54e.jpg    flickr_username: "Native American Seals/Logos" realname: "Nathan Soliz"
-image_url: http://farm5.staticflickr.com/4047/4607978765_61bd69c1e8.jpg    flickr_username: "photokai" realname: "Davis Kwan"
-image_url: http://farm5.staticflickr.com/4067/5080261209_329f69b85d.jpg    flickr_username: "Robert Hoge" realname: "Robert Hoge"
-image_url: http://farm6.staticflickr.com/5060/5483070725_dfe4ed7b9f.jpg    flickr_username: "boulter" realname: "Jeff Boulter"
-image_url: http://farm2.staticflickr.com/1206/562312477_e9cc7c0308.jpg    flickr_username: "ChristopherTitzer" realname: ""

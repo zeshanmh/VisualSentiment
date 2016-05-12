@@ -1,6 +1,0 @@
-image_url: http://farm4.staticflickr.com/3100/4563387878_ebae9d8b4e.jpg    flickr_username: "paris_hotel_design" realname: ""
-image_url: http://farm5.staticflickr.com/4023/4563387898_0ed8f6990b.jpg    flickr_username: "paris_hotel_design" realname: ""
-image_url: http://farm5.staticflickr.com/4023/4563387900_eb6bf42588.jpg    flickr_username: "paris_hotel_design" realname: ""
-image_url: http://farm5.staticflickr.com/4062/4563387902_927bcc64b7.jpg    flickr_username: "paris_hotel_design" realname: ""
-image_url: http://farm5.staticflickr.com/4009/4563387912_d0d9488f63.jpg    flickr_username: "paris_hotel_design" realname: ""
-image_url: http://farm9.staticflickr.com/8350/8191217289_a8351c7054.jpg    flickr_username: "Estancia La Jolla Hotel" realname: "Estancia La Jolla  Hotel & Spa"

@@ -1,3 +1,0 @@
-image_url: http://farm5.staticflickr.com/4020/4547511535_9eb10934b9.jpg    flickr_username: "thepeachmartini" realname: ""
-image_url: http://farm6.staticflickr.com/5057/5533397490_993e22d9d6.jpg    flickr_username: "Stampendous" realname: "Stampendous"
-image_url: http://farm6.staticflickr.com/5136/5534535353_2142407800.jpg    flickr_username: "Stampendous" realname: "Stampendous"

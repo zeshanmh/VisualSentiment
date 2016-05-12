@@ -1,3 +1,0 @@
-image_url: http://farm3.staticflickr.com/2296/2260245865_2ce0630b8d.jpg    flickr_username: "John Jeddore" realname: "John Jeddore"
-image_url: http://farm4.staticflickr.com/3534/3820712132_365e2fc29a.jpg    flickr_username: "Infrogmation" realname: "Infrogmation of New Orleans"
-image_url: http://farm9.staticflickr.com/8142/7575013186_d7c6602b47.jpg    flickr_username: "Mr Thinktank" realname: ""

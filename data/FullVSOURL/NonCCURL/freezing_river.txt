@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2049/2469751801_30471e2353.jpg    flickr_username: "Snjper" realname: ""
-image_url: http://farm4.staticflickr.com/3030/3041576877_c89c79c0e9.jpg    flickr_username: "Rennett Stowe" realname: ""
-image_url: http://farm2.staticflickr.com/1333/3175114432_f3cb728a8b.jpg    flickr_username: "teroti" realname: ""
-image_url: http://farm1.staticflickr.com/203/4086197718_3cc6c2488a.jpg    flickr_username: "Roskifte" realname: "Thomas Roskifte"
-image_url: http://farm3.staticflickr.com/2764/4086198076_32cfaa0ddc.jpg    flickr_username: "Roskifte" realname: "Thomas Roskifte"
-image_url: http://farm4.staticflickr.com/3378/4602497267_d49476944f.jpg    flickr_username: "Exardesco" realname: ""
-image_url: http://farm6.staticflickr.com/5286/5345938995_3aa4b31b8a.jpg    flickr_username: "MARLENEP22" realname: "Marlene Packwood"
-image_url: http://farm8.staticflickr.com/7015/6793891477_63207cbbfc.jpg    flickr_username: "curtisWarwick" realname: "Curtis Warwick"

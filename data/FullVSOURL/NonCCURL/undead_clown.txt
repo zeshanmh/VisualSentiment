@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2291/1809190348_241e32b0d7.jpg    flickr_username: "Michael Kuhle" realname: "Michael Kuhle"
-image_url: http://farm4.staticflickr.com/3003/2624142808_31ae90f2bb.jpg    flickr_username: "jwisser" realname: "Jonas Wisser"
-image_url: http://farm4.staticflickr.com/3279/2992018529_d7cd98ec7d.jpg    flickr_username: "caural" realname: "Zachary Mastoon"
-image_url: http://farm7.staticflickr.com/6174/6168225453_81014d6faa.jpg    flickr_username: "impalergeneral" realname: "David Mello"
-image_url: http://farm1.staticflickr.com/27/62082846_29506d113d.jpg    flickr_username: "rhaegal26" realname: "Michael Kirkpatrick"
-image_url: http://farm7.staticflickr.com/6036/6405551781_a636c1244e.jpg    flickr_username: "owen the owen" realname: ""
-image_url: http://farm8.staticflickr.com/7154/6463358321_8552271c26.jpg    flickr_username: "owen the owen" realname: ""
-image_url: http://farm9.staticflickr.com/8187/8086694276_469d17a75d.jpg    flickr_username: "Cindy's Here" realname: "Cindy"

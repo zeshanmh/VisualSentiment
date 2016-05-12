@@ -1,5 +1,0 @@
-image_url: http://farm1.staticflickr.com/51/108350671_4d66d95771.jpg    flickr_username: "the hanner" realname: "hannah"
-image_url: http://farm4.staticflickr.com/3515/3282181795_950d535a27.jpg    flickr_username: "The Andersons" realname: ""
-image_url: http://farm5.staticflickr.com/4105/4984878481_d78771ed35.jpg    flickr_username: "zhezhe2010" realname: ""
-image_url: http://farm5.staticflickr.com/4145/4986344202_d64e80f6d5.jpg    flickr_username: "barbie.harris37" realname: ""
-image_url: http://farm2.staticflickr.com/1439/822722845_d39965a40b.jpg    flickr_username: "pnoeric" realname: "Eric Mueller"

@@ -1,5 +1,0 @@
-image_url: http://farm4.staticflickr.com/3046/2397039430_b2b82c4b50.jpg    flickr_username: "Mat Honan" realname: "Mat Honan"
-image_url: http://farm4.staticflickr.com/3059/2960344725_0aaa891b37.jpg    flickr_username: "danoxster" realname: "Dan Ox"
-image_url: http://farm1.staticflickr.com/164/403759073_3ae2d55ffa.jpg    flickr_username: "jeri gloege" realname: "Jeri Gloege"
-image_url: http://farm3.staticflickr.com/2789/4286568835_9124337269.jpg    flickr_username: "Sam Stoner" realname: "Sam Stone"
-image_url: http://farm2.staticflickr.com/1343/774207085_513be4dbda.jpg    flickr_username: "rolleh" realname: "Michael Holler"

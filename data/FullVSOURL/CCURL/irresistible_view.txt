@@ -1,2 +1,0 @@
-image_url: http://farm4.staticflickr.com/3087/3228613867_3aef7d0060.jpg    flickr_username: "knfk" realname: "kenneth ng"
-image_url: http://farm8.staticflickr.com/7148/6499019871_770cf48c52.jpg    flickr_username: "smallcamerajournal" realname: "Dave Nixen"

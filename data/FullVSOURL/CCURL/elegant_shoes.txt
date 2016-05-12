@@ -1,8 +1,0 @@
-image_url: http://farm3.staticflickr.com/2142/2078753160_814fd066c5.jpg    flickr_username: "Alex Barth" realname: "Alex Barth"
-image_url: http://farm4.staticflickr.com/3248/2603243911_039b7abd88.jpg    flickr_username: "mhobl" realname: ""
-image_url: http://farm3.staticflickr.com/2661/3829991125_4e9b8f2188.jpg    flickr_username: "Ken's Oven" realname: ""
-image_url: http://farm4.staticflickr.com/3529/3830785568_a470570543.jpg    flickr_username: "Ken's Oven" realname: ""
-image_url: http://farm4.staticflickr.com/3564/3830785840_b7ff9c1a54.jpg    flickr_username: "Ken's Oven" realname: ""
-image_url: http://farm6.staticflickr.com/5248/5245980907_b045757b50.jpg    flickr_username: "yausser" realname: "Richard Yaussi"
-image_url: http://farm6.staticflickr.com/5143/5817061617_930f47b7e4.jpg    flickr_username: "DeNovo Broome" realname: "DeNovo Broome"
-image_url: http://farm2.staticflickr.com/1033/894033226_9351e27784.jpg    flickr_username: "cambiodefractal" realname: ""

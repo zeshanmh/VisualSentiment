@@ -1,5 +1,0 @@
-image_url: http://farm2.staticflickr.com/1230/1230884193_cd4a041d02.jpg    flickr_username: "StephenMitchell" realname: ""
-image_url: http://farm3.staticflickr.com/2239/2535892666_c026ee30a4.jpg    flickr_username: "anant raman" realname: "araman"
-image_url: http://farm3.staticflickr.com/2524/3897663516_36532c731b.jpg    flickr_username: "Koinos Zoi Photography" realname: "nicholas"
-image_url: http://farm5.staticflickr.com/4040/4570709475_70c62506eb.jpg    flickr_username: "Chiot's Run" realname: ""
-image_url: http://farm5.staticflickr.com/4003/4653792084_931c838334.jpg    flickr_username: "loop_oh" realname: "Rupert Ganzer"

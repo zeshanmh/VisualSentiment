@@ -1,6 +1,0 @@
-image_url: http://farm3.staticflickr.com/2454/3961693366_6b3de69e20.jpg    flickr_username: "Courtney Rhodes Pumpkincat210" realname: ""
-image_url: http://farm1.staticflickr.com/26/40819817_fff08231bf.jpg    flickr_username: "byte" realname: "Colin Charles"
-image_url: http://farm6.staticflickr.com/5180/5550470097_c25be1e562.jpg    flickr_username: "Clyde Bentley" realname: "Clyde Bentley"
-image_url: http://farm2.staticflickr.com/1253/566590176_23f30ea333.jpg    flickr_username: "Falashad" realname: ""
-image_url: http://farm8.staticflickr.com/7032/6439873205_b58be9fba1.jpg    flickr_username: "Alaskan Dude" realname: "Frank Kovalchek"
-image_url: http://farm9.staticflickr.com/8160/7434528400_d398c52560.jpg    flickr_username: "Alaskan Dude" realname: "Frank Kovalchek"

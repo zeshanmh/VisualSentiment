@@ -1,7 +1,0 @@
-image_url: http://farm1.staticflickr.com/89/224150008_58c83d1811.jpg    flickr_username: "MHJohnston" realname: "Morgan Johnston"
-image_url: http://farm4.staticflickr.com/3075/2582642580_98bdf6855b.jpg    flickr_username: "elorgwhee" realname: ""
-image_url: http://farm5.staticflickr.com/4031/4255247623_58b7a2cb24.jpg    flickr_username: "ex_magician" realname: "Michael (a.k.a. moik) McCullough"
-image_url: http://farm5.staticflickr.com/4033/4255248907_5ccf40c3e4.jpg    flickr_username: "ex_magician" realname: "Michael (a.k.a. moik) McCullough"
-image_url: http://farm4.staticflickr.com/3022/5741062044_479baab879.jpg    flickr_username: "humanesocietyoftheunitedstates" realname: "The Humane Society of the United States"
-image_url: http://farm7.staticflickr.com/6196/6049449317_8501a2dcc2.jpg    flickr_username: "OtterBox" realname: "OtterBox"
-image_url: http://farm8.staticflickr.com/7178/6935852767_04e6ea17cc.jpg    flickr_username: "humanesocietyoftheunitedstates" realname: "The Humane Society of the United States"

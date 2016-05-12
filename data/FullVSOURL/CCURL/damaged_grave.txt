@@ -1,7 +1,0 @@
-image_url: http://farm3.staticflickr.com/2078/2147086490_fe0ae9665d.jpg    flickr_username: "Indiawest" realname: "Damien Smith"
-image_url: http://farm4.staticflickr.com/3089/3236571698_0920c168e8.jpg    flickr_username: "R~P~M" realname: ""
-image_url: http://farm4.staticflickr.com/3461/3315654372_e071c5f301.jpg    flickr_username: "godutchbaby" realname: "dutchbaby"
-image_url: http://farm4.staticflickr.com/3476/3394233949_777ef04eaa.jpg    flickr_username: "Sint-Katelijne-Waver" realname: "Beate Catharina in Wavria"
-image_url: http://farm7.staticflickr.com/6009/5994977037_7da3a0ba32.jpg    flickr_username: "Matthew Wilkinson" realname: ""
-image_url: http://farm7.staticflickr.com/6150/5995524536_a876be4889.jpg    flickr_username: "Matthew Wilkinson" realname: ""
-image_url: http://farm9.staticflickr.com/8322/8048355474_0701b034ac.jpg    flickr_username: "SaveOurCemeteries" realname: ""

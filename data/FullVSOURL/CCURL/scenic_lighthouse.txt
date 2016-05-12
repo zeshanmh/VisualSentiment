@@ -1,3 +1,0 @@
-image_url: http://farm3.staticflickr.com/2055/2170753499_fc2c526008.jpg    flickr_username: "rgordon" realname: "Rick Gordon"
-image_url: http://farm4.staticflickr.com/3005/2880464711_a1a8a228f1.jpg    flickr_username: "drsmith7383" realname: "David Smith"
-image_url: http://farm4.staticflickr.com/3607/5694227086_710cc52398.jpg    flickr_username: "goingslo" realname: "Linda Tanner"

@@ -1,4 +1,0 @@
-image_url: http://farm4.staticflickr.com/3195/2709155483_27e9dd471a.jpg    flickr_username: "v i p e z" realname: ""
-image_url: http://farm4.staticflickr.com/3307/3253908498_2e0ef6cc4a.jpg    flickr_username: "IK's World Trip" realname: ""
-image_url: http://farm3.staticflickr.com/2442/3981594905_290f8dba07.jpg    flickr_username: "Steve Nagata" realname: ""
-image_url: http://farm5.staticflickr.com/4153/5024633204_704c6037b2.jpg    flickr_username: "dospaz" realname: ""

@@ -1,8 +1,0 @@
-image_url: http://farm1.staticflickr.com/48/147297998_e4d861f4b5.jpg    flickr_username: "Hockey Cop" realname: ""
-image_url: http://farm4.staticflickr.com/3433/3942315587_0e93192e9c.jpg    flickr_username: "feverblue" realname: "Will Keightley"
-image_url: http://farm3.staticflickr.com/2495/4151611000_b64017f6c8.jpg    flickr_username: "the|G|™" realname: "Paul G"
-image_url: http://farm5.staticflickr.com/4048/4427993482_71dd22478c.jpg    flickr_username: "ah zut" realname: ""
-image_url: http://farm5.staticflickr.com/4104/5043602383_27ebf1df3f.jpg    flickr_username: "brizzle born and bred" realname: "Paul Townsend"
-image_url: http://farm5.staticflickr.com/4128/5191448329_45814b12aa.jpg    flickr_username: "brizzle born and bred" realname: "Paul Townsend"
-image_url: http://farm4.staticflickr.com/3009/5773200396_34583ae050.jpg    flickr_username: "Comrade Foot" realname: "Jens Rost"
-image_url: http://farm8.staticflickr.com/7146/6556156415_fcb915a6d9.jpg    flickr_username: "Someguy of the Outerworld and Afar" realname: "Clement"

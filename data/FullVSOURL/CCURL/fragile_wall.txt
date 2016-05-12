@@ -1,4 +1,0 @@
-image_url: http://farm1.staticflickr.com/24/100845215_1357e04d9c.jpg    flickr_username: "Michaeldavid54" realname: ""
-image_url: http://farm2.staticflickr.com/1041/1254694910_a3cca1db4a.jpg    flickr_username: "anaxila" realname: ""
-image_url: http://farm6.staticflickr.com/5044/5243151778_400a892df1.jpg    flickr_username: "WikiThreads" realname: ""
-image_url: http://farm6.staticflickr.com/5110/5624726098_56463b099e.jpg    flickr_username: "DamienHR" realname: "Damien Halleux Radermecker"

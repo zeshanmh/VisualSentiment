@@ -1,7 +1,0 @@
-image_url: http://farm1.staticflickr.com/52/108003361_94f15adac0.jpg    flickr_username: "l0b0" realname: "Victor Engmark"
-image_url: http://farm1.staticflickr.com/34/108003386_c9b0dadd69.jpg    flickr_username: "l0b0" realname: "Victor Engmark"
-image_url: http://farm1.staticflickr.com/16/22227695_2c87b864dd.jpg    flickr_username: "NYCgal" realname: "Veronica ML"
-image_url: http://farm3.staticflickr.com/2476/3999403222_f607bc81eb.jpg    flickr_username: "the foosel" realname: "Gina Häußge"
-image_url: http://farm3.staticflickr.com/2579/3999406894_a36d1beed6.jpg    flickr_username: "the foosel" realname: "Gina Häußge"
-image_url: http://farm2.staticflickr.com/1426/5150804888_0614d9389f.jpg    flickr_username: "bobschi" realname: ""
-image_url: http://farm8.staticflickr.com/7022/6823366665_4391b6ca4a.jpg    flickr_username: "Paul. B" realname: ""

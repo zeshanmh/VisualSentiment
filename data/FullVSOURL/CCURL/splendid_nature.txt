@@ -1,6 +1,0 @@
-image_url: http://farm3.staticflickr.com/2113/1500694418_9f6c08be30.jpg    flickr_username: "*Chia-Ling" realname: ""
-image_url: http://farm4.staticflickr.com/3031/2972809593_8ebabcc9eb.jpg    flickr_username: "Denis Collette...!!!" realname: "Denis Collette"
-image_url: http://farm3.staticflickr.com/2500/3888623072_5fe1638a93.jpg    flickr_username: "Birgitta Seegers" realname: ""
-image_url: http://farm6.staticflickr.com/5011/5581040280_28cce204c6.jpg    flickr_username: "Rockin Robin" realname: "Robin Kanouse"
-image_url: http://farm7.staticflickr.com/6053/6341628725_b6a25055d2.jpg    flickr_username: "Rockin Robin" realname: "Robin Kanouse"
-image_url: http://farm7.staticflickr.com/6038/6342378208_a9c1462d7d.jpg    flickr_username: "Rockin Robin" realname: "Robin Kanouse"

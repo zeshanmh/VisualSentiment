@@ -1,7 +1,0 @@
-image_url: http://farm1.staticflickr.com/38/100237852_b4cc58d883.jpg    flickr_username: "willsfca" realname: "Will Luo"
-image_url: http://farm4.staticflickr.com/3233/2937103373_9e0163475f.jpg    flickr_username: "Lawrence OP" realname: ""
-image_url: http://farm5.staticflickr.com/4148/5077705892_13658aa318.jpg    flickr_username: "Lawrence OP" realname: ""
-image_url: http://farm7.staticflickr.com/6005/5939435631_1532e548f6.jpg    flickr_username: "Bernt Rostad" realname: "Bernt Rostad"
-image_url: http://farm8.staticflickr.com/7143/6632869269_0e4cd2068c.jpg    flickr_username: "Alan Cordova" realname: "Alan Cordova"
-image_url: http://farm8.staticflickr.com/7173/6632869707_cc7859c2d8.jpg    flickr_username: "Alan Cordova" realname: "Alan Cordova"
-image_url: http://farm8.staticflickr.com/7167/6632870253_014e3a4ed7.jpg    flickr_username: "Alan Cordova" realname: "Alan Cordova"

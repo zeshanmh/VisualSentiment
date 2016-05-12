@@ -1,4 +1,0 @@
-image_url: http://farm4.staticflickr.com/3463/3399920830_d6270942cd.jpg    flickr_username: "Elsie esq." realname: "Les Chatfield"
-image_url: http://farm4.staticflickr.com/3576/3494834917_c9c76e8a58.jpg    flickr_username: "mikebaird" realname: "Mike Baird"
-image_url: http://farm4.staticflickr.com/3625/3495651564_7cfeb14b79.jpg    flickr_username: "mikebaird" realname: "Mike Baird"
-image_url: http://farm9.staticflickr.com/8062/8159550444_d3d1d99063.jpg    flickr_username: "State Farm" realname: ""

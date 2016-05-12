@@ -1,2 +1,0 @@
-image_url: http://farm3.staticflickr.com/2069/1498330194_cb80c7fa4a.jpg    flickr_username: "August Norman" realname: "Norman"
-image_url: http://farm4.staticflickr.com/3049/2798975525_72973ffcd4.jpg    flickr_username: "J. Stephen Conn" realname: "J. Stephen Conn"

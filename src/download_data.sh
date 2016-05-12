@@ -13,6 +13,7 @@ cd $1
 # cd images
 mkdir -p images 
 
+counter=0
 ##for each file 
 for f in *.txt; do 
 	dir_n="./images/"
@@ -26,7 +27,15 @@ for f in *.txt; do
 		filename="$dir_n$file_prefix$file_number"
 
 		# echo $filename
-	    wget -nc --read-timeout=10 -t 2 -O $filename $url;
+		# if (($counter == 30))
+		# then 
+		# 	sleep 5;
+		# 	ps aux | grep wget | wc -l;
+		# 	counter=0;
+		# fi
+	    wget -nc --read-timeout=10 -t 2 -O $filename $url
+	    echo $filename
+	    # counter=$(($counter+1))
 
 	done < $f
 done;

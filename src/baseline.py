@@ -36,7 +36,7 @@ def baseline(setting='color'):
 	sentiments = ['interaction', 'focus', 'happiness']
 	for i in xrange(Y_train.shape[1]):
 		print "Fitting svm...."
-		svm_model = svm.SVC(kernel="linear", decision_function_shape='ovr', max_iter=300)
+		svm_model = svm.SVC(kernel="linear", decision_function_shape='ovr', max_iter=10000)
 		svm_model.fit(X_train, Y_train[:,i])
 		print "Predicting..."
 		y_predict_train = svm_model.predict(X_train)

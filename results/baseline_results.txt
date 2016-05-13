@@ -1,5 +1,6 @@
 Baseline (color histogram) Results: 
 
+Trial 1: 
 --interaction--
 Training Error: 0.0
 Testing Error: 0.65
@@ -11,3 +12,26 @@ Testing Error: 0.691666666667
 --happiness--
 Training Error: 0.0859538784067
 Testing Error: 0.708333333333
+
+
+Trial 2: 
+--interaction--
+Average Precision: 0.245046296296
+Average Recall: 0.240503557745
+Average F1: 0.242089127501
+Training Error: 0.0083857442348
+Testing Error: 0.733333333333
+
+--focus--
+Average Precision: 0.281098674288
+Average Recall: 0.281097006442
+Average F1: 0.277539891057
+Training Error: 0.0
+Testing Error: 0.691666666667
+
+--happiness--
+Average Precision: 0.1891783029
+Average Recall: 0.18045529382
+Average F1: 0.184375
+Training Error: 0.0775681341719
+Testing Error: 0.725

@@ -2,16 +2,17 @@ import numpy as np
 import sys
 import cv2
 import os
+import scipy.io as io
 
 from data_util import *
 
 NUM_PIXELS = 512*512
 NUM_HIST = 512
+NUM_IMAGES = 597
 
 def pixel_extractor(basepath, img_names): 
 	# basepath = '../../data/groupdataset_release/resize_images'
-	num_images = len(img_names)
-	X = np.zeros((num_images, 3*NUM_PIXELS))
+	X = np.zeros((NUM_IMAGES, 3*NUM_PIXELS))
 	for i,img in enumerate(img_names): 
 		img_arr = cv2.imread(os.path.join(basepath, 'resize_'+img))
 		new_arr = np.zeros((3*NUM_PIXELS,))
@@ -23,8 +24,7 @@ def pixel_extractor(basepath, img_names):
 	return X 
 
 def color_histogram(basepath, img_names): 
-	num_images = len(img_names)
-	X = np.zeros((num_images, NUM_HIST))
+	X = np.zeros((NUM_IMAGES, NUM_HIST))
 	for i,img in enumerate(img_names): 
 		img_arr = cv2.imread(os.path.join(basepath, img))
 		hist = cv2.calcHist([img_arr], [0, 1, 2], None, [8, 8, 8], [0, 256, 0, 256, 0, 256])
@@ -33,7 +33,40 @@ def color_histogram(basepath, img_names):
 
 	return X
 
+def bb_extractor(basepath, img_names):
+	# img_to_bb = {}
+	X = np.zeros((NUM_IMAGES, 60))
+	bb_cap = 15
+	# max_num_bbs = 0
+	for i, fil in enumerate(img_names):
+		matfile = fil[:-4] + '_labels.mat'
+		# print matfile
+		mat_struct = io.loadmat(os.path.join(basepath, matfile))
+		hmns = mat_struct['hmns']
+		saved_bbs = []
+		# count = 0
+		for group in xrange(hmns.shape[1]):
+			# print group
+			for person_list in hmns[0,group]:
+				# print len(person_list)
+				for person in person_list:
+					bb_list = person[3]
+					for bb in bb_list:
+						saved_bbs.append(bb)
+
+		# img_to_bb[matfile] = saved_bbs
+		if len(saved_bbs) > bb_cap:
+			rand_order = np.random.permutation(len(saved_bbs))
+			idxs = np.sort(rand_order[:bb_cap])
+			saved_bbs = np.array(saved_bbs)
+			saved_bbs = saved_bbs[idxs]
+		X[i,:4*len(saved_bbs)] = np.array(saved_bbs).flatten()
+
+	print X
+	return X
+
 if __name__ == '__main__':
     img_names = get_filename_list('../../data/groupdataset_release/file_names.txt')
-    color_histogram('../../data/groupdataset_release/images', img_names)
+    # color_histogram('../../data/groupdataset_release/images', img_names)
+    bb_extractor('../../data/groupdataset_release/annotations/all', img_names)
     

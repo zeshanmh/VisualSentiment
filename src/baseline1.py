@@ -10,13 +10,18 @@ from sklearn import svm
 from sklearn import metrics
 
 
-def baseline(): 
+def baseline(setting='color'):
+	
 	#get features and labels 
 	img_names = get_filename_list('../data/groupdataset_release/file_names.txt')
 
 	print "Extracting features..."
-	# X = pixel_extractor('../data/groupdataset_release/resize_images', img_names)
-	X = color_histogram('../data/groupdataset_release/images', img_names)
+	if setting == 'color': 
+		X = color_histogram('../data/groupdataset_release/images', img_names)
+	elif setting == 'pixel':
+		X = pixel_extractor('../data/groupdataset_release/resize_images', img_names)
+	else:
+		pass
 	Y = get_label_matrix('../data/groupdataset_release/image_annotations.csv')
 	y_interact = Y[:,0]
 	y_focus = Y[:,1]
@@ -59,3 +64,4 @@ def output_error(y_predict, y_true):
 
 if __name__ == '__main__':
 	baseline()
+	

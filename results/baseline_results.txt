@@ -1,0 +1,13 @@
+Baseline (color histogram) Results: 
+
+--interaction--
+Training Error: 0.0
+Testing Error: 0.65
+
+--focus--
+Training Error: 0.0
+Testing Error: 0.691666666667
+
+--happiness--
+Training Error: 0.0859538784067
+Testing Error: 0.708333333333

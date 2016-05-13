@@ -9,6 +9,7 @@ from data_util import *
 NUM_PIXELS = 512*512
 NUM_HIST = 512
 NUM_IMAGES = 597
+BB_CAP = 15
 
 def pixel_extractor(basepath, img_names): 
 	# basepath = '../../data/groupdataset_release/resize_images'
@@ -34,10 +35,7 @@ def color_histogram(basepath, img_names):
 	return X
 
 def bb_extractor(basepath, img_names):
-	# img_to_bb = {}
 	X = np.zeros((NUM_IMAGES, 60))
-	bb_cap = 15
-	# max_num_bbs = 0
 	for i, fil in enumerate(img_names):
 		matfile = fil[:-4] + '_labels.mat'
 		# print matfile
@@ -54,19 +52,16 @@ def bb_extractor(basepath, img_names):
 					for bb in bb_list:
 						saved_bbs.append(bb)
 
-		# img_to_bb[matfile] = saved_bbs
-		if len(saved_bbs) > bb_cap:
+		if len(saved_bbs) > BB_CAP:
 			rand_order = np.random.permutation(len(saved_bbs))
-			idxs = np.sort(rand_order[:bb_cap])
+			idxs = np.sort(rand_order[:BB_CAP])
 			saved_bbs = np.array(saved_bbs)
 			saved_bbs = saved_bbs[idxs]
 		X[i,:4*len(saved_bbs)] = np.array(saved_bbs).flatten()
 
-	print X
 	return X
 
 if __name__ == '__main__':
     img_names = get_filename_list('../../data/groupdataset_release/file_names.txt')
-    # color_histogram('../../data/groupdataset_release/images', img_names)
     bb_extractor('../../data/groupdataset_release/annotations/all', img_names)
     

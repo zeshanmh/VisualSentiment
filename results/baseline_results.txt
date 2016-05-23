@@ -60,3 +60,4 @@ Average F1: 0.241253191253
 Training Error: 0.620545073375
 Testing Error: 0.65
 
+ 

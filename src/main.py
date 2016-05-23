@@ -2,11 +2,11 @@ import sys
 import os
 sys.path.insert(0, './util')
 
-import FaceExtractor
+from FaceExtractor import FaceExtractor
 
 def main():
 
-	img_path = "../data/groupdataset_release/images/64015746.jpg"
+	img_path = "../data/groupdataset_release/images/4452848253_acf5eb37f2_o.jpg"
 	face_extractor = FaceExtractor()
 	face_extractor.detect_faces(img_path)
 

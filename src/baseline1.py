@@ -20,6 +20,8 @@ def baseline(setting='color'):
 		X = color_histogram('../data/groupdataset_release/images', img_names)
 	elif setting == 'pixel':
 		X = pixel_extractor('../data/groupdataset_release/resize_images', img_names)
+	elif setting == 'bb':
+		X = bb_extractor('../data/groupdataset_release/images', img_names)
 	else:
 		pass
 	Y = get_label_matrix('../data/groupdataset_release/image_annotations.csv')
@@ -64,4 +66,4 @@ def output_error(y_predict, y_true):
 
 if __name__ == '__main__':
 	baseline()
-	
+

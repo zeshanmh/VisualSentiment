@@ -34,6 +34,25 @@ def color_histogram(basepath, img_names):
 
 	return X
 
+def get_bbs(basepath, img_name): 	
+	matfile = img_name[:-4] + '_labels.mat'
+	# print matfile
+	mat_struct = io.loadmat(os.path.join(basepath, matfile))
+	hmns = mat_struct['hmns']
+	saved_bbs = []
+	# count = 0
+	for group in xrange(hmns.shape[1]):
+		# print group
+		for person_list in hmns[0,group]:
+			# print len(person_list)
+			for person in person_list:
+				bb_list = person[3]
+				for bb in bb_list:
+					saved_bbs.append(bb)
+
+	return saved_bbs
+
+
 def bb_extractor(basepath, img_names):
 	X = np.zeros((NUM_IMAGES, 60))
 	for i, fil in enumerate(img_names):

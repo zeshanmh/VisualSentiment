@@ -4,7 +4,7 @@ import sys
 
 def get_label_matrix(path, labels=['Interaction', 'Focus', 'Happiness']): 
 	# path = '../../data/image_annotations.csv'
-	pand_arr = pd.read_csv(path) 
+	pand_arr = pd.read_csv(path) 	
 	label_matrix = np.vstack((pand_arr['Interaction'].as_matrix(), \
 		pand_arr['Focus'].as_matrix(), pand_arr['Happiness'].as_matrix()))
 	return label_matrix.T

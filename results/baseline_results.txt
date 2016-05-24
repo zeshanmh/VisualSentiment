@@ -1,0 +1,63 @@
+Baseline (color histogram) Results: 
+
+Trial 1: 
+--interaction--
+Training Error: 0.0
+Testing Error: 0.65
+
+--focus--
+Training Error: 0.0
+Testing Error: 0.691666666667
+
+--happiness--
+Training Error: 0.0859538784067
+Testing Error: 0.708333333333
+
+
+Trial 2: 
+--interaction--
+Average Precision: 0.245046296296
+Average Recall: 0.240503557745
+Average F1: 0.242089127501
+Training Error: 0.0083857442348
+Testing Error: 0.733333333333
+
+--focus--
+Average Precision: 0.281098674288
+Average Recall: 0.281097006442
+Average F1: 0.277539891057
+Training Error: 0.0
+Testing Error: 0.691666666667
+
+--happiness--
+Average Precision: 0.1891783029
+Average Recall: 0.18045529382
+Average F1: 0.184375
+Training Error: 0.0775681341719
+Testing Error: 0.725
+
+
+Baseline (bounding boxes) Results: 
+
+--interaction-- 
+Average Precision: 0.25
+Average Recall: 0.202713963964
+Average F1: 0.199643493761
+Training Error: 0.685534591195
+Testing Error: 0.8
+
+--focus--
+Average Precision: 0.328578643579
+Average Recall: 0.337820512821
+Average F1: 0.330966346724
+Training Error: 0.67714884696
+Testing Error: 0.65
+
+--happiness--
+Average Precision: 0.262923126997
+Average Recall: 0.245674356699
+Average F1: 0.241253191253
+Training Error: 0.620545073375
+Testing Error: 0.65
+
+ 

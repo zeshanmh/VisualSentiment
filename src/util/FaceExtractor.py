@@ -18,7 +18,7 @@ class FaceExtractor:
 				and 'catface' not in pathname:
 				face_cascade = cv2.CascadeClassifier(pathname);
 				self.cascades.append(face_cascade)
-				
+
 
 	def detect_faces(self, img_path):
 		image = cv2.imread(img_path)
@@ -62,8 +62,7 @@ class FaceExtractor:
 						valid_face = True
 
 				if not valid_face: 
-					del face_list[i]
-				
+					del face_list[i]				
 
 		print "Found {0} faces!".format(sum([ len(x) for x in faces_lists]))
 
@@ -74,6 +73,8 @@ class FaceExtractor:
 		
 		cv2.imshow("Faces found" ,image)
 		cv2.waitKey(0)
+
+		return faces_lists, image
 
 
 

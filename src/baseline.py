@@ -51,5 +51,10 @@ def baseline(setting='color'):
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD:src/baseline1.py
+	baseline()
+
+=======
 	baseline(setting='bb')
 	
+>>>>>>> 1912ab2a6f9380c3c2a45062e8f2f5a4e6a4ce3d:src/baseline.py

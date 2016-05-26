@@ -26,11 +26,15 @@ def main():
 
 def train_smile_extractor(img_path, labels_path): 
 	#read in stuff 
-	img_base_path = "../data/GENKI-R2009a/Subsets/GENKI-4K"
+	img_base_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/files"
 	images_file = open(img_path, 'r')
 	filenames = []
-	for file in images_file.readline(): 
-		filenames.append(os.path.join(img_base_path, file.strip()))
+	
+	filenames = images_file.readlines()
+	filenames = [os.path.join(img_base_path, filename.strip()) for filename in filenames]
+
+	print filenames
+
 
 	labels_file = open(labels_path, 'r')
 	lines = labels_file.readlines()
@@ -40,10 +44,11 @@ def train_smile_extractor(img_path, labels_path):
 
 	#setup 
 	emotion_extractor = EmotionExtractor()
-	n_cells = emotion_extractor.NORMALIZED_SIZE
-	n_gaussians = emotion_extractor.NUM_GAUSSIANS
-	X = np.zeros((len(filenames), n_cells*n_cells*n_gaussians*2))
+	
+	X = np.zeros((len(filenames), emotion_extractor.NUM_FEATURES))
 	y = np.array(labels)
+
+	print X.shape
 
 	for i, img_name in enumerate(filenames): 
 		face_image = cv2.imread(img_name)
@@ -51,9 +56,14 @@ def train_smile_extractor(img_path, labels_path):
 		X[i,:] = emotion_extractor.extract_smile_features()
 
 	pca = PCA()
-	pca.fit(X)
+	X_new = pca.fit_transform(X)
 
-	X_train, X_test, Y_train, Y_test = sklearn.cross_validation.train_test_split(X, y, test_size=0.2)
+	print X_new.shape
+
+	# X_train, X_test, Y_train, Y_test = sklearn.cross_validation.train_test_split(X, y, test_size=0.2)
+
+	# run SVM
+
 
 
 

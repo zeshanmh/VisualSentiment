@@ -7,6 +7,8 @@ from feature_extractors import *
 
 class FaceExtractor:
 
+	NORMALIZED_SIZE = 64
+
 	def __init__(self):
 		dir_path = "/usr/local/Cellar/opencv/2.4.12_2/share/OpenCV/haarcascades/"
 		file_names = os.listdir(dir_path)
@@ -71,10 +73,21 @@ class FaceExtractor:
 			for (x, y, w, h) in face_list:
 				cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
 		
-		cv2.imshow("Faces found" ,image)
+		cv2.imshow("Faces found", image)
 		cv2.waitKey(0)
 
 		return faces_lists, image
 
+	def scale_face(face_coords, im):
+		x, y, w, h = face_coords
+		face = im[x:x+w,y:y+h]
+		scaled_face = cv2.resize(face, (NORMALIZED_SIZE, NORMALIZED_SIZE))
+		return scaled_face
+
+	def get_scaled_faces(faces_list, im):
+		scaled_faces = []
+		for face in faces_list:
+			scaled_faces.append(scale_face(face, im))
+		return scaled_faces
 
 

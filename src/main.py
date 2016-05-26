@@ -22,7 +22,27 @@ def main():
 	img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images.txt"
 	labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels.txt"
 	train_smile_extractor(img_path, labels_path)
-	
+
+# Given an image path and a classifier (svm), this method returns a list of 
+# image coordinates of faces, a matrix of smile features and the classifier's
+# predictions for each face.
+def predict_smiles(img_path, classifier):
+	face_extractor = FaceExtractor()
+	faces_list, im = face_extractor.detect_faces(img_path)
+	faces = face_extractor.get_scaled_faces(faces_list, im)
+	n_faces = len(faces_list)
+
+	emotion_extractor = EmotionExtractor()
+	smile_features = np.zeros((n_faces, emotion_extractor.NUM_FEATURES))
+	predictions = np.zeros(n_faces)
+	for i, face in enumerate(faces_list):
+		emotion_extractor.set_face(face)
+		feature_vec = emotion_extractor.extract_smile_features()
+		smile_features[i,:] = feature_vec
+		predictions[i] = classifier.predict(feature_vec)
+
+	return faces_list, smile_features, predictions
+
 
 def train_smile_extractor(img_path, labels_path): 
 	#read in stuff 

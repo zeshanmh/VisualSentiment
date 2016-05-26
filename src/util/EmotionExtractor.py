@@ -2,15 +2,15 @@ import numpy as np
 import cv2
 import os
 import scipy.io as io
+import math
 
 from feature_extractors import *
 
-NORMALIZED_SIZE = 64
-NUM_GAUSSIANS = 5
-
 class EmotionExtractor: 
-	
 
+	NORMALIZED_SIZE = 64
+	NUM_GAUSSIANS = 5
+	
 	def __init__(self): 
 		self.face = None
 
@@ -19,7 +19,29 @@ class EmotionExtractor:
 		self.face = face_image
 
 
-	def extract_smile(self):
+	def extract_smile_features(self):
+
+		def calc_mean_sd(pixel_derivs):
+			n_cells = NORMALIZED_SIZE / 4
+			n_stats = 5
+			all_stats = np.zeros(n_cells*n_cells*2*n_stats)
+			counter = 0
+			for i in xrange(0, NORMALIZED_SIZE, 4):
+				for j in xrange(0, NORMALIZED_SIZE, 4):
+					# first_window = pixel_derivs[i:i+4,j:j+4,1]
+					# print "second window:"
+					# print first_window
+					flat_window = np.reshape(pixel_derivs[i:i+4,j:j+4,:], (-1, 5))
+
+					for col in xrange(flat_window.shape[1]):
+						col_list = list(flat_window[:,col])
+						good_list = [x for x in col_list if not math.isnan(x)]
+						all_stats[counter] = np.mean(np.array(good_list))
+						all_stats[counter+1] = np.std(np.array(good_list))
+						counter += 2
+	
+			return all_stats
+
 		#read in the image 
 		gray_img = cv2.cvtColor(self.face, cv2.COLOR_RGB2GRAY)
 
@@ -58,27 +80,5 @@ class EmotionExtractor:
 				
 		feature_vec = calc_mean_sd(pixel_derivs)
 
-
-
-	def calc_mean_sd(pixel_derivs):
-		n_cells = NORMALIZED_SIZE / 4
-		n_stats = 5
-		all_stats = np.zeros(n_cells*n_cells*2*n_stats)
-		counter = 0
-		for i in xrange(0, NORMALIZED_SIZE, 4):
-			for j in xrange(0, NORMALIZED_SIZE, 4):
-
-				flat_window = np.reshape(pixel_derivs[i:i+4,j:j+4], (-1, 5))
-				for col in xrange(flat_window.shape[1]):
-					col_list = list(flat_window[:,col])
-					good_list = [x for x in col_list if x is not None]
-					all_stats[counter:counter+n_stats] = np.mean(np.array(good_list))
-					all_stats[counter+n_stats:counter+2*n_stats] = np.std(np.array(good_list))
-					counter += 2*n_stats
-		print all_stats[:10]
-		print all_stats[-10:]
-		return all_stats
-
-
-		# print pixel_derivs[30,30,:]
+		return feature_vec
 

@@ -77,17 +77,23 @@ def train_smile_extractor(img_path, labels_path):
 
 	pca = PCA()
 	X_new = pca.fit_transform(X)
-
-	print X_new.shape
-
-	# X_train, X_test, Y_train, Y_test = sklearn.cross_validation.train_test_split(X, y, test_size=0.2)
+	X_new = X_new[:,:600]
+	X_train, X_test, y_train, y_test = sklearn.cross_validation.train_test_split(X_new, y, test_size=0.2)
 
 	# run SVM
+	svm_model = svm.SVC(kernel="linear", decision_function_shape='ovr', max_iter=10000)
+	svm_model.fit(X_train, y_train)
+	print "Predicting..."
+	y_predict_train = svm_model.predict(X_train)
+	y_predict = svm_model.predict(X_test)
 
+	_, training_error = analysis.output_error(y_predict_train, y_train)
+	_, testing_error = analysis.output_error(y_predict, y_test)
 
+	print "training error:", training_error
+	print "testing error:", testing_error 
 
-
-
+	return svm_model
 
 
 

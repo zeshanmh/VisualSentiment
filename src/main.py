@@ -34,12 +34,12 @@ def predict_smiles(img_path, classifier):
 
 	emotion_extractor = EmotionExtractor()
 	smile_features = np.zeros((n_faces, emotion_extractor.NUM_FEATURES))
-	predictions = np.zeros(n_faces)
 	for i, face in enumerate(faces_list):
 		emotion_extractor.set_face(face)
 		feature_vec = emotion_extractor.extract_smile_features()
 		smile_features[i,:] = feature_vec
-		predictions[i] = classifier.predict(feature_vec)
+
+	predictions = classifier.predict(smile_features)
 
 	return faces_list, smile_features, predictions
 

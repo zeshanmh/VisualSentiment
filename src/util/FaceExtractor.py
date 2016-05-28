@@ -54,8 +54,7 @@ class FaceExtractor:
 				valid_face = False 
 				for bb in bbs: 
 					x, y, w_bb, h_bb = int(bb[0]), int(bb[1]), int(bb[2]), int(bb[3])
-					h_middle = h_bb / 2; 
-
+					h_middle = h_bb / 2
 					# if center_face[0] > x and center_face[1] > y and center_face[0] < x + w_bb \
 					# 	and center_face[1] < y + h_bb: 
 					# 	valid_face = True 
@@ -78,16 +77,18 @@ class FaceExtractor:
 
 		return faces_lists, image
 
-	def scale_face(face_coords, im):
+	def scale_face(self, face_coords, im):
+		# print face_coords
 		x, y, w, h = face_coords
 		face = im[x:x+w,y:y+h]
-		scaled_face = cv2.resize(face, (NORMALIZED_SIZE, NORMALIZED_SIZE))
+		scaled_face = cv2.resize(face, (self.NORMALIZED_SIZE, self.NORMALIZED_SIZE))
 		return scaled_face
 
-	def get_scaled_faces(faces_list, im):
+	def get_scaled_faces(self, face_lists, im):
 		scaled_faces = []
-		for face in faces_list:
-			scaled_faces.append(scale_face(face, im))
+		for face_list in face_lists:
+			for face in face_list: 
+				scaled_faces.append(self.scale_face(face, im))
 		return scaled_faces
 
 

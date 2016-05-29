@@ -47,6 +47,7 @@ def predict_smiles(img_path, classifier):
 		smile_features[i,:] = feature_vec
 
 	print 'Predicting...'
+	print smile_features.shape
 	predictions = classifier.predict(smile_features)
 
 	return faces_list, smile_features, predictions
@@ -87,22 +88,27 @@ def train_smile_extractor(img_path, labels_path):
 		print "Loading emotions..."
 		X = np.load('./cache/emotion_features.npy')
 		y = np.load('./cache/emotion_labels.npy')
-
-	run_again = False
+	print X.shape
+	run_again = True
 	if not os.path.isfile('./cache/smile_pca.npy') or run_again : 
 		print "Running PCA..."
 		pca = PCA()
 		X_new = pca.fit_transform(X)
-		# X_new = X_new[:,:600]
+		print X_new.shape
+		print pca.explained_variance_ratio_[:2000]
+		print sum(pca.explained_variance_ratio_[:2000])
 		np.save('./cache/smile_pca', X_new)
 	else: 
 		print "Loading reduced matrix..."
 		X_new = np.load('./cache/smile_pca.npy')
-
+	# print X_new.shape
 	X_train, X_test, y_train, y_test = sklearn.cross_validation.train_test_split(X_new, y, test_size=0.2)
 
 	# run SVM
 	svm_model = svm.SVC(kernel="linear", decision_function_shape='ovr')
+	print "Fitting..."
+	print X_train.shape
+	print y_train.shape
 	svm_model.fit(X_train, y_train)
 	print "Predicting..."
 	y_predict_train = svm_model.predict(X_train)

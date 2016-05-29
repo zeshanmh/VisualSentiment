@@ -2,9 +2,10 @@ import sys
 import os
 import cv2
 import sklearn
-import analysis
+# import analysis
 import numpy as np
 sys.path.insert(0, './util')
+import image_util
 
 from FaceExtractor import FaceExtractor
 from EmotionExtractor import EmotionExtractor
@@ -19,14 +20,20 @@ def main():
 	# faces_lists, image = face_extractor.detect_faces(img_path)
 	# for face_list in faces_lists: 
 	# 	for (x,y,w,h) in face_list: 
+	extract_faces = True 
+	if extract_faces: 
+		src_path = '../data/GENKI-R2009a/Subsets/GENKI-4K/files'
+		dest_path = './cache/GENKI_faces'
+		image_util.extract_GENKI_faces(src_path, dest_path)
 
-	img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images.txt"
-	labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels.txt"
-	svm = train_smile_extractor(img_path, labels_path)
-	img_path2 = '../data/groupdataset_release/images/466491971_b3bfbce419_o.jpg'
-	faces_list, smile_features, predictions = predict_smiles(img_path2, svm)
-	print faces_list
-	print predictions
+	# img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images.txt"
+	# labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels.txt"
+
+	# svm = train_smile_extractor(img_path, labels_path)
+	# img_path2 = '../data/groupdataset_release/images/466491971_b3bfbce419_o.jpg'
+	# faces_list, smile_features, predictions = predict_smiles(img_path2, svm)
+	# print faces_list
+	# print predictions
 
 
 # Given an image path and a classifier (svm), this method returns a list of 

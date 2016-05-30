@@ -2,7 +2,7 @@ import sys
 import os
 import cv2
 import sklearn
-# import analysis
+import analysis
 import numpy as np
 sys.path.insert(0, './util')
 import image_util
@@ -35,10 +35,10 @@ def main():
 
 
 	img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images_Reduced.txt"
-	labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels.txt"
+	labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels_Reduced.txt"
 
 	svm = train_smile_extractor(img_path, labels_path)
-	img_path2 = '../data/groupdataset_release/images/466491971_b3bfbce419_o.jpg'
+	img_path2 = '../data/groupdataset_release/images/all/466491971_b3bfbce419_o.jpg'
 	faces_list, smile_features, predictions = predict_smiles(img_path2, svm)
 	print faces_list
 	print predictions
@@ -60,6 +60,11 @@ def predict_smiles(img_path, classifier):
 		emotion_extractor.set_face(face)
 		feature_vec = emotion_extractor.extract_smile_features()
 		smile_features[i,:] = feature_vec
+
+	# do PCA
+	pca = PCA()
+	smile_features_pcad = pca.fit_transform(X)
+
 
 	print 'Predicting...'
 	print smile_features.shape
@@ -84,7 +89,10 @@ def train_smile_extractor(img_path, labels_path):
 		labels.append(int(line.split()[0]))
 
 	#setup 
-	if not os.path.isfile('./cache/emotion_features.npy'):
+	run_extraction_again = False
+	run_PCA_again = True
+
+	if not os.path.isfile('./cache/emotion_features.npy') or run_extraction_again:
 		print "Extracting emotions..."
 		emotion_extractor = EmotionExtractor()
 
@@ -106,19 +114,34 @@ def train_smile_extractor(img_path, labels_path):
 		X = np.load('./cache/emotion_features.npy')
 		y = np.load('./cache/emotion_labels.npy')
 	print X.shape
-	run_again = False
-	if not os.path.isfile('./cache/smile_pca.npy') or run_again : 
+
+	if not os.path.isfile('./cache/smile_pca.npy') or run_PCA_again : 
 		print "Running PCA..."
 		pca = PCA()
 		X_new = pca.fit_transform(X)
 		print X_new.shape
-		print pca.explained_variance_ratio_[:2000]
-		print sum(pca.explained_variance_ratio_[:2000])
+
+		# testing optimal pca values 
+		# print "Explained variance ratio with feature vector size 500: " \
+		#  + str(sum(pca.explained_variance_ratio_[:500]))
+
+		# print "Explained variance ratio with feature vector size 1000: " \
+		#  + str(sum(pca.explained_variance_ratio_[:1000]))
+
+		# print "Explained variance ratio with feature vector size 2100: " \
+		#  + str(sum(pca.explained_variance_ratio_[:2100]))
+
+
+		# print "Explained variance ratio with feature vector size 3000: " \
+		#  + str(sum(pca.explained_variance_ratio_[:3000]))
+		# print sum(pca.explained_variance_ratio_[:3000])
+
 		np.save('./cache/smile_pca', X_new)
 	else: 
 		print "Loading reduced matrix..."
 		X_new = np.load('./cache/smile_pca.npy')
-	# print X_new.shape
+
+	X_new = X_new[:2000]
 	X_train, X_test, y_train, y_test = sklearn.cross_validation.train_test_split(X_new, y, test_size=0.2)
 
 	# run SVM

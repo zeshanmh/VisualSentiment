@@ -9,22 +9,29 @@ import image_util
 
 from FaceExtractor import FaceExtractor
 from EmotionExtractor import EmotionExtractor
+from TorsoExtractor import TorsoExtractor
 from sklearn import svm
 from sklearn.decomposition import PCA
 
 
 def main():
+	##Torso Extraction##
+	img_path = "../data/groupdataset_release/images/4940922642_5dab04b030_o.jpg"
+	torso_extractor = TorsoExtractor()
+	torso_list, image = torso_extractor.detect_torsos(img_path)
+	
+
 	## Face Extraction ## 
 	# img_path = "../data/groupdataset_release/images/Library3.jpg"
 	# face_extractor = FaceExtractor()
 	# faces_lists, image = face_extractor.detect_faces(img_path)
 	# for face_list in faces_lists: 
 	# 	for (x,y,w,h) in face_list: 
-	extract_faces = True 
-	if extract_faces: 
-		src_path = '../data/GENKI-R2009a/Subsets/GENKI-4K/files'
-		dest_path = './cache/GENKI_faces'
-		image_util.extract_GENKI_faces(src_path, dest_path)
+	# extract_faces = True 
+	# if extract_faces: 
+	# 	src_path = '../data/GENKI-R2009a/Subsets/GENKI-4K/files'
+	# 	dest_path = './cache/GENKI_faces'
+	# 	image_util.extract_GENKI_faces(src_path, dest_path)
 
 	# img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images.txt"
 	# labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels.txt"

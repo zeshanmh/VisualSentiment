@@ -1,7 +1,10 @@
 import cv2
 import os
 import scipy.io
+
 from FaceExtractor import FaceExtractor 
+from TorsoExtractor import TorsoExtractor
+
 
 def extract_GENKI_faces(img_path, dest_path):
 	face_extractor = FaceExtractor()
@@ -16,7 +19,7 @@ def extract_GENKI_faces(img_path, dest_path):
 		if filename == '.DS_Store': 
 			continue
 		full_path = os.path.join(img_path, filename)
-		face_lists, image = face_extractor.detect_faces(full_path)
+		face_lists, image = face_extractor.detect_faces_GENKI(full_path)
 
 		if sum([len(x) for x in face_lists]) == 0: 
 			print "No face found in image:", full_path
@@ -36,4 +39,25 @@ def extract_GENKI_faces(img_path, dest_path):
 					+ "_face" + str(i) + '.jpg'), face_image)
 
 	print "Number of times no face found per image per classifier:", none_cntr 
+
+
+def extract_group_bbs(images_path): 
+	img_names = os.listdir(images_path)
+	img_names = [img_name.strip() for img_name in img_names]
+
+	face_extractor = FaceExtractor()
+	torso_extractor = TorsoExtractor()
+	for img_name in img_names: 
+		pathname = os.path.join(images_path, img_name)
+		faces_lists, _ = face_extractor.detect_faces(pathname)
+		img_face_list = [face for face_list in faces_lists for face in face_list]
+		img_torso_list = torso_extractor.detect_torso(pathname)
+		
+
+
+
+
+
+
+
 

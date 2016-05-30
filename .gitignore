@@ -2,3 +2,5 @@
 *.pyc
 data/*
 trainingAndTestingPartition
+src/cache/GENKI_faces*
+src/cache/temp*

@@ -20,20 +20,28 @@ def main():
 	# faces_lists, image = face_extractor.detect_faces(img_path)
 	# for face_list in faces_lists: 
 	# 	for (x,y,w,h) in face_list: 
-	extract_faces = True 
+	extract_faces = False
+	extract_missed_faces = False 
 	if extract_faces: 
 		src_path = '../data/GENKI-R2009a/Subsets/GENKI-4K/files'
 		dest_path = './cache/GENKI_faces'
 		image_util.extract_GENKI_faces(src_path, dest_path)
 
-	# img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images.txt"
-	# labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels.txt"
+	if extract_missed_faces: 
+		src_path = '../data/GENKI-R2009a/Subsets/GENKI-4K/files'
+		dest_path = './cache/GENKI_faces/GENKI_faces_looser_bounds'
+		image_util.extract_missed_faces(dest_path)
 
-	# svm = train_smile_extractor(img_path, labels_path)
-	# img_path2 = '../data/groupdataset_release/images/466491971_b3bfbce419_o.jpg'
-	# faces_list, smile_features, predictions = predict_smiles(img_path2, svm)
-	# print faces_list
-	# print predictions
+
+
+	img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images_Reduced.txt"
+	labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels.txt"
+
+	svm = train_smile_extractor(img_path, labels_path)
+	img_path2 = '../data/groupdataset_release/images/466491971_b3bfbce419_o.jpg'
+	faces_list, smile_features, predictions = predict_smiles(img_path2, svm)
+	print faces_list
+	print predictions
 
 
 # Given an image path and a classifier (svm), this method returns a list of 
@@ -62,7 +70,7 @@ def predict_smiles(img_path, classifier):
 
 def train_smile_extractor(img_path, labels_path): 
 	#read in stuff 
-	img_base_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/files"
+	img_base_path = "./cache/GENKI_faces"
 	images_file = open(img_path, 'r')
 	filenames = []
 	
@@ -84,7 +92,9 @@ def train_smile_extractor(img_path, labels_path):
 		y = np.array(labels)
 
 
-		for i, img_name in enumerate(filenames): 
+		for i, img_name in enumerate(filenames):
+			# check if image is in 
+			print "Extracting emotions for image:", str(i)
 			face_image = cv2.imread(img_name)
 			emotion_extractor.set_face(face_image)
 			X[i,:] = emotion_extractor.extract_smile_features()
@@ -96,7 +106,7 @@ def train_smile_extractor(img_path, labels_path):
 		X = np.load('./cache/emotion_features.npy')
 		y = np.load('./cache/emotion_labels.npy')
 	print X.shape
-	run_again = True
+	run_again = False
 	if not os.path.isfile('./cache/smile_pca.npy') or run_again : 
 		print "Running PCA..."
 		pca = PCA()

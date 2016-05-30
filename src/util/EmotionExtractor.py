@@ -110,6 +110,6 @@ class EmotionExtractor:
 		feature_vec = np.array(feature_vec)
 		feature_vec = np.reshape(feature_vec, (-1,))
 
-		print feature_vec[:10	]
+		# print feature_vec[:10	]
 		return feature_vec
 

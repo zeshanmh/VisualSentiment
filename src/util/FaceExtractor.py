@@ -41,7 +41,7 @@ class FaceExtractor:
 			face_list = self.cascades[i].detectMultiScale(
 				gray_img,
 				scaleFactor=1.1,
-				minNeighbors=5,
+				minNeighbors=3,
 				minSize=(20, 20),
 				flags = cv2.cv.CV_HAAR_SCALE_IMAGE
 			)

@@ -41,9 +41,6 @@ def reduce_labels():
 	new_imgs = [filename.strip() for filename in new_imgs]
 
 	for img in new_imgs: 
-		if 'face3' in img: 
-			new_labels_file.write('\n')
-			continue	
 		img_label = img_labels_dict[img]
 		new_labels_file.write(str(img_label) + '\n')
 

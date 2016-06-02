@@ -69,7 +69,7 @@ class FaceExtractor:
 			face_list = self.cascades[i].detectMultiScale(
 				gray_img,
 				scaleFactor=1.1,
-				minNeighbors=3,
+				minNeighbors=2,
 				minSize=(10, 10),
 				flags = cv2.cv.CV_HAAR_SCALE_IMAGE
 			)
@@ -110,6 +110,7 @@ class FaceExtractor:
 	def scale_face(self, face_coords, im):
 		# print face_coords
 		x, y, w, h = face_coords
+		print face_coords
 		face = im[x:x+w,y:y+h]
 		scaled_face = cv2.resize(face, (self.NORMALIZED_SIZE, self.NORMALIZED_SIZE))
 		return scaled_face

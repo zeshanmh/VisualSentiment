@@ -12,44 +12,79 @@ from EmotionExtractor import EmotionExtractor
 from TorsoExtractor import TorsoExtractor
 from sklearn import svm
 from sklearn.decomposition import PCA
+from sklearn.externals import joblib
 
 
 def main():
 	##Torso Extraction##
-	img_path = "../data/groupdataset_release/images/4940922642_5dab04b030_o.jpg"
-	torso_extractor = TorsoExtractor()
-	torso_list, image = torso_extractor.detect_torsos(img_path)
+	# img_path = "../data/groupdataset_release/images/4940922642_5dab04b030_o.jpg"
+	# torso_extractor = TorsoExtractor()
+	# torso_list, image = torso_extractor.detect_torsos(img_path)
 	
 
-	## Face Extraction ## 
-	# img_path = "../data/groupdataset_release/images/Library3.jpg"
-	# face_extractor = FaceExtractor()
-	# faces_lists, image = face_extractor.detect_faces(img_path)
-	# for face_list in faces_lists: 
-	# 	for (x,y,w,h) in face_list: 
+	# ## Face Extraction ## 
+	# # img_path = "../data/groupdataset_release/images/Library3.jpg"
+	# # face_extractor = FaceExtractor()
+	# # faces_lists, image = face_extractor.detect_faces(img_path)
+	# # for face_list in faces_lists: 
+	# # 	for (x,y,w,h) in face_list: 
 
-	extract_faces = False
-	extract_missed_faces = False 
-	if extract_faces: 
-		src_path = '../data/GENKI-R2009a/Subsets/GENKI-4K/files'
-		dest_path = './cache/GENKI_faces'
-		image_util.extract_GENKI_faces(src_path, dest_path)
+	# extract_faces = False
+	# extract_missed_faces = False 
+	# if extract_faces: 
+	# 	src_path = '../data/GENKI-R2009a/Subsets/GENKI-4K/files'
+	# 	dest_path = './cache/GENKI_faces'
+	# 	image_util.extract_GENKI_faces(src_path, dest_path)
 
-	if extract_missed_faces: 
-		src_path = '../data/GENKI-R2009a/Subsets/GENKI-4K/files'
-		dest_path = './cache/GENKI_faces/GENKI_faces_looser_bounds'
-		image_util.extract_missed_faces(dest_path)
-
+	# if extract_missed_faces: 
+	# 	src_path = '../data/GENKI-R2009a/Subsets/GENKI-4K/files'
+	# 	dest_path = './cache/GENKI_faces/GENKI_faces_looser_bounds'
+	# 	image_util.extract_missed_faces(dest_path)
 
 
 	img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images_Reduced.txt"
 	labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels_Reduced.txt"
 
-	svm = train_smile_extractor(img_path, labels_path)
-	img_path2 = '../data/groupdataset_release/images/all/466491971_b3bfbce419_o.jpg'
-	faces_list, smile_features, predictions = predict_smiles(img_path2, svm)
-	print faces_list
-	print predictions
+	train_again = False
+	if not os.path.isfile('./svm_model.pkl') or train_again: 
+		svm = train_smile_extractor(img_path, labels_path)	
+		joblib.dump(svm, 'svm_model.pkl')
+	else: 
+		print 'Loading svm...'
+		svm = joblib.load('svm_model.pkl')
+		
+	# img_path2 = '../data/groupdataset_release/images/all/466491971_b3bfbce419_o.jpg'
+	# img_path2 = '../data/groupdataset_release/images/all/419925_10150597648651087_1342010291_n.jpg'
+	img_path2 = '../data/groupdataset_release/images/all'
+	filenames = os.listdir(img_path2)
+	filenames = [os.path.join(img_path2, filename) for filename in filenames]
+
+	for img_path2 in filenames: 
+		if '.DS' in img_path2 or '01-breeze-outdoor-dining.jpg' in img_path2: 
+			continue
+
+		# faces_list, smile_features, scores = predict_smiles(img_path2, svm)
+		faces_list, smile_features, predictions, scores = predict_smiles(img_path2, svm)
+
+		all_faces = [face for face_list in faces_list for face in face_list]
+		image = cv2.imread(img_path2)
+		for i,face in enumerate(all_faces): 
+			x,y,w,h = face  
+			# prediction = np.argmax(scores[i,:])
+			print "coordinates:", face
+			print "score %d:" % (scores[i])
+			print "prediction for face %d: %d" % (i,predictions[i])
+
+			if predictions[i] == 0:
+				cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
+			else: 
+				cv2.rectangle(image, (x, y), (x+w, y+h), (0, 0, 255), 2)
+
+		cv2.imshow("blah", image)
+		cv2.waitKey(0)
+
+		print faces_list
+		print predictions
 
 
 # Given an image path and a classifier (svm), this method returns a list of 
@@ -71,14 +106,15 @@ def predict_smiles(img_path, classifier):
 
 	# do PCA
 	pca = PCA()
-	smile_features_pcad = pca.fit_transform(X)
+	smile_features_pcad = pca.fit_transform(smile_features)
 
 
 	print 'Predicting...'
-	print smile_features.shape
+	print smile_features_pcad.shape
 	predictions = classifier.predict(smile_features)
+	scores = classifier.decision_function(smile_features)
 
-	return faces_list, smile_features, predictions
+	return faces_list, smile_features, predictions, scores
 
 
 def train_smile_extractor(img_path, labels_path): 
@@ -98,7 +134,7 @@ def train_smile_extractor(img_path, labels_path):
 
 	#setup 
 	run_extraction_again = False
-	run_PCA_again = True
+	run_PCA_again = False
 
 	if not os.path.isfile('./cache/emotion_features.npy') or run_extraction_again:
 		print "Extracting emotions..."
@@ -149,24 +185,31 @@ def train_smile_extractor(img_path, labels_path):
 		print "Loading reduced matrix..."
 		X_new = np.load('./cache/smile_pca.npy')
 
-	X_new = X_new[:2000]
-	X_train, X_test, y_train, y_test = sklearn.cross_validation.train_test_split(X_new, y, test_size=0.2)
+	# X_new = X_new[:,:2000]
+	# print X_new.shape
+	# X_train, X_test, y_train, y_test = sklearn.cross_validation.train_test_split(X_new, y, test_size=0.2)
+	X_train, X_test, y_train, y_test = sklearn.cross_validation.train_test_split(X, y, test_size=0.2)
 
 	# run SVM
-	svm_model = svm.SVC(kernel="linear", decision_function_shape='ovr')
-	print "Fitting..."
-	print X_train.shape
-	print y_train.shape
-	svm_model.fit(X_train, y_train)
-	print "Predicting..."
-	y_predict_train = svm_model.predict(X_train)
-	y_predict = svm_model.predict(X_test)
+	kernels = ['linear', 'rbf']
+	C = [1.0,3.0,5.0,7.0,9.0]
 
-	_, training_error = analysis.output_error(y_predict_train, y_train)
-	_, testing_error = analysis.output_error(y_predict, y_test)
+	for kernel in kernels: 
+		for c in C: 
+			svm_model = svm.SVC(C=c, kernel=kernel, decision_function_shape='ovr')
+			print "Fitting for C, %d, and kernel, %s..." % (c, kernel)
+			print X_train.shape
+			print y_train.shape
+			svm_model.fit(X_train, y_train)
+			print "Predicting..."
+			y_predict_train = svm_model.predict(X_train)
+			y_predict = svm_model.predict(X_test)
 
-	print "training error:", training_error
-	print "testing error:", testing_error 
+			_, training_error = analysis.output_error(y_predict_train, y_train)
+			_, testing_error = analysis.output_error(y_predict, y_test)
+
+			print "training error:", training_error
+			print "testing error:", testing_error 
 
 	return svm_model
 

@@ -1,7 +1,6 @@
 import cv2
 import os
 import scipy.io
-<<<<<<< HEAD
 
 from FaceExtractor import FaceExtractor 
 from TorsoExtractor import TorsoExtractor

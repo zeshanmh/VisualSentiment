@@ -22,12 +22,14 @@ class EmotionExtractor:
 	def set_face(self, face_image):
 		self.face = face_image
 
+
 	def build_pyr_level(self, img, sigma=1):
 		I1 = cv2.GaussianBlur(img, (3,3), sigma)
 		I2 = cv2.GaussianBlur(I1, (3,3), np.sqrt(2)*sigma)
 		down = cv2.pyrDown(I2, dstsize=(I2.shape[0]/2, I2.shape[1]/2))
 		I_new = cv2.pyrUp(down, dstsize=I2.shape)
 		return I1, I2, I_new
+
 
 	def calc_mean_sd(self, pixel_derivs):
 			n_stats = 5
@@ -48,6 +50,7 @@ class EmotionExtractor:
 						counter += 2
 	
 			return all_stats
+
 
 	def get_derivs(self, img):
 		pixel_derivs = np.zeros((self.NORMALIZED_SIZE, self.NORMALIZED_SIZE, self.NUM_GAUSSIANS))
@@ -79,6 +82,7 @@ class EmotionExtractor:
 				pixel_derivs[i,k] = deriv_vec
 
 		return pixel_derivs
+
 
 	def extract_smile_features(self):
 

@@ -24,8 +24,9 @@ class FaceExtractor:
 		for i, filename in enumerate(file_names): 
 			pathname = os.path.join(dir_path,filename)
 			#or 'ear' in pathname or 'eye' in pathname
-			if ('frontalface' in pathname) \
-				and 'catface' not in pathname:
+			if 'frontalface_default' in pathname:
+			# if ('frontalface' in pathname) \
+			# 	and 'catface' not in pathname:
 				face_cascade = cv2.CascadeClassifier(pathname);
 				self.cascades.append(face_cascade)
 
@@ -50,15 +51,19 @@ class FaceExtractor:
 
 		return faces_lists, image
 
+	# def detect_group_faces(self, img_path):
+	# 	image = cv2.imread(img_path)
+
+
 
 	def detect_faces(self, img_path):
 		image = cv2.imread(img_path)
-		bbs = get_bbs('../data/groupdataset_release/annotations/all', img_path.split('/')[-1])
-		print bbs
+		bbs = get_bbs('../../data/groupdataset_release/annotations/all', img_path.split('/')[-1])
+		# print bbs
 
-		for bb in bbs: 
-			x, y, width, height = int(bb[0]), int(bb[1]), int(bb[2]), int(bb[3])
-			cv2.rectangle(image, (x, y), (x+width, y+height), (255, 0, 0), 2)
+		# for bb in bbs: 
+		# 	x, y, width, height = int(bb[0]), int(bb[1]), int(bb[2]), int(bb[3])
+		# 	cv2.rectangle(image, (x, y), (x+width, y+height), (255, 0, 0), 2)
 
 		#changed BGR to RGB. possible error
 		gray_img = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
@@ -97,12 +102,12 @@ class FaceExtractor:
 		print "Found {0} faces!".format(sum([ len(x) for x in faces_lists]))
 
 		# Draw a rectangle around the faces
-		for face_list in faces_lists:
-			for (x, y, w, h) in face_list:
-				cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
+		# for face_list in faces_lists:
+		# 	for (x, y, w, h) in face_list:
+		# 		cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
 		
-		cv2.imshow("Faces found", image)
-		cv2.waitKey(0)
+		# cv2.imshow("Faces found", image)
+		# cv2.waitKey(0)
 
 		return faces_lists, image
 

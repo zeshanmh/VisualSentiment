@@ -58,8 +58,9 @@ def getTorsos(img_path="../../data/groupdataset_release/images/all/5164048347_af
 
 	eng.quit()
 
-FACE_POSELET_IDS = [7,16,19,22,24,25,28,30,34,35,45,48,51,53,63,72,74,80,83,100,105,112,115,119,129]
-POSELET_SCORE_THRESH = 0.5
+# FACE_POSELET_IDS = [7,16,19,22,24,25,28,30,34,35,45,48,51,53,63,72,74,80,83,100,105,112,115,119,129]
+# FACE_POSELET_IDS = [7,16,19,80,105]
+POSELET_SCORE_THRESH = 0.1
 def getHeadPoselets(img_path="../../data/groupdataset_release/images/all/5164048347_af12243081_z.jpg",\
  poselets_folder="../../data/groupdataset_release/all_poselets/"):
 	"""
@@ -92,21 +93,21 @@ def getHeadPoselets(img_path="../../data/groupdataset_release/images/all/5164048
 			if poselet_id in FACE_POSELET_IDS:
 				face_poselets.append(poselet[:4])
 
-	return face_poselets
+	# return face_poselets
 
 	# # run face extractor on all faces
 	# face_extractor = FaceExtractor()
 	# faces_from_poselets = []
 
-	# for i in range (len(face_poselets)):
-	# 	# get the poselet 
-	# 	x,y,w,h = face_poselets[i]
-	# 	x = int(x)
-	# 	y = int(y)
-	# 	w = int(w)
-	# 	h = int(h)
+	for i in range (len(face_poselets)):
+		# get the poselet 
+		x,y,w,h = face_poselets[i]
+		x = int(x)
+		y = int(y)
+		w = int(w)
+		h = int(h)
 
-	# 	cv2.rectangle(img, (int(x), int(y)), (int(x+w), int(y+h)), (255, 0, 0), 1)
+		cv2.rectangle(img, (int(x), int(y)), (int(x+w), int(y+h)), (255, 0, 0), 1)
 
 	# 	poselet = img[y:y+h, x:x+w]
 
@@ -118,8 +119,8 @@ def getHeadPoselets(img_path="../../data/groupdataset_release/images/all/5164048
 	# 	x, y, w, h = faces_from_poselets[i]
 	# 	cv2.rectangle(img, (int(x), int(y)), (int(x+w), int(y+h)), (0, 255, 0), 2)
 		
-	# cv2.imshow("Faces found", img)
-	# cv2.waitKey(0)
+	cv2.imshow("Faces found", img)
+	cv2.waitKey(0)
 
 
 

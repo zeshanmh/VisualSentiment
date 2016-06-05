@@ -49,10 +49,10 @@ if ~enable_bigq || faster_detection
    disp('*******************************************************');
 end
 
-im1.image_file{1}=[data_root '/test2.jpg'];
-img = imread(im1.image_file{1})
+im1.image_file{1}=[data_root '/test3.jpg'];
+img = imread(im1.image_file{1});
 
-[bounds_predictions,poselet_hits,torso_predictions]=detect_objects_in_image_python(img,config);
+[bounds_predictions,poselet_hits,torso_predictions]=detect_objects_in_image(img, model, config);
 
 if interactive_visualization && (~exist('poselet_patches','var') || ~exist('fg_masks','var'))
     disp('Interactive visualization not supported for this category');

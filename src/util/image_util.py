@@ -7,6 +7,7 @@ import copy
 
 from FaceExtractor import FaceExtractor 
 from TorsoExtractor import TorsoExtractor
+from SilhouetteExtractor import SilhouetteExtractor
 from feature_extractors import *
 
 def extract_save_group_faces(img_path, dest_path):
@@ -257,20 +258,20 @@ def extract_group_bbs(images_path):
 		
 
 if __name__ == '__main__':
-	extract_save_group_faces('../../data/groupdataset_release/images', '../../data/groupdataset_release/faces')
-	# img_path = '../../data/groupdataset_release/images'
-	# filename = '01-breeze-outdoor-dining.jpg'
-	# full_path = os.path.join(img_path, filename)
-	# face_extractor = FaceExtractor()
-	# face_lists, img = face_extractor.detect_faces(full_path)
-	# face_list = [face for face_list in face_lists for face in face_list]
-	# faces = np.array(face_list)
-	# # img = cv2.imread('../../data/groupdataset_release/images/01-breeze-outdoor-dining.jpg')
-	# torsos = np.genfromtxt('/Users/hardiecate/Downloads/all_torsos/01-breeze-outdoor-dining_torsos.csv', delimiter=',')
-	# torsos = torsos[:,:4]
-	# bb_path = '../../data/groupdataset_release/annotations/all'
-	# people = np.array(get_bbs(bb_path, filename))
-	# matched_list = bb_matching(img, people, faces, torsos)
+	# extract_save_group_faces('../../data/groupdataset_release/images', '../../data/groupdataset_release/faces')
+	img_path = '../../data/groupdataset_release/images'
+	filename = '01-breeze-outdoor-dining.jpg'
+	full_path = os.path.join(img_path, filename)
+	face_extractor = FaceExtractor()
+	face_lists, img = face_extractor.detect_faces(full_path)
+	face_list = [face for face_list in face_lists for face in face_list]
+	faces = np.array(face_list)
+	# img = cv2.imread('../../data/groupdataset_release/images/01-breeze-outdoor-dining.jpg')
+	torsos = np.genfromtxt('/Users/hardiecate/Downloads/all_torsos/01-breeze-outdoor-dining_torsos.csv', delimiter=',')
+	torsos = torsos[:,:4]
+	bb_path = '../../data/groupdataset_release/annotations/all'
+	people = np.array(get_bbs(bb_path, filename))
+	matched_list = bb_matching(img, people, faces, torsos)
 	# for i, match in enumerate(matched_list):
 	# 	# print match
 	# 	color = (80 * i) % 256
@@ -287,6 +288,12 @@ if __name__ == '__main__':
 
 	# cv2.imshow('People!', img)
 	# cv2.waitKey(0)
+	sil_extractor = SilhouetteExtractor()
+	sils = sil_extractor.get_silhouettes(img, matched_list)
+	for sil in sils:
+		cv2.imshow('Silhouette!', sil)
+		cv2.waitKey(0)
+
 
 
 

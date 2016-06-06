@@ -19,6 +19,8 @@ class GroupExtractor:
 
 		z_coordinates = []
 
+		
+ 
 
 
 

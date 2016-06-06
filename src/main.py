@@ -55,8 +55,9 @@ def main():
 		print 'Loading svm...'
 		svm = EmotionSVM(img_path, labels_path, img_path2, 'smile', fit=False)
 	
-	test_path = ''
-	filenames = os.listdir(test_path)
+	# X = get_emotion_vector(svm)
+	# test_path = ''
+	# filenames = os.listdir(test_path)
 	
 
 		

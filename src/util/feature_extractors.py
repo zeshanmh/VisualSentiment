@@ -10,6 +10,8 @@ NUM_PIXELS = 512*512
 NUM_HIST = 512
 NUM_IMAGES = 597
 BB_CAP = 15
+NUM_ATTRIBUTES = 10
+
 
 def pixel_extractor(basepath, img_names): 
 	# basepath = '../../data/groupdataset_release/resize_images'
@@ -24,6 +26,7 @@ def pixel_extractor(basepath, img_names):
 	
 	return X 
 
+
 def color_histogram(basepath, img_names): 
 	X = np.zeros((NUM_IMAGES, NUM_HIST))
 	for i,img in enumerate(img_names): 
@@ -33,6 +36,7 @@ def color_histogram(basepath, img_names):
 		X[i,:] = hist
 
 	return X
+
 
 def get_bbs(basepath, img_name): 	
 	matfile = img_name[:-4] + '_labels.mat'
@@ -79,6 +83,47 @@ def bb_extractor(basepath, img_names):
 		X[i,:4*len(saved_bbs)] = np.array(saved_bbs).flatten()
 
 	return X
+
+
+def get_image_feature(img_path, faces_path, classifier):
+	image = cv2.imread(img_path)
+	face_bbs = []
+	faces = []
+	y, x = image.shape 
+
+	h = y / 4
+	w = x / 4 
+
+	X = np.zeros((NUM_ATTRIBUTES,))
+	for i in xrange(0, image.shape[0]-h, h): 
+		for j in xrange(0, image.shape[1]-w, w): 
+			# y = i 
+			# x = j 
+			region_proposal = image[i:i+h,j:j+w]
+
+			for k,face_bb in face_bbs: 
+				x_f,y_f,w_f,h_f = face_bb 
+				x_center = x_f + (w_f/2)
+				y_center = y_f + (h_f/2)
+
+				if x_center > j and x_center < j + w \
+					and y_center > i and y_center < i + h: 
+					prediction = classifier.predict(faces[k])
+
+			
+
+
+	# test_path = ''
+	# pathnames = os.listdir(test_path)
+
+	# X = np.zeros((len(pathnames),))
+	# for i,path in pathnames: 
+	# 	faces_list, smile_features, predictions, scores = classifier.predict(path)
+	# 	ratio_smile = np.sum(predictions) / float(predicitons.shape[0])
+	# 	X[i] = ratio_smile 
+
+	# return X 
+
 
 if __name__ == '__main__':
     img_names = get_filename_list('../../data/groupdataset_release/file_names.txt')

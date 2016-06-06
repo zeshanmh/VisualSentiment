@@ -49,13 +49,25 @@ def extract_save_group_faces(img_path, dest_path):
 			cv2.imwrite(os.path.join(new_fold, face_name), face_window)
 
 
-# def clean_all_faces(img_path, poselet_dict):
-# 	filenames = os.listdir(img_path)
+def clean_all_faces(faces_path, poselet_dict):
+	dirnames = os.listdir(faces_path)
+	for direc in dirnames:
+		img_folder = os.path.join(faces_path, direc)
+		poselets = poselet_dict[direc]
+		clean_faces(img_folder, poselets)
+		# filenames = [f for f in os.path.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, f))]
+
+		# for filename in filenames:
+		# 	if 'face' in filename:
+		# 		file_path = os.path.join(dir_path, f)
+
 
 
 def clean_faces(img_folder, poselets):
 	bb_path = os.path.join(img_folder, 'face_bbs.npy')
 	bbs = np.load(bb_path)
+	new_bbs = np.zeros_like(bbs)
+	counter = 0
 
 	for i in xrange(bbs.shape[0]):
 		face = bbs[i,:]
@@ -63,12 +75,23 @@ def clean_faces(img_folder, poselets):
 		for j in xrange(poselets.shape[0]):
 			poselet = poselets[j,:]
 			if contained_in(face, poselet):
+				new_bbs[counter,:] = face
+				counter += 1
 				poselet_found = True
 				break
 		if not poselet_found:
 			face_path = os.path.join(img_folder, 'face' + str(i) + '.jpg')
 			if os.path.exists(face_path):
 				os.remove(face_path)
+
+	bbs = new_bbs[:counter,:]
+	np.save(bb_path, bbs)
+
+# def clean_duplicate_faces(img_folder):
+# 	bb_path = os.path.join(img_folder, 'face_bbs.npy')
+# 	bbs = np.load(bb_path)
+
+# 	for 
 
 
 def extract_GENKI_faces(img_path, dest_path):

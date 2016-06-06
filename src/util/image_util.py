@@ -43,7 +43,7 @@ def extract_save_group_faces(img_path, dest_path):
 			face_name = 'face' + str(i) + '.jpg'
 			cv2.imwrite(os.path.join(new_fold, face_name), face_window)
 
-
+# TODO: remove poselets
 def clean_all_faces(faces_path, poselet_dict):
 	dirnames = os.listdir(faces_path)
 	for i, dirname in enumerate(dirnames):

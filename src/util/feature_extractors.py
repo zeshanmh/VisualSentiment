@@ -56,7 +56,7 @@ def get_bbs(basepath, img_name):
 
 	return saved_bbs
 
-
+# not used anymore
 def bb_extractor(basepath, img_names):
 	X = np.zeros((NUM_IMAGES, 60))
 	for i, fil in enumerate(img_names):
@@ -85,30 +85,55 @@ def bb_extractor(basepath, img_names):
 	return X
 
 
-def get_image_feature(img_path, faces_path, classifier):
+def get_image_face_features(img_path, faces_folder, classifier):
 	image = cv2.imread(img_path)
-	face_bbs = []
-	faces = []
-	y, x = image.shape 
+	face_bbs = np.load(os.path.join(faces_folder, 'face_bbs.npy'))
+	n_faces = face_bbs.shape[0]
+	faces = [cv2.imread(face) for face in os.listdir(faces_folder) if 'faces' not in face and 'DS_Store' not in face]
+	y, x = image.shape
 
-	h = y / 4
-	w = x / 4 
+	N_BINS_PER_SIDE = 4
+	h = y / N_BINS_PER_SIDE
+	w = x / N_BINS_PER_SIDE
 
-	X = np.zeros((NUM_ATTRIBUTES,))
-	for i in xrange(0, image.shape[0]-h, h): 
-		for j in xrange(0, image.shape[1]-w, w): 
-			# y = i 
-			# x = j 
-			region_proposal = image[i:i+h,j:j+w]
+	feature_vec = np.zeros(N_BINS_PER_SIDE*N_BINS_PER_SIDE*2)
 
-			for k,face_bb in face_bbs: 
-				x_f,y_f,w_f,h_f = face_bb 
-				x_center = x_f + (w_f/2)
-				y_center = y_f + (h_f/2)
+	for k in xrange(n_faces):
+		face_bb = face_bbs[k,:]
+		xf, yf, wf, hf = face_bb
+		x_center = xf + (wf/2)
+		y_center = yf + (hf/2)
+		i = y_center / h
+		j = x_center / w
+		bin_num = i * N_BINS_PER_SIDE + j
+		prediction = classifier.predict(faces[k])
+		feature_vec[2*bin_num + prediction] += 1
 
-				if x_center > j and x_center < j + w \
-					and y_center > i and y_center < i + h: 
-					prediction = classifier.predict(faces[k])
+	return feature_vec
+
+def get_image_pose_features(img_path, orientations):
+	# TODO
+	pass
+
+def get_image_group_features(img_path, groups):
+	# TODO
+	pass
+
+
+
+	# for i in xrange(0, image.shape[0]-h, h): 
+	# 	for j in xrange(0, image.shape[1]-w, w): 
+	# 		bin_num = (i / h) * N_BINS_PER_SIDE + (j / w)
+	# 		region_proposal = image[i:i+h,j:j+w]
+
+	# 		for k,face_bb in face_bbs: 
+	# 			xf, yf, wf, hf = face_bb 
+	# 			x_center = xf + (wf/2)
+	# 			y_center = yf + (hf/2)
+
+	# 			if x_center => j and x_center < j + w \
+	# 				and y_center => i and y_center < i + h: 
+	# 				prediction = classifier.predict(faces[k])
 
 			
 

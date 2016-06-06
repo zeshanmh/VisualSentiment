@@ -3,25 +3,46 @@ import os
 import cv2
 
 from xml.dom import minidom
-# from bs4 import BeautifulSoup
 
-# class TUDAnnotationHandler(xml.sax.ContentHandler):
-# 	def __init__(self):
-# 		self.CurrentData = ""
-# 		self.annotation = ""
-# 		self.image = ""
-# 		self.annorect = ""
-# 		self.x1 = ""
-# 		self.y1 = ""
+def test_orientation_svm():
+	# get all testing images
 
-# 		self.x2 = ""
-# 		self.y2 = ""
-# 		self.annopoints = ""
-# 		self.point = ""
-# 		self.id = ""
-# 		self.x = ""
-# 		self.y = "" 
+	# get silhouettes of testing images
+
+	# run SIFT on silhouettes
+
+	# run HOG on regular images
+
+	# combine feature vecs
+
+	# get corresponding labels
+
+	# test and report accuracy
+	pass
+
+def train_orientation_svm():
+	# get all training images
+
+	# get silhouettes of training images
+
+	# run SIFT on silhouettes
+
+	# run HOG on regular images
+
+	# combine feature vecs
+
+	# create input feature matrix with corresponding labels
+
+	# train
+	pass
+
 def create_filename_orient_dict(tud_path='../../../data/TUD', tud_type = 'train'):
+	"""
+    Extracts orientations for a given data set type (train, test, validate) and creates
+    a dict from img_name -> orientation 
+    """
+
+
 	# build the train dict
 	# train_dict = {}
 	img_folder = os.path.join(tud_path, tud_type)
@@ -45,18 +66,7 @@ def create_filename_orient_dict(tud_path='../../../data/TUD', tud_type = 'train'
 			orientation = orientation.firstChild.nodeValue
 			all_orientations.append(orientation)
 
-	# all_images = []
-	# for filename in img_filenames:
-	# 	img_path = os.path.join(img_folder, filename)
-	# 	img = cv2.imread(img_path)
-	# 	all_images.append(img)
-		# cv2.imshow("Faces found", img)
-		# cv2.waitKey(0)
 	return dict(zip(img_filenames, all_orientations))
-
-
-	# build the test dict
-
 
 
 if __name__ == '__main__':

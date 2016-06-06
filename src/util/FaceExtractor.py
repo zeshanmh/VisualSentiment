@@ -10,7 +10,7 @@ class FaceExtractor:
 	NORMALIZED_SIZE = 64
 
 	def __init__(self):
-		dir_path = "/usr/local/Cellar/opencv/2.4.12_2/share/OpenCV/haarcascades/"
+		dir_path = "/usr/local/Cellar/opencv3/3.1.0_3/share/OpenCV/haarcascades/"
 		file_names = os.listdir(dir_path)
 		self.cascades = []
 
@@ -118,7 +118,7 @@ class FaceExtractor:
 				scaleFactor=1.1,
 				minNeighbors=2,
 				minSize=(10, 10),
-				flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+				flags = cv2.CASCADE_SCALE_IMAGE
 			)
 
 			faces_lists.append(list(face_list))
@@ -157,8 +157,10 @@ class FaceExtractor:
 	def scale_face(self, face_coords, im):
 		# print face_coords
 		x, y, w, h = face_coords
-		print face_coords
-		face = im[x:x+w,y:y+h]
+		face = im[y:y+h,x:x+w]
+		# face = im[x:x+w,y:y+h]
+		# print face.shape 
+		# print type(face[0,0])
 		scaled_face = cv2.resize(face, (self.NORMALIZED_SIZE, self.NORMALIZED_SIZE))
 		return scaled_face
 

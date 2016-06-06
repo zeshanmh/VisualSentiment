@@ -54,8 +54,6 @@ def clean_all_faces(faces_path):
 		# poselets = poselet_dict[dirname]
 		# clean_faces(img_folder, poselets)
 		clean_duplicate_faces(img_folder)
-		if i == 10:
-			break
 
 
 

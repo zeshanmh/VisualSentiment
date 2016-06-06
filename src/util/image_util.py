@@ -8,7 +8,9 @@ import copy
 from FaceExtractor import FaceExtractor 
 from TorsoExtractor import TorsoExtractor
 from SilhouetteExtractor import SilhouetteExtractor
+from poselet_util import *
 from feature_extractors import *
+from natsort import natsorted
 
 def extract_save_group_faces(img_path, dest_path):
 	face_extractor = FaceExtractor()
@@ -19,15 +21,28 @@ def extract_save_group_faces(img_path, dest_path):
 
 	for j, filename in enumerate(filenames):
 		# print filename
+		print 'Extracting faces from image number:', j
 		if filename == '.DS_Store': 
 			continue
 
 		full_path = os.path.join(img_path, filename)
-		face_lists, img = face_extractor.detect_faces(full_path)
+		# print full_path
+		img = cv2.imread(full_path)
+		face_list = getFacesFromHeadPoselets(full_path)
+
+		# for face in face_list:
+		# 	print face
+		# 	x, y, w, h = face
+		# 	cv2.rectangle(img, (x, y), (int(x+w), int(y+h)), (0, 255, 0), 2)
+		# 	cv2.imshow("Faces found", img)
+		# 	cv2.waitKey(0)
+
+
+		# face_lists, img = face_extractor.detect_faces(img)
 
 		# form matrix of all faces from all classifiers
-		face_list = [face for face_list in face_lists for face in face_list]
-		face_matrix = np.array(face_list)
+		# face_list = [face for face_list in face_lists for face in face_list]
+		# face_matrix = np.array(face_list)
 
 		modified_path = filename[:-4]
 		new_fold = os.path.join(dest_path, modified_path)
@@ -35,13 +50,51 @@ def extract_save_group_faces(img_path, dest_path):
 			os.makedirs(new_fold)
 
 		bb_path = os.path.join(new_fold, 'face_bbs')
-		np.save(bb_path, face_matrix)
 
+		face_bbs = []
 		for i, face in enumerate(face_list):
+			face_bbs.append(face)
 			x, y, w, h = face
 			face_window = img[y:y+h,x:x+w]
 			face_name = 'face' + str(i) + '.jpg'
 			cv2.imwrite(os.path.join(new_fold, face_name), face_window)
+
+		np.save(bb_path, face_bbs)
+
+		clean_duplicate_faces(new_fold)
+
+# def extract_save_group_faces(img_path, dest_path):
+# 	face_extractor = FaceExtractor()
+# 	filenames = os.listdir(img_path)
+
+# 	# remove all existing files from dest_path
+# 	remove_files_from_directory(dest_path)
+
+# 	for j, filename in enumerate(filenames):
+# 		# print filename
+# 		if filename == '.DS_Store': 
+# 			continue
+
+# 		full_path = os.path.join(img_path, filename)
+# 		face_lists, img = face_extractor.detect_faces(full_path)
+
+# 		# form matrix of all faces from all classifiers
+# 		face_list = [face for face_list in face_lists for face in face_list]
+# 		face_matrix = np.array(face_list)
+
+# 		modified_path = filename[:-4]
+# 		new_fold = os.path.join(dest_path, modified_path)
+# 		if not os.path.exists(new_fold):
+# 			os.makedirs(new_fold)
+
+# 		bb_path = os.path.join(new_fold, 'face_bbs')
+# 		np.save(bb_path, face_matrix)
+
+# 		for i, face in enumerate(face_list):
+# 			x, y, w, h = face
+# 			face_window = img[y:y+h,x:x+w]
+# 			face_name = 'face' + str(i) + '.jpg'
+# 			cv2.imwrite(os.path.join(new_fold, face_name), face_window)
 
 # TODO: remove poselets
 def clean_all_faces(faces_path):
@@ -85,43 +138,85 @@ def clean_duplicate_faces(img_folder):
 	bb_path = os.path.join(img_folder, 'face_bbs.npy')
 	bbs = np.load(bb_path)
 	filenames = [f for f in os.listdir(img_folder) if 'bb' not in f and 'DS_Store' not in f]
-	print img_folder
-	new_faces = []
-	new_bbs = np.zeros_like(bbs)
-	counter = 0
+	# print img_folder
+	# new_faces = []
+	# new_bbs = np.zeros_like(bbs)
+	# counter = 0
+	# print type(filenames)
+	filenames = natsorted(filenames)
+	# print filenames
+	# print len(filenames)
+
+
+	filtered_filenames = copy.deepcopy(filenames)
+
+	to_remove_indices = set()
+	for i, face_bb in enumerate(bbs):
+		for k in range(i+1, len(bbs)):
+			face_bb2 = bbs[k]
+			if center_contained_in(face_bb, face_bb2):
+				to_remove = i
+				# remove smaller one from the list
+				if calc_area(face_bb) > calc_area(face_bb2):
+					to_remove = k
+				# remove
+				to_remove_indices.add(to_remove)
+	# print to_remove_indices
+
+	# add any file that should not be removed
+	filtered_bbs = []
+	filtered_filenames = []
+	for i, face_bb in enumerate(bbs):
+		if i not in to_remove_indices:
+			filtered_bbs.append(face_bb)
+			filtered_filenames.append(filenames[i])
+
+	# print len(filtered_bbs)
+	# print filtered_filenames
+
+	# return
+
+
+	# get rid of files that should
+	filtered_faces = []
+	for i, filename in enumerate(filtered_filenames):
+		img_path = os.path.join(img_folder, filename)
+		face_img = cv2.imread(img_path)
+		filtered_faces.append(face_img)
+
 
 	# loop over pairs of duplicates and add non repeaters to new_faces
-	for i in xrange(len(filenames)):
-		face_bbi = bbs[i,:]
-		found_duplicate = False
-		for j in xrange(len(filenames)):
-			if i == j:
-				continue
-			face_bbj = bbs[j,:]
+	# for i in xrange(len(filenames)):
+	# 	face_bbi = bbs[i,:]
+	# 	found_duplicate = False
+	# 	for j in xrange(len(filenames)):
+	# 		if i == j:
+	# 			continue
+	# 		face_bbj = bbs[j,:]
 
-			if center_contained_in(face_bbi, face_bbj):
-				found_duplicate = True
-				break
-		if not found_duplicate:
-			img_path = os.path.join(img_folder, 'face' + str(i) + '.jpg')
-			face_img = cv2.imread(img_path)
-			new_faces.append(face_img)
-			new_bbs[counter,:] = face_bbi
-			counter += 1
+	# 		if center_contained_in(face_bbi, face_bbj):
+	# 			found_duplicate = True
+	# 			break
+	# 	if not found_duplicate:
+	# 		img_path = os.path.join(img_folder, 'face' + str(i) + '.jpg')
+	# 		face_img = cv2.imread(img_path)
+	# 		new_faces.append(face_img)
+	# 		new_bbs[counter,:] = face_bbi
+	# 		counter += 1
 
-	# print len(new_faces)
+	# # print len(new_faces)
 	# clear all existing files
 	remove_files_from_directory(img_folder)
 
-	#replace bbs
-	bbs = new_bbs[:counter,:]
-	np.save(bb_path, bbs)
+	# #replace bbs
+	# bbs = new_bbs[:counter,:]
+	np.save(bb_path, filtered_bbs)
 
 	# replace face files
-	for i in xrange(len(new_faces)):
+	for i in xrange(len(filtered_faces)):
 		face_name = 'face' + str(i) + '.jpg'
 		face_path = os.path.join(img_folder, face_name)
-		cv2.imwrite(face_path, new_faces[i])
+		cv2.imwrite(face_path, filtered_faces[i])
 
 
 
@@ -325,6 +420,10 @@ def compute_torso_dist(torso, bb):
 	b_cent = np.array([by + bh / 2, bx + bw / 2])
 	return np.linalg.norm(t_cent - b_cent)
 
+def calc_area(bb1):
+	x, y, w, h = bb1
+	return w * h
+
 def extract_group_bbs(images_path): 
 	img_names = os.listdir(images_path)
 	img_names = [img_name.strip() for img_name in img_names]
@@ -339,8 +438,8 @@ def extract_group_bbs(images_path):
 		
 
 if __name__ == '__main__':
-	pass
-	# extract_save_group_faces('../../data/groupdataset_release/images', '../../data/groupdataset_release/faces')
+	extract_save_group_faces('../../data/groupdataset_release/images/all', '../../data/groupdataset_release/faces')
+	# clean_duplicate_faces('../../data/groupdataset_release/faces/13-03-08-classroom-2')
 	# clean_all_faces('../../data/groupdataset_release/faces', poselet_dict)
 	# img_path = '../../data/groupdataset_release/images'
 	# filename = '01-breeze-outdoor-dining.jpg'

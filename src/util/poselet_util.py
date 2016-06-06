@@ -60,8 +60,8 @@ def getTorsos(img_path="../../data/groupdataset_release/images/all/5164048347_af
 
 FACE_POSELET_IDS = [7,16,19,22,24,25,28,30,34,35,45,48,51,53,63,72,74,80,83,100,105,112,115,119,129]
 # FACE_POSELET_IDS = [7,16,19,80,105]
-POSELET_SCORE_THRESH = 0.05
-def getHeadPoselets(img_path="../../data/groupdataset_release/images/all/1 Library Reading.jpg",\
+POSELET_SCORE_THRESH = 0.3
+def getFacesFromHeadPoselets(img_path="../../data/groupdataset_release/images/all/1 Library Reading.jpg",\
  poselets_folder="../../data/groupdataset_release/all_poselets_hq/"):
 	"""
     Runs face detector on relevant poselets. Returns list of faces for given image. 
@@ -112,28 +112,27 @@ def getHeadPoselets(img_path="../../data/groupdataset_release/images/all/1 Libra
 		poselet = img[y:y+h, x:x+w]
 
 		faces_list = face_extractor.detect_faces(poselet)
+		# faces_list = [face for face_list in faces_lists for face in face_list]
 		# faces_from_poselets.extend(faces_list)
 
 		for k in range(len(faces_list)):
 			x_face, y_face, w, h = faces_list[k]
 			x_face = x + x_face
 			y_face = y + y_face
+			faces_list[k] = [x_face, y_face, w, h]
 			cv2.rectangle(img, (x_face, y_face), (int(x_face+w), int(y_face+h)), (0, 255, 0), 2)
 
+		faces_from_poselets.extend(faces_list)
+
+	# cv2.imshow("Faces found", img)
+	# cv2.waitKey(0)
+
 	
-	
+	return faces_from_poselets
 		
-	cv2.imshow("Faces found", img)
-	cv2.waitKey(0)
-
-
-
-
-
-
-
+	
 
 
 if __name__ == '__main__':
-	getHeadPoselets()
+	getFacesFromHeadPoselets()
 

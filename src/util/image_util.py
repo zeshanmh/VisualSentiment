@@ -44,15 +44,15 @@ def extract_save_group_faces(img_path, dest_path):
 			cv2.imwrite(os.path.join(new_fold, face_name), face_window)
 
 # TODO: remove poselets
-def clean_all_faces(faces_path, poselet_dict):
+def clean_all_faces(faces_path):
 	dirnames = os.listdir(faces_path)
 	for i, dirname in enumerate(dirnames):
 		if dirname == '.DS_Store': 
 			continue
 
 		img_folder = os.path.join(faces_path, dirname)
-		poselets = poselet_dict[dirname]
-		clean_faces(img_folder, poselets)
+		# poselets = poselet_dict[dirname]
+		# clean_faces(img_folder, poselets)
 		clean_duplicate_faces(img_folder)
 		if i == 10:
 			break

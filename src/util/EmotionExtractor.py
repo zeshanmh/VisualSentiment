@@ -84,10 +84,13 @@ class EmotionExtractor:
 		return pixel_derivs
 
 
-	def extract_smile_features(self):
+	def extract_emotion_features(self):
 
 		#read in the image 
-		gray_img = cv2.cvtColor(self.face, cv2.COLOR_RGB2GRAY)
+		if self.face.shape[0] == 48: 
+			gray_img = self.face 
+		else:
+			gray_img = cv2.cvtColor(self.face, cv2.COLOR_RGB2GRAY)
 
 		#normalize to 64x64; precondition: make sure that face patches are square!!
 		gray_img_resize = cv2.resize(gray_img, (self.NORMALIZED_SIZE, self.NORMALIZED_SIZE)) 

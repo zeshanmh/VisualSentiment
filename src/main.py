@@ -7,13 +7,13 @@ import numpy as np
 sys.path.insert(0, './util')
 import image_util
 
-from FaceExtractor import FaceExtractor
-from EmotionExtractor import EmotionExtractor
-from TorsoExtractor import TorsoExtractor
-from sklearn import svm
-from sklearn.decomposition import PCA
-from sklearn.externals import joblib
-
+# from FaceExtractor import FaceExtractor
+# from EmotionExtractor import EmotionExtractor
+# from TorsoExtractor import TorsoExtractor
+# from sklearn import svm
+# from sklearn.decomposition import PCA
+# from sklearn.externals import joblib
+from EmotionSVM import EmotionSVM
 
 def main():
 	##Torso Extraction##
@@ -41,178 +41,58 @@ def main():
 	# 	dest_path = './cache/GENKI_faces/GENKI_faces_looser_bounds'
 	# 	image_util.extract_missed_faces(dest_path)
 
-
 	img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images_Reduced.txt"
 	labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels_Reduced.txt"
+	img_path2 = '../data/groupdataset_release/images/all'
 
 	train_again = False
-	if not os.path.isfile('./svm_model.pkl') or train_again: 
-		svm = train_smile_extractor(img_path, labels_path)	
-		joblib.dump(svm, 'svm_model.pkl')
+	if train_again:
+		svm = EmotionSVM(img_path, labels_path, img_path2, 'sad', dump=True)
+		svm.train()
+		# svm = train_smile_extractor(img_path, labels_path)	
+		# joblib.dump(svm, 'svm_model.pkl')
 	else: 
 		print 'Loading svm...'
-		svm = joblib.load('svm_model.pkl')
+		svm = EmotionSVM(img_path, labels_path, img_path2, 'smile', fit=False)
+	
+	test_path = ''
+	filenames = os.listdir(test_path)
+	
+
 		
 	# img_path2 = '../data/groupdataset_release/images/all/466491971_b3bfbce419_o.jpg'
 	# img_path2 = '../data/groupdataset_release/images/all/419925_10150597648651087_1342010291_n.jpg'
-	img_path2 = '../data/groupdataset_release/images/all'
-	filenames = os.listdir(img_path2)
-	filenames = [os.path.join(img_path2, filename) for filename in filenames]
+	# filenames = os.listdir(img_path2)
+	# filenames = [os.path.join(img_path2, filename) for filename in filenames]
 
-	for img_path2 in filenames: 
-		if '.DS' in img_path2 or '01-breeze-outdoor-dining.jpg' in img_path2: 
-			continue
+	# for path in filenames:
+	# 	#or '01-breeze-outdoor-dining.jpg' in img_path2:  
+	# 	if '.DS' in path: 
+	# 		continue
 
-		# faces_list, smile_features, scores = predict_smiles(img_path2, svm)
-		faces_list, smile_features, predictions, scores = predict_smiles(img_path2, svm)
-
-		all_faces = [face for face_list in faces_list for face in face_list]
-		image = cv2.imread(img_path2)
-		for i,face in enumerate(all_faces): 
-			x,y,w,h = face  
-			# prediction = np.argmax(scores[i,:])
-			print "coordinates:", face
-			print "score %d:" % (scores[i])
-			print "prediction for face %d: %d" % (i,predictions[i])
-
-			if predictions[i] == 0:
-				cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
-			else: 
-				cv2.rectangle(image, (x, y), (x+w, y+h), (0, 0, 255), 2)
-
-		cv2.imshow("blah", image)
-		cv2.waitKey(0)
-
-		print faces_list
-		print predictions
+	# 	# faces_list, smile_features, scores = predict_smiles(path, svm)
+	# 	faces_list, smile_features, predictions, scores = svm.predict(path)
 
 
-# Given an image path and a classifier (svm), this method returns a list of 
-# image coordinates of faces, a matrix of smile features and the classifier's
-# predictions for each face.
-def predict_smiles(img_path, classifier):
-	face_extractor = FaceExtractor()
-	faces_list, im = face_extractor.detect_faces(img_path)
-	faces = face_extractor.get_scaled_faces(faces_list, im)
-	n_faces = len(faces)
+	# 	all_faces = [face for face_list in faces_list for face in face_list]
+	# 	image = cv2.imread(path)
+	# 	for i,face in enumerate(all_faces): 
+	# 		x,y,w,h = face  
+	# 		# prediction = np.argmax(scores[i,:])
+	# 		print "coordinates:", face
+	# 		print "score %d:" % (scores[i])
+	# 		print "prediction for face %d: %d" % (i,predictions[i])
 
-	emotion_extractor = EmotionExtractor()
-	smile_features = np.zeros((n_faces, emotion_extractor.NUM_FEATURES))
-	print 'Extracting smiles of faces...'
-	for i, face in enumerate(faces):
-		emotion_extractor.set_face(face)
-		feature_vec = emotion_extractor.extract_smile_features()
-		smile_features[i,:] = feature_vec
+	# 		if predictions[i] == 0:
+	# 			cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
+	# 		else: 
+	# 			cv2.rectangle(image, (x, y), (x+w, y+h), (0, 0, 255), 2)
 
-	# do PCA
-	pca = PCA()
-	smile_features_pcad = pca.fit_transform(smile_features)
+	# 	cv2.imshow("blah", image)
+	# 	cv2.waitKey(0)
 
-
-	print 'Predicting...'
-	print smile_features_pcad.shape
-	predictions = classifier.predict(smile_features)
-	scores = classifier.decision_function(smile_features)
-
-	return faces_list, smile_features, predictions, scores
-
-
-def train_smile_extractor(img_path, labels_path): 
-	#read in stuff 
-	img_base_path = "./cache/GENKI_faces"
-	images_file = open(img_path, 'r')
-	filenames = []
-	
-	filenames = images_file.readlines()
-	filenames = [os.path.join(img_base_path, filename.strip()) for filename in filenames]
-
-	labels_file = open(labels_path, 'r')
-	lines = labels_file.readlines()
-	labels = []
-	for line in lines: 
-		labels.append(int(line.split()[0]))
-
-	#setup 
-	run_extraction_again = False
-	run_PCA_again = False
-
-	if not os.path.isfile('./cache/emotion_features.npy') or run_extraction_again:
-		print "Extracting emotions..."
-		emotion_extractor = EmotionExtractor()
-
-		X = np.zeros((len(filenames), emotion_extractor.NUM_FEATURES))
-		y = np.array(labels)
-
-
-		for i, img_name in enumerate(filenames):
-			# check if image is in 
-			print "Extracting emotions for image:", str(i)
-			face_image = cv2.imread(img_name)
-			emotion_extractor.set_face(face_image)
-			X[i,:] = emotion_extractor.extract_smile_features()
-
-		np.save('./cache/emotion_features', X)
-		np.save('./cache/emotion_labels', y)
-	else: 
-		print "Loading emotions..."
-		X = np.load('./cache/emotion_features.npy')
-		y = np.load('./cache/emotion_labels.npy')
-	print X.shape
-
-	if not os.path.isfile('./cache/smile_pca.npy') or run_PCA_again : 
-		print "Running PCA..."
-		pca = PCA()
-		X_new = pca.fit_transform(X)
-		print X_new.shape
-
-		# testing optimal pca values 
-		# print "Explained variance ratio with feature vector size 500: " \
-		#  + str(sum(pca.explained_variance_ratio_[:500]))
-
-		# print "Explained variance ratio with feature vector size 1000: " \
-		#  + str(sum(pca.explained_variance_ratio_[:1000]))
-
-		# print "Explained variance ratio with feature vector size 2100: " \
-		#  + str(sum(pca.explained_variance_ratio_[:2100]))
-
-
-		# print "Explained variance ratio with feature vector size 3000: " \
-		#  + str(sum(pca.explained_variance_ratio_[:3000]))
-		# print sum(pca.explained_variance_ratio_[:3000])
-
-		np.save('./cache/smile_pca', X_new)
-	else: 
-		print "Loading reduced matrix..."
-		X_new = np.load('./cache/smile_pca.npy')
-
-	# X_new = X_new[:,:2000]
-	# print X_new.shape
-	# X_train, X_test, y_train, y_test = sklearn.cross_validation.train_test_split(X_new, y, test_size=0.2)
-	X_train, X_test, y_train, y_test = sklearn.cross_validation.train_test_split(X, y, test_size=0.2)
-
-	# run SVM
-	kernels = ['linear', 'rbf']
-	C = [1.0,3.0,5.0,7.0,9.0]
-
-	for kernel in kernels: 
-		for c in C: 
-			svm_model = svm.SVC(C=c, kernel=kernel, decision_function_shape='ovr')
-			print "Fitting for C, %d, and kernel, %s..." % (c, kernel)
-			print X_train.shape
-			print y_train.shape
-			svm_model.fit(X_train, y_train)
-			print "Predicting..."
-			y_predict_train = svm_model.predict(X_train)
-			y_predict = svm_model.predict(X_test)
-
-			_, training_error = analysis.output_error(y_predict_train, y_train)
-			_, testing_error = analysis.output_error(y_predict, y_test)
-
-			print "training error:", training_error
-			print "testing error:", testing_error 
-
-	return svm_model
-
+	# 	print faces_list
+	# 	print predictions
 
 
 if __name__ == '__main__':

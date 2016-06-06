@@ -110,8 +110,10 @@ class FaceExtractor:
 	def scale_face(self, face_coords, im):
 		# print face_coords
 		x, y, w, h = face_coords
-		print face_coords
-		face = im[x:x+w,y:y+h]
+		face = im[y:y+h,x:x+w]
+		# face = im[x:x+w,y:y+h]
+		# print face.shape 
+		# print type(face[0,0])
 		scaled_face = cv2.resize(face, (self.NORMALIZED_SIZE, self.NORMALIZED_SIZE))
 		return scaled_face
 

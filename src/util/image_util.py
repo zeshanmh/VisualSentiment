@@ -15,12 +15,7 @@ def extract_save_group_faces(img_path, dest_path):
 	filenames = os.listdir(img_path)
 
 	# remove all existing files from dest_path
-	for the_file in os.listdir(dest_path):
-		file_path = os.path.join(dest_path, the_file)
-		if os.path.isfile(file_path):
-			os.unlink(file_path)
-		elif os.path.isdir(file_path):
-			shutil.rmtree(file_path)
+	remove_files_from_directory(dest_path)
 
 	for j, filename in enumerate(filenames):
 		# print filename
@@ -48,14 +43,25 @@ def extract_save_group_faces(img_path, dest_path):
 			face_name = 'face' + str(i) + '.jpg'
 			cv2.imwrite(os.path.join(new_fold, face_name), face_window)
 
+# TODO: remove poselets
+def clean_all_faces(faces_path):
+	dirnames = os.listdir(faces_path)
+	for i, dirname in enumerate(dirnames):
+		if dirname == '.DS_Store': 
+			continue
 
-# def clean_all_faces(img_path, poselet_dict):
-# 	filenames = os.listdir(img_path)
+		img_folder = os.path.join(faces_path, dirname)
+		# poselets = poselet_dict[dirname]
+		# clean_faces(img_folder, poselets)
+		clean_duplicate_faces(img_folder)
+
 
 
 def clean_faces(img_folder, poselets):
 	bb_path = os.path.join(img_folder, 'face_bbs.npy')
 	bbs = np.load(bb_path)
+	new_bbs = np.zeros_like(bbs)
+	counter = 0
 
 	for i in xrange(bbs.shape[0]):
 		face = bbs[i,:]
@@ -63,6 +69,8 @@ def clean_faces(img_folder, poselets):
 		for j in xrange(poselets.shape[0]):
 			poselet = poselets[j,:]
 			if contained_in(face, poselet):
+				new_bbs[counter,:] = face
+				counter += 1
 				poselet_found = True
 				break
 		if not poselet_found:
@@ -70,6 +78,60 @@ def clean_faces(img_folder, poselets):
 			if os.path.exists(face_path):
 				os.remove(face_path)
 
+	bbs = new_bbs[:counter,:]
+	np.save(bb_path, bbs)
+
+def clean_duplicate_faces(img_folder):
+	bb_path = os.path.join(img_folder, 'face_bbs.npy')
+	bbs = np.load(bb_path)
+	filenames = [f for f in os.listdir(img_folder) if 'bb' not in f and 'DS_Store' not in f]
+	print img_folder
+	new_faces = []
+	new_bbs = np.zeros_like(bbs)
+	counter = 0
+
+	# loop over pairs of duplicates and add non repeaters to new_faces
+	for i in xrange(len(filenames)):
+		face_bbi = bbs[i,:]
+		found_duplicate = False
+		for j in xrange(len(filenames)):
+			if i == j:
+				continue
+			face_bbj = bbs[j,:]
+
+			if center_contained_in(face_bbi, face_bbj):
+				found_duplicate = True
+				break
+		if not found_duplicate:
+			img_path = os.path.join(img_folder, 'face' + str(i) + '.jpg')
+			face_img = cv2.imread(img_path)
+			new_faces.append(face_img)
+			new_bbs[counter,:] = face_bbi
+			counter += 1
+
+	# print len(new_faces)
+	# clear all existing files
+	remove_files_from_directory(img_folder)
+
+	#replace bbs
+	bbs = new_bbs[:counter,:]
+	np.save(bb_path, bbs)
+
+	# replace face files
+	for i in xrange(len(new_faces)):
+		face_name = 'face' + str(i) + '.jpg'
+		face_path = os.path.join(img_folder, face_name)
+		cv2.imwrite(face_path, new_faces[i])
+
+
+
+def remove_files_from_directory(path):
+	for the_file in os.listdir(path):
+		file_path = os.path.join(path, the_file)
+		if os.path.isfile(file_path):
+			os.unlink(file_path)
+		elif os.path.isdir(file_path):
+			shutil.rmtree(file_path)
 
 def extract_GENKI_faces(img_path, dest_path):
 	# save images where no faces where found to a file
@@ -232,6 +294,12 @@ def bb_matching(img, ppl_bbs, face_bbs, torso_bbs):
 
 	return matching_list
 
+def center_contained_in(bb1, bb2):
+	x1, y1, w1, h1 = bb1
+	x2, y2, w2, h2 = bb2
+	cent1x = x1 + w1 / 2
+	cent1y = y1 + h1 / 2
+	return (cent1x >= x2) and (cent1x <= x2 + w2) and (cent1y >= y2) and (cent1y <= y2 + h2)
 
 def contained_in(bb_small, bb_big):
 	sx, sy, sw, sh = bb_small
@@ -271,7 +339,9 @@ def extract_group_bbs(images_path):
 		
 
 if __name__ == '__main__':
-	extract_save_group_faces('../../data/groupdataset_release/images', '../../data/groupdataset_release/faces')
+	pass
+	# extract_save_group_faces('../../data/groupdataset_release/images', '../../data/groupdataset_release/faces')
+	# clean_all_faces('../../data/groupdataset_release/faces', poselet_dict)
 	# img_path = '../../data/groupdataset_release/images'
 	# filename = '01-breeze-outdoor-dining.jpg'
 	# full_path = os.path.join(img_path, filename)

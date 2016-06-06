@@ -17,7 +17,6 @@ def extract_save_group_faces(img_path, dest_path):
 	# remove all existing files from dest_path
 	for the_file in os.listdir(dest_path):
 		file_path = os.path.join(dest_path, the_file)
-		print file_path
 		if os.path.isfile(file_path):
 			os.unlink(file_path)
 		elif os.path.isdir(file_path):
@@ -48,14 +47,51 @@ def extract_save_group_faces(img_path, dest_path):
 			face_window = img[y:y+h,x:x+w]
 			face_name = 'face' + str(i) + '.jpg'
 			cv2.imwrite(os.path.join(new_fold, face_name), face_window)
-			# if not os.path.exists(face_path):
-			# 	# os.makedirs(face_path)
-			# 	print 'path does not exist yet'
-			# print face_path
-			# cv2.imwrite(face_path, face_window)
 
-		if j == 5:
-			break
+
+def clean_all_faces(faces_path, poselet_dict):
+	dirnames = os.listdir(faces_path)
+	for direc in dirnames:
+		img_folder = os.path.join(faces_path, direc)
+		poselets = poselet_dict[direc]
+		clean_faces(img_folder, poselets)
+		# filenames = [f for f in os.path.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, f))]
+
+		# for filename in filenames:
+		# 	if 'face' in filename:
+		# 		file_path = os.path.join(dir_path, f)
+
+
+
+def clean_faces(img_folder, poselets):
+	bb_path = os.path.join(img_folder, 'face_bbs.npy')
+	bbs = np.load(bb_path)
+	new_bbs = np.zeros_like(bbs)
+	counter = 0
+
+	for i in xrange(bbs.shape[0]):
+		face = bbs[i,:]
+		poselet_found = False
+		for j in xrange(poselets.shape[0]):
+			poselet = poselets[j,:]
+			if contained_in(face, poselet):
+				new_bbs[counter,:] = face
+				counter += 1
+				poselet_found = True
+				break
+		if not poselet_found:
+			face_path = os.path.join(img_folder, 'face' + str(i) + '.jpg')
+			if os.path.exists(face_path):
+				os.remove(face_path)
+
+	bbs = new_bbs[:counter,:]
+	np.save(bb_path, bbs)
+
+# def clean_duplicate_faces(img_folder):
+# 	bb_path = os.path.join(img_folder, 'face_bbs.npy')
+# 	bbs = np.load(bb_path)
+
+# 	for 
 
 
 def extract_GENKI_faces(img_path, dest_path):
@@ -258,41 +294,41 @@ def extract_group_bbs(images_path):
 		
 
 if __name__ == '__main__':
-	# extract_save_group_faces('../../data/groupdataset_release/images', '../../data/groupdataset_release/faces')
-	img_path = '../../data/groupdataset_release/images'
-	filename = '01-breeze-outdoor-dining.jpg'
-	full_path = os.path.join(img_path, filename)
-	face_extractor = FaceExtractor()
-	face_lists, img = face_extractor.detect_faces(full_path)
-	face_list = [face for face_list in face_lists for face in face_list]
-	faces = np.array(face_list)
-	# img = cv2.imread('../../data/groupdataset_release/images/01-breeze-outdoor-dining.jpg')
-	torsos = np.genfromtxt('/Users/hardiecate/Downloads/all_torsos/01-breeze-outdoor-dining_torsos.csv', delimiter=',')
-	torsos = torsos[:,:4]
-	bb_path = '../../data/groupdataset_release/annotations/all'
-	people = np.array(get_bbs(bb_path, filename))
-	matched_list = bb_matching(img, people, faces, torsos)
-	# for i, match in enumerate(matched_list):
-	# 	# print match
-	# 	color = (80 * i) % 256
-	# 	if match[1] != None and match[2] != None:
-	# 		cv2.rectangle(img, (match[0][0], match[0][1]), (match[0][0]+match[0][2], match[0][1]+match[0][3]), (0, color, 0), 2)
-	# 		cv2.rectangle(img, (match[1][0], match[1][1]), (match[1][0]+match[1][2], match[1][1]+match[1][3]), (0, color, 0), 2)
-	# 		cv2.rectangle(img, (match[2][0], match[2][1]), (match[2][0]+match[2][2], match[2][1]+match[2][3]), (0, color, 0), 2)
-	# 	elif match[1] == None and match[2] != None:
-	# 		cv2.rectangle(img, (match[0][0], match[0][1]), (match[0][0]+match[0][2], match[0][1]+match[0][3]), (0, color, 0), 2)
-	# 		cv2.rectangle(img, (match[2][0], match[2][1]), (match[2][0]+match[2][2], match[2][1]+match[2][3]), (0, color, 0), 2)
-	# 	elif match[1] != None and match[2] == None:
-	# 		cv2.rectangle(img, (match[0][0], match[0][1]), (match[0][0]+match[0][2], match[0][1]+match[0][3]), (0, color, 0), 2)
-	# 		cv2.rectangle(img, (match[1][0], match[1][1]), (match[1][0]+match[1][2], match[1][1]+match[1][3]), (0, color, 0), 2)
+	extract_save_group_faces('../../data/groupdataset_release/images', '../../data/groupdataset_release/faces')
+	# img_path = '../../data/groupdataset_release/images'
+	# filename = '01-breeze-outdoor-dining.jpg'
+	# full_path = os.path.join(img_path, filename)
+	# face_extractor = FaceExtractor()
+	# face_lists, img = face_extractor.detect_faces(full_path)
+	# face_list = [face for face_list in face_lists for face in face_list]
+	# faces = np.array(face_list)
+	# # img = cv2.imread('../../data/groupdataset_release/images/01-breeze-outdoor-dining.jpg')
+	# torsos = np.genfromtxt('/Users/hardiecate/Downloads/all_torsos/01-breeze-outdoor-dining_torsos.csv', delimiter=',')
+	# torsos = torsos[:,:4]
+	# bb_path = '../../data/groupdataset_release/annotations/all'
+	# people = np.array(get_bbs(bb_path, filename))
+	# matched_list = bb_matching(img, people, faces, torsos)
+	# # for i, match in enumerate(matched_list):
+	# # 	# print match
+	# # 	color = (80 * i) % 256
+	# # 	if match[1] != None and match[2] != None:
+	# # 		cv2.rectangle(img, (match[0][0], match[0][1]), (match[0][0]+match[0][2], match[0][1]+match[0][3]), (0, color, 0), 2)
+	# # 		cv2.rectangle(img, (match[1][0], match[1][1]), (match[1][0]+match[1][2], match[1][1]+match[1][3]), (0, color, 0), 2)
+	# # 		cv2.rectangle(img, (match[2][0], match[2][1]), (match[2][0]+match[2][2], match[2][1]+match[2][3]), (0, color, 0), 2)
+	# # 	elif match[1] == None and match[2] != None:
+	# # 		cv2.rectangle(img, (match[0][0], match[0][1]), (match[0][0]+match[0][2], match[0][1]+match[0][3]), (0, color, 0), 2)
+	# # 		cv2.rectangle(img, (match[2][0], match[2][1]), (match[2][0]+match[2][2], match[2][1]+match[2][3]), (0, color, 0), 2)
+	# # 	elif match[1] != None and match[2] == None:
+	# # 		cv2.rectangle(img, (match[0][0], match[0][1]), (match[0][0]+match[0][2], match[0][1]+match[0][3]), (0, color, 0), 2)
+	# # 		cv2.rectangle(img, (match[1][0], match[1][1]), (match[1][0]+match[1][2], match[1][1]+match[1][3]), (0, color, 0), 2)
 
-	# cv2.imshow('People!', img)
-	# cv2.waitKey(0)
-	sil_extractor = SilhouetteExtractor()
-	sils = sil_extractor.get_silhouettes(img, matched_list)
-	for sil in sils:
-		cv2.imshow('Silhouette!', sil)
-		cv2.waitKey(0)
+	# # cv2.imshow('People!', img)
+	# # cv2.waitKey(0)
+	# sil_extractor = SilhouetteExtractor()
+	# sils = sil_extractor.get_silhouettes(img, matched_list)
+	# for sil in sils:
+	# 	cv2.imshow('Silhouette!', sil)
+	# 	cv2.waitKey(0)
 
 
 

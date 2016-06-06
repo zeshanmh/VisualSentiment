@@ -21,40 +21,38 @@ from xml.dom import minidom
 # 		self.id = ""
 # 		self.x = ""
 # 		self.y = "" 
-def get_labels_pictures(tud_path='../../../data/TUD'):
+def create_filename_orient_dict(tud_path='../../../data/TUD', tud_type = 'train'):
 	# build the train dict
-	train_dict = {}
-	train_folder = os.path.join(tud_path, 'train')
-	train_filenames = [f for f in os.listdir(train_folder) if 'DS_Store' not in f]
+	# train_dict = {}
+	img_folder = os.path.join(tud_path, tud_type)
+	img_filenames = [f for f in os.listdir(img_folder) if 'DS_Store' not in f]
+	print len(img_filenames)
 
 	# get corresponding training annotations
-	train_annotation_files = [f for f in os.listdir(tud_path) if '_train' in f]
-	print train_annotation_files
+	annotation_type = '_' + tud_type
+	train_annotation_files = [f for f in os.listdir(tud_path) if annotation_type in f]
+	# print train_annotation_files
 
-	tree = []
+	all_orientations = []
 	for file in train_annotation_files:
 		fullpath = os.path.join(tud_path,file)
 		# annotation_xml = xml.etree.ElementTree.parse(fullpath).getroot()
 		annotation_xml = minidom.parse(fullpath)
 		sil_list = annotation_xml.getElementsByTagName('silhouette')
-		print len(sil_list)
 		for sil in sil_list:
 			orientation = sil.getElementsByTagName('id')
 			orientation = orientation[0]
-			print orientation.firstChild.nodeValue
-		pass
-		# tree.extend(file.readlines())
+			orientation = orientation.firstChild.nodeValue
+			all_orientations.append(orientation)
 
-	# print tree
-
-	# for filename in train_filenames:
-	# 	img_path = os.path.join(train_folder, filename)
-	# 	print img_path
+	# all_images = []
+	# for filename in img_filenames:
+	# 	img_path = os.path.join(img_folder, filename)
 	# 	img = cv2.imread(img_path)
-	# 	cv2.imshow("Faces found", img)
-	# 	cv2.waitKey(0)
-	# print train_filenames
-
+	# 	all_images.append(img)
+		# cv2.imshow("Faces found", img)
+		# cv2.waitKey(0)
+	return dict(zip(img_filenames, all_orientations))
 
 
 	# build the test dict
@@ -62,4 +60,4 @@ def get_labels_pictures(tud_path='../../../data/TUD'):
 
 
 if __name__ == '__main__':
-    get_labels_pictures()
+    create_filename_orient_dict()

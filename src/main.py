@@ -5,14 +5,14 @@ import sklearn
 import analysis
 import numpy as np
 sys.path.insert(0, './util')
-import image_util
+# import image_util
 
 # from FaceExtractor import FaceExtractor
 # from EmotionExtractor import EmotionExtractor
 # from TorsoExtractor import TorsoExtractor
-# from sklearn import svm
-# from sklearn.decomposition import PCA
-# from sklearn.externals import joblib
+from sklearn import svm
+from sklearn.decomposition import PCA
+from sklearn.externals import joblib
 from EmotionSVM import EmotionSVM
 from feature_extractors import *
 
@@ -42,29 +42,64 @@ def main():
 	# 	dest_path = './cache/GENKI_faces/GENKI_faces_looser_bounds'
 	# 	image_util.extract_missed_faces(dest_path)
 
-	img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images_Reduced.txt"
-	labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels_Reduced.txt"
-	img_path2 = '../data/groupdataset_release/images'
-	faces_path = '../data/groupdataset_release/faces'
+	##SVM Training
+	# img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images_Reduced.txt"
+	# labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels_Reduced.txt"
+	# img_path2 = '../data/groupdataset_release/images'
+	# faces_path = '../data/groupdataset_release/faces'
 
-	train_again = False
-	if train_again:
-		svm = EmotionSVM(img_path, labels_path, img_path2, 'sad', dump=True)
-		svm.train()
-		# svm = train_smile_extractor(img_path, labels_path)	
-		# joblib.dump(svm, 'svm_model.pkl')
-	else: 
-		pass
-		# print 'Loading svm...'
-		# svm = EmotionSVM(img_path, labels_path, img_path2, 'smile', fit=False)
-		# all_face_features = get_all_face_features(img_path2, faces_path, svm)
-		# print all_face_features.shape
-		# np.save('../data/groupdataset_release/face_features.npy', all_face_features)
+	# train_again = False
+	# if train_again:
+	# 	svm = EmotionSVM(img_path, labels_path, img_path2, 'sad', dump=True)
+	# 	svm.train()
+	# 	# svm = train_smile_extractor(img_path, labels_path)	
+	# 	# joblib.dump(svm, 'svm_model.pkl')
+	# else: 
+	# 	pass
+	# 	# print 'Loading svm...'
+	# 	# svm = EmotionSVM(img_path, labels_path, img_path2, 'smile', fit=False)
+	# 	# all_face_features = get_all_face_features(img_path2, faces_path, svm)
+	# 	# print all_face_features.shape
+	# 	# np.save('../data/groupdataset_release/face_features.npy', all_face_features)
 
-	poselet_path = '../data/groupdataset_release/all_poseletes_hq'
-	all_poselet_features = get_all_poselet_features(poselet_path)
-	print all_poselet_features.shape
-	np.save('../data/groupdataset_release/poselet_features.npy', all_poselet_features)
+	# poselet_path = '../data/groupdataset_release/all_poseletes_hq'
+	# all_poselet_features = get_all_poselet_features(poselet_path)
+	# print all_poselet_features.shape
+	# np.save('../data/groupdataset_release/poselet_features.npy', all_poselet_features)
+	print "Extracting features..."
+	X = construct_full_feature_matrix()
+	Y = get_label_matrix('../data/groupdataset_release/image_annotations.csv')
+
+	binary = True 
+	if binary: 
+		Y[Y == 1] = 0
+		Y[Y == 2] = 0
+		Y[Y == 3] = 1 
+		Y[Y == 4] = 1 
+	
+
+	print "Splitting into train and test set..."
+	X_train, X_test, Y_train, Y_test = sklearn.cross_validation.train_test_split(X, Y, test_size=0.2)
+
+
+
+	# class_names = {'none': 1, 'low': 2, 'moderate': 3, 'high': 4}
+	class_names = {'no': 1, 'yes': 2}
+	sentiments = ['interaction', 'focus', 'happiness', 'activity']
+
+
+	for i in xrange(Y_train.shape[1]):
+		print "Fitting svm...."
+		# svm_model = svm.LinearSVC(C=0.1)
+		svm_model = svm.SVC(C=0.1, kernel="linear", decision_function_shape='ovr', verbose=True)
+		svm_model.fit(X_train, Y_train[:,i])
+
+		joblib.dump(svm_model, './final_svm_models/svm_%s_model.pkl'%sentiments[i])
+		print "Predicting..."
+		y_predict_train = svm_model.predict(X_train)
+		y_predict = svm_model.predict(X_test)
+
+		analysis.run_analyses(y_predict_train, Y_train[:,i], y_predict, Y_test[:,i], class_names, sentiments[i])	
 
 
 	# X = get_emotion_vector(svm)

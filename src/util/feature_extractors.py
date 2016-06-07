@@ -155,10 +155,26 @@ def get_image_poselet_features(poselet_path, img_name, threshold=0.9):
 			feature_vec[ids[i]-1] += scores[i]
 	return feature_vec
 
+
 def get_image_group_features(img_path, groups):
 	# TODO
 	pass
 
+
+def construct_full_feature_matrix(only_emotion=False, only_poselet=True, only_group=False): 
+	#group_features = np.load('../cache/group_features.npy')
+	emotion_features = np.load('./cache/face_features.npy')
+	poselet_features = np.load('./cache/poselet_features.npy')
+
+	if only_emotion: 
+		return emotion_features
+
+	if only_poselet: 
+		return poselet_features
+
+	X = np.hstack((emotion_features, poselet_features))
+
+	return X 
 
 
 	# for i in xrange(0, image.shape[0]-h, h): 

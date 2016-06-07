@@ -65,9 +65,57 @@ Testing Error: 0.616666666667
 
 ##Emotion 
 --precision tends to decrease
+Predicting...
+Average Precision: 0.158823529412
+Average Recall: 0.205783799534
+Average F1: 0.150983712304
+Training Error: 0.589098532495
+Testing Error: 0.775
+Predicting...
+Average Precision: 0.0882352941176
+Average Recall: 0.25
+Average F1: 0.130434782609
+Training Error: 0.620545073375
+Testing Error: 0.65
+Predicting...
+Average Precision: 0.172222222222
+Average Recall: 0.232951717272
+Average F1: 0.180307276065
+Training Error: 0.559748427673
+Testing Error: 0.666666666667
+Predicting...
+Average Precision: 0.173536439665
+Average Recall: 0.239361702128
+Average F1: 0.186196911197
+Training Error: 0.568134171908
+Testing Error: 0.625
 
 ##poselet 
 --does really well with activity but nothing else
+Predicting
+Average Precision: 0.175641025641
+Average Recall: 0.174479166667
+Average F1: 0.164824625502
+Training Error: 0.331236897275
+Testing Error: 0.8
+Predicting...
+Average Precision: 0.24050032175
+Average Recall: 0.238371456442
+Average F1: 0.218006649595
+Training Error: 0.333333333333
+Testing Error: 0.708333333333
+Predicting...
+Average Precision: 0.266227625802
+Average Recall: 0.276972624799
+Average F1: 0.26104733766
+Training Error: 0.335429769392
+Testing Error: 0.591666666667
+Predicting...
+Average Precision: 0.247549019608
+Average Recall: 0.247080136402
+Average F1: 0.240703781513
+Training Error: 0.312368972746
+Testing Error: 0.616666666667
 
 
 #Binary Classification
@@ -121,4 +169,6 @@ Average F1: 0.603418803419
 Training Error: 0.163522012579
 Testing Error: 0.241666666667
 
-
+%prediction on orientations
+training error: 0.0935270805812
+testing error: 0.0971488912355

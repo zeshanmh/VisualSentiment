@@ -42,7 +42,7 @@ def main():
 	# 	dest_path = './cache/GENKI_faces/GENKI_faces_looser_bounds'
 	# 	image_util.extract_missed_faces(dest_path)
 
-	##SVM Training
+	#SVM Training
 	# img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images_Reduced.txt"
 	# labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels_Reduced.txt"
 	# img_path2 = '../data/groupdataset_release/images'
@@ -66,16 +66,23 @@ def main():
 	# all_poselet_features = get_all_poselet_features(poselet_path)
 	# print all_poselet_features.shape
 	# np.save('../data/groupdataset_release/poselet_features.npy', all_poselet_features)
+
+	# basepath = '../data/groupdataset_release/annotations/all'
+	# img_names = os.listdir(basepath)
+	# svm = joblib.load('./svm_models/svm_orient_model.pkl')
+	# X = get_image_orientation_features(svm)
+
+
 	print "Extracting features..."
-	X = construct_full_feature_matrix()
+	X = construct_full_feature_matrix(only_poselet=True)
 	Y = get_label_matrix('../data/groupdataset_release/image_annotations.csv')
 
-	binary = True 
-	if binary: 
-		Y[Y == 1] = 0
-		Y[Y == 2] = 0
-		Y[Y == 3] = 1 
-		Y[Y == 4] = 1 
+	# binary = True 
+	# if binary: 
+	# 	Y[Y == 1] = 0
+	# 	Y[Y == 2] = 0
+	# 	Y[Y == 3] = 1 
+	# 	Y[Y == 4] = 1 
 	
 
 	print "Splitting into train and test set..."

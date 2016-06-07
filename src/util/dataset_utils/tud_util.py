@@ -2,12 +2,19 @@ import numpy as np
 import os
 import cv2
 import sys	
+import sklearn
 
 # from xml.dom import minidom
 import xml.etree.ElementTree as ET
 sys.path.insert(0, '../.')
+sys.path.insert(0, '../../.')
+import analysis 
+
 from SilhouetteExtractor import SilhouetteExtractor
 from image_util import *
+from sklearn import svm
+from sklearn.decomposition import PCA
+from sklearn.externals import joblib
 
 TUD_PATH = '../../../data/TUD'
 
@@ -42,15 +49,35 @@ def train_orientation_svm():
 	img_list = []
 	img_names = []
 
-	FEATURE_VEC_SIZE = 2494800
+	FEATURE_VEC_SIZE = 1764
+
+	winSize = (64,64)
+	blockSize = (16,16)
+	blockStride = (8,8)
+	cellSize = (8,8)
+	nbins = 9
+	derivAperture = 1
+	winSigma = 4.
+	histogramNormType = 0
+	L2HysThreshold = 2.0000000000000001e-01
+	gammaCorrection = 0
+	nlevels = 64
+	hog = cv2.HOGDescriptor(winSize,blockSize,blockStride,cellSize,nbins,derivAperture,winSigma,
+	                        histogramNormType,L2HysThreshold,gammaCorrection,nlevels)
+	#compute(img[, winStride[, padding[, locations]]]) -> descriptors
+	winStride = (8,8)
+	padding = (8,8)
+	locations = ((10,20),)
+	# hist = hog.compute(image,winStride,padding,locations)
 
 	X = []
 	Y = []
-	if not os.path.isfile('../../cache/orientation_features2.npy') or run_extraction_again: 
+	if not os.path.isfile('../../cache/orientation_features.npy') or run_extraction_again: 
 		X = np.zeros((len(train_dict), FEATURE_VEC_SIZE))
-		for i,img_name in enumerate(train_dict.keys(), 2500):
-			if run_1 and i == 2500:
-				break
+		for i,img_name in enumerate(train_dict.keys()):
+			print 'image %d' % i
+			# if run_1 and i == 2500:
+			# 	break
 		# for img_label_pts in train_dict.keys():
 			img_names.append(img_name)
 			img_path = os.path.join(TUD_PATH,tud_type,img_name)
@@ -61,20 +88,38 @@ def train_orientation_svm():
 			img = cv2.resize(gray_img, (NORMALIZED_SIZE, NORMALIZED_SIZE))
 
 			# resize to 100 by 100
-	 		hog = cv2.HOGDescriptor()
+	 		# hog = cv2.HOGDescriptor()
 	 		# im = cv2.imread(sample)
-			h = hog.compute(img)
-			print i
+			h = hog.compute(img, winStride, padding, locations)
 			# print X.shape
 			X[i,:] = h.T
 
 		Y = train_dict.values()
 		# print Y
-		np.save('../../cache/orientation_features1', X)
+		np.save('../../cache/orientation_features', X)
 		np.save('../../cache/orientation_labels',Y)
 	else:
-		np.load('../../cache/orientation_features', X)
-		np.load('../../cache/orientation_labels',Y)
+		X = np.load('../../cache/orientation_features.npy')
+		Y = np.load('../../cache/orientation_labels.npy')
+
+	X_train, X_test, y_train, y_test = sklearn.cross_validation.train_test_split(X, Y, test_size=0.2)
+
+	run_svm = False
+	if not os.path.isfile('../../svm_models/svm_orient_model.pkl') or run_svm: 	
+		svm_model = svm.SVC(kernel="linear", decision_function_shape='ovr', verbose=True)
+		svm_model.fit(X_train, y_train)
+		joblib.dump(svm_model, '../../svm_models/svm_orient_model.pkl')
+	else: 
+		svm_model = joblib.load('../../svm_models/svm_orient_model.pkl')
+
+	print "Predicting..."
+	y_predict_train = svm_model.predict(X_train)
+	y_predict = svm_model.predict(X_test)
+	_, training_error = analysis.output_error(y_predict_train, y_train)
+	_, testing_error = analysis.output_error(y_predict, y_test)
+
+	print "training error:", training_error
+	print "testing error:", testing_error 
 
 	# for img_name,orientation in train_dict.iteritems():
 	# for img_label_pts in train_dict.keys():

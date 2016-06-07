@@ -14,6 +14,7 @@ BB_CAP = 15
 NUM_ATTRIBUTES = 10
 NUM_BINS_PER_SIDE = 4
 NUM_IMG_FACE_FEATURES = NUM_BINS_PER_SIDE*NUM_BINS_PER_SIDE*2
+ORIENT_FEAT_SIZE = 8 
 
 
 def pixel_extractor(basepath, img_names): 
@@ -43,6 +44,7 @@ def color_histogram(basepath, img_names):
 
 def get_bbs(basepath, img_name): 	
 	matfile = img_name[:-4] + '_labels.mat'
+	# matfile = img_name
 	# print matfile
 	mat_struct = io.loadmat(os.path.join(basepath, matfile))
 	hmns = mat_struct['hmns']
@@ -156,12 +158,69 @@ def get_image_poselet_features(poselet_path, img_name, threshold=0.9):
 	return feature_vec
 
 
-def get_image_group_features(img_path, groups):
+def get_image_orientation_features(svm):
 	# TODO
-	pass
+	FEATURE_VEC_SIZE = 1764
+
+	winSize = (64,64)
+	blockSize = (16,16)
+	blockStride = (8,8)
+	cellSize = (8,8)
+	nbins = 9
+	derivAperture = 1
+	winSigma = 4.
+	histogramNormType = 0
+	L2HysThreshold = 2.0000000000000001e-01
+	gammaCorrection = 0
+	nlevels = 64
+	hog = cv2.HOGDescriptor(winSize,blockSize,blockStride,cellSize,nbins,derivAperture,winSigma,
+	                        histogramNormType,L2HysThreshold,gammaCorrection,nlevels)
+	#compute(img[, winStride[, padding[, locations]]]) -> descriptors
+	winStride = (8,8)
+	padding = (8,8)
+	locations = ((10,20),)
 
 
-def construct_full_feature_matrix(only_emotion=False, only_poselet=True, only_group=False): 
+	# basepath = '../data/groupdataset_release/real_annotations'
+	# img_paths = os.listdir(basepath)
+	basepath = '../data/groupdataset_release/images/all'
+	basepath2 = '../data/groupdataset_release/real_annotations'
+	img_paths = os.listdir(basepath)
+	X = np.zeros((len(img_paths),ORIENT_FEAT_SIZE))
+	for i,img_path in enumerate(img_paths): 
+		print 'image %d' % i
+		if '.DS' in img_path: continue
+		bbs = get_bbs(basepath2, img_path)
+		img = cv2.imread(os.path.join(basepath, img_path))
+		# cv2.imshow('face', img)
+		# cv2.waitKey(0)
+
+		eight_bins = np.zeros((ORIENT_FEAT_SIZE,))
+		H = np.zeros((len(bbs),FEATURE_VEC_SIZE))
+		for j,bb in enumerate(bbs): 
+			print j
+			bb = [int(x) for x in bb]
+			x,y,w,h = bb
+
+			person = img[y:y+h,x:x+w]
+			print person.shape
+			x = hog.compute(person, winStride, padding, locations)
+			H[j,:] = np.reshape(x, (FEATURE_VEC_SIZE,))
+		
+		'Predicting...'
+		y_predict = svm.predict(H)
+		for elem in y_predict: 
+			eight_bins[elem] += 1
+
+		X[i,:] = eight_bins
+
+		print X[i,:]
+
+	return X
+	
+
+
+def construct_full_feature_matrix(only_emotion=False, only_poselet=False, only_group=False): 
 	#group_features = np.load('../cache/group_features.npy')
 	emotion_features = np.load('./cache/face_features.npy')
 	poselet_features = np.load('./cache/poselet_features.npy')
@@ -209,4 +268,7 @@ def construct_full_feature_matrix(only_emotion=False, only_poselet=True, only_gr
 if __name__ == '__main__':
     img_names = get_filename_list('../../data/groupdataset_release/file_names.txt')
     bb_extractor('../../data/groupdataset_release/annotations/all', img_names)
+
+
+
     

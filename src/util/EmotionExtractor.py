@@ -27,6 +27,7 @@ class EmotionExtractor:
 		I1 = cv2.GaussianBlur(img, (3,3), sigma)
 		I2 = cv2.GaussianBlur(I1, (3,3), np.sqrt(2)*sigma)
 		down = cv2.pyrDown(I2, dstsize=(I2.shape[0]/2, I2.shape[1]/2))
+		# print down.shape
 		I_new = cv2.pyrUp(down, dstsize=I2.shape)
 		return I1, I2, I_new
 
@@ -87,10 +88,10 @@ class EmotionExtractor:
 	def extract_emotion_features(self):
 
 		#read in the image 
-		if self.face.shape[0] == 48: 
-			gray_img = self.face 
-		else:
-			gray_img = cv2.cvtColor(self.face, cv2.COLOR_RGB2GRAY)
+		# if self.face.shape[0] == 48: 
+		# 	gray_img = self.face 
+		# else:
+		gray_img = cv2.cvtColor(self.face, cv2.COLOR_RGB2GRAY)
 
 		#normalize to 64x64; precondition: make sure that face patches are square!!
 		gray_img_resize = cv2.resize(gray_img, (self.NORMALIZED_SIZE, self.NORMALIZED_SIZE)) 

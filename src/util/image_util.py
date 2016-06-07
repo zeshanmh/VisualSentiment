@@ -124,7 +124,6 @@ def clean_duplicate_faces(img_folder):
 		cv2.imwrite(face_path, new_faces[i])
 
 
-
 def remove_files_from_directory(path):
 	for the_file in os.listdir(path):
 		file_path = os.path.join(path, the_file)
@@ -209,6 +208,47 @@ def extract_GENKI_faces(img_path, dest_path):
 
 # 	print "Number of times no face found per image per classifier:", none_cntr 
 
+def get_face_matrix_from_matching_list(matching_list):
+	face_matrix = np.zeros((len(matching_list), 4))
+	counter = 0
+
+	for match in matching_list:
+		if match[1] != None:
+			face_matrix[counter,:] = match[1]
+			counter += 1
+
+	face_matrix = face_matrix[:counter,:]
+	return face_matrix
+
+def clean_all_faces_with_bb_matching(imgs_path, person_bb_path, faces_path, torsos_path):
+	img_folders = [folder for folder in os.listdir(faces_path) if 'DS_Store' not in folder]
+
+	for i, folder in enumerate(img_folders):
+		print folder
+		img_path = os.path.join(imgs_path, folder + '.jpg')
+		img = cv2.imread(img_path)
+		ppl_bbs = np.array(get_bbs(person_bb_path, folder + '.jpg'))
+		faces_folder = os.path.join(faces_path, folder)
+		face_bb_path = os.path.join(faces_folder, 'face_bbs.npy')
+		face_bbs = np.load(face_bb_path)
+		torso_bbs = np.genfromtxt(os.path.join(torsos_path, folder + '_torsos.csv'), delimiter=',')
+		torso_bbs = torso_bbs[:,:4]
+		matching_list = bb_matching(img, ppl_bbs, face_bbs, torso_bbs)
+
+		# remove all files in folder, replace face_bbs
+		remove_files_from_directory(faces_folder)
+		face_bbs = get_face_matrix_from_matching_list(matching_list)
+		np.save(face_bb_path, face_bbs)
+
+		# save remaining faces
+		for i in xrange(face_bbs.shape[0]):
+			x, y, w, h = face_bbs[i,:]
+			face = img[int(y):int(y+h),int(x):int(x+w)]
+			face_path = os.path.join(faces_folder, 'face' + str(i) + '.jpg')
+			cv2.imwrite(face_path, face)
+
+
+
 # assumes params are num_bbs x 4 np arrays
 # returns list of list of tuples of coordinates
 def bb_matching(img, ppl_bbs, face_bbs, torso_bbs):
@@ -216,9 +256,9 @@ def bb_matching(img, ppl_bbs, face_bbs, torso_bbs):
 	face_bbs = face_bbs.astype(int)
 	torso_bbs = torso_bbs.astype(int)
 
-	print 'num people: ', ppl_bbs.shape[0]
-	print 'num faces: ', face_bbs.shape[0]
-	print 'num torsos: ', torso_bbs.shape[0]
+	# print 'num people: ', ppl_bbs.shape[0]
+	# print 'num faces: ', face_bbs.shape[0]
+	# print 'num torsos: ', torso_bbs.shape[0]
 
 	ppl_bbs = ppl_bbs.tolist()
 	face_bbs = face_bbs.tolist()
@@ -230,7 +270,6 @@ def bb_matching(img, ppl_bbs, face_bbs, torso_bbs):
 
 	unmatched_ppl = copy.copy(ppl_bbs)
 	unmatched_faces = copy.copy(face_bbs)
-	unmatched_torsos = copy.copy(torso_bbs)
 
 	# match people and faces
 	for i, face in enumerate(face_bbs):
@@ -266,12 +305,13 @@ def bb_matching(img, ppl_bbs, face_bbs, torso_bbs):
 	torsos_w_sizes = [(torso, torso[2] * torso[3]) for torso in torso_bbs]
 	sorted_torsos_w_sizes = sorted(torsos_w_sizes, key=lambda torso_tup: torso_tup[1])
 	sorted_torsos = [torso_tup[0] for torso_tup in sorted_torsos_w_sizes]
+	unmatched_torsos = copy.copy(sorted_torsos)
 
 	# match people and torsos
 	for person in sorted_bbs:
 		best_torso = None
 
-		for torso in sorted_torsos:
+		for torso in unmatched_torsos:
 			if contained_in(torso, person):
 				best_torso = torso
 
@@ -339,7 +379,11 @@ def extract_group_bbs(images_path):
 		
 
 if __name__ == '__main__':
-	pass
+	imgs_path = '../../data/groupdataset_release/images'
+	person_bb_path = '../../data/groupdataset_release/annotations/all'
+	faces_path = '../../data/groupdataset_release/faces'
+	torsos_path = '../../data/groupdataset_release/all_torsos_hq'
+	clean_all_faces_with_bb_matching(imgs_path, person_bb_path, faces_path, torsos_path)
 	# extract_save_group_faces('../../data/groupdataset_release/images', '../../data/groupdataset_release/faces')
 	# clean_all_faces('../../data/groupdataset_release/faces', poselet_dict)
 	# img_path = '../../data/groupdataset_release/images'

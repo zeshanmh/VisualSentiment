@@ -28,4 +28,5 @@ class GroupExtractor:
 			threeD[i,:] = np.array([center[0], center[1], depths[i]])
 		return threeD
 
+	def get_clusters(threeD_coords, orientations):
 		

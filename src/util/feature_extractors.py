@@ -5,12 +5,15 @@ import os
 import scipy.io as io
 
 from data_util import *
+from EmotionExtractor import EmotionExtractor
 
 NUM_PIXELS = 512*512
 NUM_HIST = 512
 NUM_IMAGES = 597
 BB_CAP = 15
 NUM_ATTRIBUTES = 10
+NUM_BINS_PER_SIDE = 4
+NUM_IMG_FACE_FEATURES = NUM_BINS_PER_SIDE*NUM_BINS_PER_SIDE*2
 
 
 def pixel_extractor(basepath, img_names): 
@@ -84,29 +87,48 @@ def bb_extractor(basepath, img_names):
 
 	return X
 
+def get_all_face_features(images_path, faces_folder, classifier):
+	img_names = [f for f in os.listdir(images_path) if os.path.isfile(os.path.join(images_path, f)) and 'DS_Store' not in f]
+	n_images = len(img_names)
+	X = np.zeros((n_images, NUM_IMG_FACE_FEATURES))
 
-def get_image_face_features(img_path, faces_folder, classifier):
+	for i, img_name in enumerate(img_names):
+		image_path = os.path.join(images_path, img_name)
+		face_folder = os.path.join(faces_folder, img_name[:-4])
+		X[i,:] = get_image_face_features(image_path, face_folder, classifier)
+
+	return X
+
+def get_image_face_features(img_path, face_folder, classifier):
 	image = cv2.imread(img_path)
-	face_bbs = np.load(os.path.join(faces_folder, 'face_bbs.npy'))
+	face_bbs = np.load(os.path.join(face_folder, 'face_bbs.npy'))
 	n_faces = face_bbs.shape[0]
-	faces = [cv2.imread(face) for face in os.listdir(faces_folder) if 'faces' not in face and 'DS_Store' not in face]
-	y, x = image.shape
+	faces = [face_name for face_name in os.listdir(face_folder) if 'faces' not in face_name and 'DS_Store' not in face_name]
+	y = image.shape[0]
+	x = image.shape[1]
+	
+	h = y / NUM_BINS_PER_SIDE
+	w = x / NUM_BINS_PER_SIDE
 
-	N_BINS_PER_SIDE = 4
-	h = y / N_BINS_PER_SIDE
-	w = x / N_BINS_PER_SIDE
+	emotion_extractor = EmotionExtractor()
+	feature_vec = np.zeros(NUM_IMG_FACE_FEATURES)
 
-	feature_vec = np.zeros(N_BINS_PER_SIDE*N_BINS_PER_SIDE*2)
+	print face_folder
 
 	for k in xrange(n_faces):
+		face_path = os.path.join(face_folder, faces[k])
+		face = cv2.imread(face_path)
 		face_bb = face_bbs[k,:]
-		xf, yf, wf, hf = face_bb
+		xf, yf, wf, hf = [int(c) for c in face_bb]
 		x_center = xf + (wf/2)
 		y_center = yf + (hf/2)
 		i = y_center / h
 		j = x_center / w
-		bin_num = i * N_BINS_PER_SIDE + j
-		prediction = classifier.predict(faces[k])
+		bin_num = i * NUM_BINS_PER_SIDE + j
+
+		emotion_extractor.set_face(face)
+		face_features = emotion_extractor.extract_emotion_features()
+		prediction = classifier.predict_single_face(face_features)
 		feature_vec[2*bin_num + prediction] += 1
 
 	return feature_vec

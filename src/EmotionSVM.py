@@ -138,6 +138,10 @@ class EmotionSVM:
 		print "testing error:", testing_error 
 
 
+	def predict_single_face(self, face_features):
+		prediction = self.classifier.predict(face_features.reshape(1, -1))
+		return prediction[0]
+
 	def predict(self, image_path):
 		face_extractor = FaceExtractor()
 		faces_list, im = face_extractor.detect_faces(image_path)

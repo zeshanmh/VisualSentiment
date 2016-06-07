@@ -39,16 +39,22 @@ if ~enable_bigq || faster_detection
 end
 
 % read in all images form a folder 
-foldername = '../../data/groupdataset_release/images/all/';
+foldername = '../../data/TUD/test/';
 srcFiles = dir(foldername);
+size(srcFiles)
 
 % % make dir to hold all poselet bounds if it doesn't exist
-poselets_dir = '../../data/groupdataset_release/all_poselets/';
+poselets_dir = '../../data/TUD/test/all_poselets/';
 mkdir(poselets_dir);
 
 % make dir to hold all torso bounds if it doesn't exist
-torso_dir = '../../data/groupdataset_release/all_torsos/';
+torso_dir = '../../data/TUD/test/all_torsos/';
 mkdir(torso_dir);
+
+% make dir to hold all person bounds
+people_dir = '../../data/TUD/test/all_people/';
+mkdir(people_dir);
+
 
 % our wanted poselets
 % rel_poselets = [7,16,19,22,24,25,28,30,34,35,45,48,51,53,63,72,74,80,83,100,105,112,115,119,129]; 
@@ -56,6 +62,9 @@ mkdir(torso_dir);
 % for each image
 for i = 3 : length(srcFiles)
     i
+    if srcFiles(i).name == '.DS_Store'
+        continue
+    end
     filename = strcat(foldername,srcFiles(i).name);
     img = imread(filename);
 
@@ -68,25 +77,13 @@ for i = 3 : length(srcFiles)
     
     poselets = [poselet_bounds poselet_ids poselet_scores];
     
-%     rel_poselet_bounds = zeros(size(poselet_bounds));
-%     rel_poselet_scores = zeros(size(rel_poselet_bounds));
-%     rel_poselet_ids = zeros(size(rel_poselet_bounds)); 
-%     cntr = 0;
-%     % loop through our wanted poselets
-%     for i = 1:length(rel_poselets)
-%        for k = 1:length(poselet_ids)
-%           rel_id = rel_poselets(i);
-%           if (poselet_ids(k) == rel_id)
-%               % grab corresponding poselet bounds
-%               cntr = cntr + 1;
-%               rel_poselet_bounds(cntr,:) = poselet_bounds(k,:);
-%               
-%           end
-%        end
-%         
-%     end
-%     
-%     cntr
+    people_bounds = bounds_predictions.bounds';
+    people_scores = bounds_predictions.score;
+    people = [people_bounds people_scores];
+    
+    all_torso_bounds = torso_predictions.bounds';
+    all_torso_scores = torso_predictions.score;
+    torsos = [all_torso_bounds all_torso_scores];
     
     
 %     % get the image filename without the extension to save torso file
@@ -96,16 +93,15 @@ for i = 3 : length(srcFiles)
 %      % create and store data as csv file
     poselet_filename = strcat(poselets_dir,filename_no_ext,'_poselets.csv');
     csvwrite(poselet_filename, poselets);
+       
     
-    % get the image filename without the extension to save torso file
-    all_torso_bounds = torso_predictions.bounds';
-    all_torso_scores = torso_predictions.score;
-    
-    torsos = [all_torso_bounds all_torso_scores];
     
      % create and store data as csv file
     torso_filename = strcat(torso_dir,filename_no_ext,'_torsos.csv');
     csvwrite(torso_filename, torsos);
+    
+    people_filename = strcat(people_dir,filename_no_ext,'_people.csv');
+    csvwrite(people_filename, people);
     
     
 %     % for each torso

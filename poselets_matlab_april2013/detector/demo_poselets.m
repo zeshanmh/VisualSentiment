@@ -49,7 +49,7 @@ if ~enable_bigq || faster_detection
    disp('*******************************************************');
 end
 
-im1.image_file{1}=[data_root '/test3.jpg'];
+im1.image_file{1}=[data_root '/test4.png'];
 img = imread(im1.image_file{1});
 
 [bounds_predictions,poselet_hits,torso_predictions]=detect_objects_in_image(img, model, config);

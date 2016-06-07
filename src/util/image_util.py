@@ -96,43 +96,43 @@ def extract_save_group_faces(img_path, dest_path):
 # 			face_name = 'face' + str(i) + '.jpg'
 # 			cv2.imwrite(os.path.join(new_fold, face_name), face_window)
 
-# TODO: remove poselets
-def clean_all_faces(faces_path):
-	dirnames = os.listdir(faces_path)
-	for i, dirname in enumerate(dirnames):
-		if dirname == '.DS_Store': 
-			continue
+# # TODO: remove poselets
+# def clean_all_faces(faces_path):
+# 	dirnames = os.listdir(faces_path)
+# 	for i, dirname in enumerate(dirnames):
+# 		if dirname == '.DS_Store': 
+# 			continue
 
-		img_folder = os.path.join(faces_path, dirname)
-		# poselets = poselet_dict[dirname]
-		# clean_faces(img_folder, poselets)
-		clean_duplicate_faces(img_folder)
+# 		img_folder = os.path.join(faces_path, dirname)
+# 		# poselets = poselet_dict[dirname]
+# 		# clean_faces(img_folder, poselets)
+# 		clean_duplicate_faces(img_folder)
 
 
 
-def clean_faces(img_folder, poselets):
-	bb_path = os.path.join(img_folder, 'face_bbs.npy')
-	bbs = np.load(bb_path)
-	new_bbs = np.zeros_like(bbs)
-	counter = 0
+# def clean_faces(img_folder, poselets):
+# 	bb_path = os.path.join(img_folder, 'face_bbs.npy')
+# 	bbs = np.load(bb_path)
+# 	new_bbs = np.zeros_like(bbs)
+# 	counter = 0
 
-	for i in xrange(bbs.shape[0]):
-		face = bbs[i,:]
-		poselet_found = False
-		for j in xrange(poselets.shape[0]):
-			poselet = poselets[j,:]
-			if contained_in(face, poselet):
-				new_bbs[counter,:] = face
-				counter += 1
-				poselet_found = True
-				break
-		if not poselet_found:
-			face_path = os.path.join(img_folder, 'face' + str(i) + '.jpg')
-			if os.path.exists(face_path):
-				os.remove(face_path)
+# 	for i in xrange(bbs.shape[0]):
+# 		face = bbs[i,:]
+# 		poselet_found = False
+# 		for j in xrange(poselets.shape[0]):
+# 			poselet = poselets[j,:]
+# 			if contained_in(face, poselet):
+# 				new_bbs[counter,:] = face
+# 				counter += 1
+# 				poselet_found = True
+# 				break
+# 		if not poselet_found:
+# 			face_path = os.path.join(img_folder, 'face' + str(i) + '.jpg')
+# 			if os.path.exists(face_path):
+# 				os.remove(face_path)
 
-	bbs = new_bbs[:counter,:]
-	np.save(bb_path, bbs)
+# 	bbs = new_bbs[:counter,:]
+# 	np.save(bb_path, bbs)
 
 def clean_duplicate_faces(img_folder):
 	bb_path = os.path.join(img_folder, 'face_bbs.npy')
@@ -348,15 +348,21 @@ def clean_all_faces_with_bb_matching(imgs_path, person_bb_path, faces_path, tors
 # returns list of list of tuples of coordinates
 def bb_matching(img, ppl_bbs, face_bbs, torso_bbs):
 	ppl_bbs = ppl_bbs.astype(int)
+	# if face_bbs != None:
 	face_bbs = face_bbs.astype(int)
 	torso_bbs = torso_bbs.astype(int)
 
-	# print 'num people: ', ppl_bbs.shape[0]
-	# print 'num faces: ', face_bbs.shape[0]
-	# print 'num torsos: ', torso_bbs.shape[0]
+	print 'num people: ', ppl_bbs.shape[0]
+	# if face_bbs != None:
+	print 'num faces: ', face_bbs.shape[0]
+	print 'num torsos: ', torso_bbs.shape[0]
+
 
 	ppl_bbs = ppl_bbs.tolist()
+	# if face_bbs != None:
 	face_bbs = face_bbs.tolist()
+	# else:
+	# 	face_bbs = []
 	torso_bbs = torso_bbs.tolist()
 
 	matching_list = []
@@ -437,6 +443,7 @@ def center_contained_in(bb1, bb2):
 	return (cent1x >= x2) and (cent1x <= x2 + w2) and (cent1y >= y2) and (cent1y <= y2 + h2)
 
 def contained_in(bb_small, bb_big):
+	# print bb_small
 	sx, sy, sw, sh = bb_small
 	bx, by, bw, bh = bb_big
 	return (sx >= bx) and (sx+sw <= bx+bw) and (sy >= by) and (sy+sh <= by+bh)

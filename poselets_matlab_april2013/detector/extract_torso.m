@@ -39,11 +39,11 @@ if ~enable_bigq || faster_detection
 end
 
 % read in all images form a folder 
-foldername = '../../../data/groupdataset_release/images/all/';
+foldername = '../../../data/TUD/train/';
 srcFiles = dir(foldername);
 
 % make dir to hold all torso bounds if it doesn't exist
-torso_dir = '../../../data/groupdataset_release/all_torsos/';
+torso_dir = '../../../data/TUD/all_train_torsos/';
 mkdir(torso_dir);
 
 % for each image

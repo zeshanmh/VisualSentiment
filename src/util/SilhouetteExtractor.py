@@ -18,13 +18,14 @@ class SilhouetteExtractor:
 	def __init__(self):
 		pass
 
-	def get_silhouettes(self, img, bb_matching_list):
-		silhouettes = []
-		print bb_matching_list
+	def get_silhouetted_images(self, img='', bb_matching_list=''):
+		silhouetted_images = []
+		# print bb_matching_list
+		print len(bb_matching_list)
 		for match in bb_matching_list: 
 			# print match
-			# person, face, torso = match
-			# mask = self.get_mask(img, person, face, torso).astype('uint8')
+			person, face, torso = match
+			mask = self.get_mask(img, person, face, torso).astype('uint8')
 			# # mask = np.zeros((img.shape[0], img.shape[1]))
 			# bg_model = np.zeros((1, 65), np.float64)
 			# fg_model = np.zeros((1, 65), np.float64)
@@ -38,21 +39,28 @@ class SilhouetteExtractor:
 			# print mask.shape
 			# print type(mask)
 			# img = img.astype('uint8')
-			img = cv2.imread('../../data/groupdataset_release/images/01-breeze-outdoor-dining.jpg')
-			mask = np.zeros(img.shape[:2],np.uint8)
+			# img = cv2.imread('../../data/groupdataset_release/images/01-breeze-outdoor-dining.jpg')
 			bgdModel = np.zeros((1,65), np.float64)
 			fgdModel = np.zeros((1,65), np.float64)
 
-			rect = (50,50,450,290)
+			# rect = (50,50,450,290)
+			# print img.shape
 
-			mask, _, _ = cv2.grabCut(img, mask, rect, bgdModel, fgdModel, 5, cv2.GC_INIT_WITH_RECT)
+			mask, _, _ = cv2.grabCut(img, mask, None, bgdModel, fgdModel, 5, cv2.GC_INIT_WITH_MASK)
+
+			mask = np.where((mask==2)|(mask==0),0,1).astype('uint8')
+  	 		silhouetted_image = img*mask[:,:,np.newaxis]
+  	 		silhouetted_images.append(silhouetted_image)
+
+  	 		# cv2.imshow('silhouette', img)
+  	 		# cv2.waitKey(0)
 			# mask = np.where((mask==2)|(mask==0), 0, 1).astype('uint8')
 			# new_img = img * mask[:,:,np.newaxis]
 			# x, y, w, h = person
 			# silhouette = new_img[y:y+h,x:x+w,:]
 			# silhouettes.append(silhouette)
 
-		return silhouettes
+		return silhouetted_images
 		# basepath1 = '../data/groupdataset_release/annotations/all'
 		# basepath2 = '../data/groupdataset_release/images'
 
@@ -71,14 +79,36 @@ class SilhouetteExtractor:
 				cv2.rectangle(img, (x,y), (x+w,y+h), color, 2)
 
 		x, y, w, h = img_bb
-		if face_bb != None: x_face, y_face, w_face, h_face = face_bb
-		if torso_bb != None: x_torso, y_torso, w_torso, h_torso = torso_bb
-		mask = np.zeros((img.shape[0], img.shape[1]))
 
 		# setting probable values
+		mask = np.zeros((img.shape[0], img.shape[1]))	
 		mask[y:y+h,x:x+w] = cv2.GC_PR_BGD
-		mask[y_face:y_face+h_face,x_face:x_face+w_face] = cv2.GC_PR_FGD
-		mask[y_torso:y_torso+h_torso,x_torso:x_torso+w_torso] = cv2.GC_PR_FGD
+
+		if face_bb != None: 
+			x_face, y_face, w_face, h_face = face_bb
+			mask[y_face:y_face+h_face,x_face:x_face+w_face] = cv2.GC_PR_FGD
+		if torso_bb != None: 
+			x_torso, y_torso, w_torso, h_torso = torso_bb
+			mask[y_torso:y_torso+h_torso,x_torso:x_torso+w_torso] = cv2.GC_PR_FGD
+			print img.shape
+			print torso_bb
+
+		FGD_present = False
+		BGD_present = False
+		for y in xrange(mask.shape[0]):
+			for x in xrange(mask.shape[1]):
+				if mask[y,x] == cv2.GC_PR_FGD:
+					FGD_present = True
+				elif mask[y,x] == cv2.GC_PR_BGD:
+					BGD_present = True
+		if not FGD_present:
+			print "Grab cut is going to cry. Foreground not present"
+		if not  BGD_present:
+			print "Grab cut is going to cry. Background not present"
+		if not FGD_present or not BGD_present:
+			print mask[y_torso:y_torso+h_torso,x_torso:x_torso+w_torso]
+			print np.sum(mask)
+		
 
 		draw_rect(img_bb, (0,255,0), draw)
 		draw_rect(face_bb, (0,0,255), draw)

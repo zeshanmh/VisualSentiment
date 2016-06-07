@@ -4,6 +4,7 @@ import numpy as np
 FACE_HEIGHT = 0.17
 CAM_FOC_LENGTH = 500
 SCALE_PARAM = FACE_HEIGHT * CAM_FOC_LENGTH
+DOT_PROD_SCALING = 10
 
 class GroupExtractor: 
 
@@ -28,4 +29,10 @@ class GroupExtractor:
 			threeD[i,:] = np.array([center[0], center[1], depths[i]])
 		return threeD
 
-		
+	def get_clusters(threeD, orientations):
+		n_people = threeD.shape[0]
+		max_k = int(np.ceil(n_people / 2.0))
+
+		for k in xrange(1, max_k+1):
+			cent_idxs = np.random.choice(np.arange(n_people), size=k)
+			cents = threeD[cents_idxs,:]

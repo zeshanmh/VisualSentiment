@@ -14,6 +14,7 @@ import image_util
 # from sklearn.decomposition import PCA
 # from sklearn.externals import joblib
 from EmotionSVM import EmotionSVM
+from feature_extractors import *
 
 def main():
 	##Torso Extraction##
@@ -43,7 +44,8 @@ def main():
 
 	img_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Images_Reduced.txt"
 	labels_path = "../data/GENKI-R2009a/Subsets/GENKI-4K/GENKI-4K_Labels_Reduced.txt"
-	img_path2 = '../data/groupdataset_release/images/all'
+	img_path2 = '../data/groupdataset_release/images'
+	faces_path = '../data/groupdataset_release/faces'
 
 	train_again = False
 	if train_again:
@@ -52,9 +54,19 @@ def main():
 		# svm = train_smile_extractor(img_path, labels_path)	
 		# joblib.dump(svm, 'svm_model.pkl')
 	else: 
-		print 'Loading svm...'
-		svm = EmotionSVM(img_path, labels_path, img_path2, 'smile', fit=False)
-	
+		pass
+		# print 'Loading svm...'
+		# svm = EmotionSVM(img_path, labels_path, img_path2, 'smile', fit=False)
+		# all_face_features = get_all_face_features(img_path2, faces_path, svm)
+		# print all_face_features.shape
+		# np.save('../data/groupdataset_release/face_features.npy', all_face_features)
+
+	poselet_path = '../data/groupdataset_release/all_poseletes_hq'
+	all_poselet_features = get_all_poselet_features(poselet_path)
+	print all_poselet_features.shape
+	np.save('../data/groupdataset_release/poselet_features.npy', all_poselet_features)
+
+
 	# X = get_emotion_vector(svm)
 	# test_path = ''
 	# filenames = os.listdir(test_path)

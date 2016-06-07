@@ -1,0 +1,124 @@
+happy/neutral: 
+training error: 0.0
+testing error: 0.285
+
+sad/neutral: 
+training error: 0.0
+testing error: 0.44
+
+smile/neutral: 
+training error: 0.0 
+testing error: 0.165 
+
+
+
+SVM: 
+-for each image 
+	-run SVM on all faces 
+	-[vector of smiles/non-smiles] 
+	-ratio of 'smileyness' (ratio of smiles to non-smiles)
+
+-map ratios to attribute space 
+
+##Combined Emotion and Poselet
+
+'Interaction Results': 
+Average Precision: 0.322739514675
+Average Recall: 0.329792068855
+Average F1: 0.321875
+Training Error: 0.310272536688
+Testing Error: 0.641666666667
+
+'Focus Results': 
+Average Precision: 0.284350132626
+Average Recall: 0.279644026187
+Average F1: 0.273678166096
+Training Error: 0.266247379455
+Testing Error: 0.666666666667
+
+'Happiness Results': 
+#Average Precision: 0.279411764706
+#Average Recall: 0.268939393939
+#Average F1: 0.26594899128
+#Training Error: 0.278825995807
+#Testing Error: 0.625
+
+Average Precision: 0.303246753247
+Average Recall: 0.309692798895
+Average F1: 0.302505514199
+Training Error: 0.30607966457
+Testing Error: 0.558333333333
+
+'Activity Results':
+#Average Precision: 0.263916459884
+#Average Recall: 0.256866580624
+#Average F1: 0.241935483871
+#Training Error: 0.285115303983
+#Testing Error: 0.616666666667
+
+Average Precision: 0.298418134377
+Average Recall: 0.293669314796
+Average F1: 0.270061535122
+Training Error: 0.285115303983
+Testing Error: 0.616666666667
+
+
+##Emotion 
+--precision tends to decrease
+
+##poselet 
+--does really well with activity but nothing else
+
+
+#Binary Classification
+'Focus Results': 
+Predicting...
+Average Precision: 0.536458333333
+Average Recall: 0.524305555556
+Average F1: 0.503968253968
+Training Error: 0.276729559748
+Testing Error: 0.416666666667
+Fitting svm....
+[LibSVM]...........*.........*
+optimization finished, #iter = 9980
+obj = -27.607548, rho = -0.709625
+nSV = 350, nBSV = 252
+Total nSV = 350
+
+'Interaction Results'
+Predicting...
+Average Precision: 0.543599257885
+Average Recall: 0.527614571093
+Average F1: 0.507523939808
+Training Error: 0.236897274633
+Testing Error: 0.4
+Fitting svm....
+[LibSVM]...........*........*
+optimization finished, #iter = 9177
+obj = -19.022225, rho = -1.153333
+nSV = 252, nBSV = 155
+Total nSV = 252
+
+'Happiness Results':
+Predicting...
+Average Precision: 0.465465465465
+Average Recall: 0.483405483405
+Average F1: 0.466666666667
+Training Error: 0.188679245283
+Testing Error: 0.233333333333
+Fitting svm....
+[LibSVM]...............*....*
+optimization finished, #iter = 9331
+obj = -19.322060, rho = -1.120625
+nSV = 262, nBSV = 165
+Total nSV = 262
+
+'Activity Results':
+Predicting...
+Average Precision: 0.62908496732
+Average Recall: 0.594384707288
+Average F1: 0.603418803419
+Training Error: 0.163522012579
+Testing Error: 0.241666666667
+
+

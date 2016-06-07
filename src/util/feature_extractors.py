@@ -133,9 +133,27 @@ def get_image_face_features(img_path, face_folder, classifier):
 
 	return feature_vec
 
-def get_image_pose_features(img_path, orientations):
-	# TODO
-	pass
+def get_all_poselet_features(poselet_path, threshold=0.9):
+	img_names = [name[:-13] for name in os.listdir(poselet_path) if 'DS_Store' not in name]
+	n_images = len(img_names)
+	X = np.zeros((n_images, 150))
+
+	for i, img_name in enumerate(img_names):
+		print img_name
+		X[i,:] = get_image_poselet_features(poselet_path, img_name)
+	return X
+
+def get_image_poselet_features(poselet_path, img_name, threshold=0.9):
+	poselets = np.genfromtxt(os.path.join(poselet_path, img_name + '_poselets.csv'), delimiter=',')
+	ids = poselets[:,4]
+	scores = poselets[:,5]
+	# ids = ids[scores > threshold]
+	feature_vec = np.zeros(150)
+
+	for i in xrange(ids.shape[0]):
+		if scores[i] > threshold:
+			feature_vec[ids[i]-1] += scores[i]
+	return feature_vec
 
 def get_image_group_features(img_path, groups):
 	# TODO

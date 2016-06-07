@@ -54,11 +54,19 @@ def main():
 		# svm = train_smile_extractor(img_path, labels_path)	
 		# joblib.dump(svm, 'svm_model.pkl')
 	else: 
-		print 'Loading svm...'
-		svm = EmotionSVM(img_path, labels_path, img_path2, 'smile', fit=False)
-		all_face_features = get_all_face_features(img_path2, faces_path, svm)
-		print all_face_features.shape
-		np.save('../data/groupdataset_release/face_features.npy', all_face_features)
+		pass
+		# print 'Loading svm...'
+		# svm = EmotionSVM(img_path, labels_path, img_path2, 'smile', fit=False)
+		# all_face_features = get_all_face_features(img_path2, faces_path, svm)
+		# print all_face_features.shape
+		# np.save('../data/groupdataset_release/face_features.npy', all_face_features)
+
+	poselet_path = '../data/groupdataset_release/all_poseletes_hq'
+	all_poselet_features = get_all_poselet_features(poselet_path)
+	print all_poselet_features.shape
+	np.save('../data/groupdataset_release/poselet_features.npy', all_poselet_features)
+
+
 	# X = get_emotion_vector(svm)
 	# test_path = ''
 	# filenames = os.listdir(test_path)
